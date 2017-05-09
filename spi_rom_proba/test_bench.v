@@ -27,24 +27,19 @@ module test_bench;
 	// Inputs
 	reg rst;
 	reg clk;
-	reg enable;
 	reg [31:0] d_send;
 
 	// Outputs
-	wire [31:0] d_received;
-	wire transfer_success;
 	wire miso;
 	wire mosi;
+	wire cs;
+	wire sck;
 	wire HOLD_ENABLE;
 
 	// Instantiate the Unit Under Test (UUT)
 	top_module uut (
 		.rst(rst), 
-		.clk(clk), 
-		.enable(enable), 
-		.d_send(d_send), 
-		.d_received(d_received), 
-		.transfer_success(transfer_success), 
+		.clk(clk),  
 		.HOLD_ENABLE(HOLD_ENABLE),
 		.miso(miso),
 		.mosi(mosi)
@@ -53,8 +48,8 @@ module test_bench;
 	M23A1024 memoria (
 		.SI_SIO0(mosi),
 		.SO_SIO1(miso), 
-		.SCK(), 
-		.CS_N(), 
+		.SCK(sck), 
+		.CS_N(cs), 
 		.SIO2(), //not used
 		.HOLD_N_SIO3(HOLD_ENABLE), 
 		.RESET(rst)
@@ -62,18 +57,18 @@ module test_bench;
 
 	initial begin
 		// Initialize Inputs
-		rst = 0;
+		rst = 1;
 		clk = 0;
-		enable = 0;
-		d_send = 0;
-		HOLD_ENABLE = 0;
-
+		
+		#9
+		rst = 0;
 		// Wait 100 ns for global reset to finish
-		#100;
+
         
 		// Add stimulus here
-
 	end
-      
+   
+	always #25 clk = ~clk;
+   
 endmodule
 

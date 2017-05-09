@@ -1,4 +1,5 @@
 verilog isim_temp "spi.v"
-verilog isim_temp "23A1024.v"
+verilog isim_temp "spi_interface.v"
+verilog isim_temp "amba.v"
 verilog isim_temp "top_module.v"
-verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
+verilog isim_temp "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

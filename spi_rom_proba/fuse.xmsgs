@@ -5,5 +5,26 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="188" delta="unknown" >"C:/Company/GitProject/rarchhazi/spi_rom_proba/23A1024.v" Line 479: Actual bit length <arg fmt="%d" index="1">32</arg> differs from formal bit length <arg fmt="%d" index="2">1</arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="188" delta="unknown" >"C:/Company/GitProject/rarchhazi/spi_rom_proba/23A1024.v" Line 480: Actual bit length <arg fmt="%d" index="1">32</arg> differs from formal bit length <arg fmt="%d" index="2">1</arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="188" delta="unknown" >"C:/Company/GitProject/rarchhazi/spi_rom_proba/23A1024.v" Line 481: Actual bit length <arg fmt="%d" index="1">32</arg> differs from formal bit length <arg fmt="%d" index="2">1</arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Company/GitProject/rarchhazi/spi_rom_proba/test_bench.v" Line 40: Port <arg fmt="%s" index="1">sck</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Company/GitProject/rarchhazi/spi_rom_proba/top_module.v" Line 41: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">amba_command</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">2</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Company/GitProject/rarchhazi/spi_rom_proba/top_module.v" Line 42: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">amba_reg_select</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="Simulator" num="0" delta="unknown" >Unable to copy libPortabilityNOSH.dll to the simulation executable directory: <arg fmt="%s" index="1">boost::filesystem::copy_file: A rendszer nem tal￡lja a megadott el￩r￩si utat, &quot;isim\test_bench_isim_beh.exe.sim\libPortability.dll&quot;</arg>.
+</msg>
+
 </messages>
 
