@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Company/GitProject/rarchhazi/spi_rom_proba/amba_isim_beh.exe" -prj "C:/Company/GitProject/rarchhazi/spi_rom_proba/amba_beh.prj" "work.amba" "work.glbl" 

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="751" delta="new" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v" Line 45: Redeclaration of ansi port <arg fmt="%s" index="1">d_send</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="new" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v" Line 46: Redeclaration of ansi port <arg fmt="%s" index="1">d_received</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\top_module.v" Line 33: Redeclaration of ansi port <arg fmt="%s" index="1">enable</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\top_module.v" Line 34: Redeclaration of ansi port <arg fmt="%s" index="1">miso</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\top_module.v" Line 35: Redeclaration of ansi port <arg fmt="%s" index="1">mosi</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\top_module.v" Line 39: Port <arg fmt="%s" index="1">clk</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v" Line 34: Assignment to <arg fmt="%s" index="1">cs</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v" Line 35: Assignment to <arg fmt="%s" index="1">sck</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v" Line 37: Assignment to <arg fmt="%s" index="1">mosi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v" Line 38: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">dout</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v" Line 38: Assignment to <arg fmt="%s" index="1">d_received</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v" Line 39: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">din</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v" Line 42: Assignment to <arg fmt="%s" index="1">transfer_success</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v" Line 41: Net &lt;<arg fmt="%s" index="1">enable</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\amba.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">amba</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\top_module.v" Line 47: Assignment to <arg fmt="%s" index="1">sckcs</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="new" >"C:\Company\GitProject\rarchhazi\spi_rom_proba\top_module.v" Line 39: Input port <arg fmt="%s" index="1">clk</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v</arg>&quot; line <arg fmt="%d" index="2">31</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">spi</arg>&gt; of block &lt;<arg fmt="%s" index="4">spi</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">spi_interface</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">clk</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">interface</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">rst</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">interface</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">mosi</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">interface</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">d_received</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">interface</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">d_send</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">enable</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">miso</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Company\GitProject\rarchhazi\spi_rom_proba\top_module.v</arg>&quot; line <arg fmt="%s" index="2">39</arg>: Output port &lt;<arg fmt="%s" index="3">miso</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">interface</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Company\GitProject\rarchhazi\spi_rom_proba\top_module.v</arg>&quot; line <arg fmt="%s" index="2">39</arg>: Output port &lt;<arg fmt="%s" index="3">d_send</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">interface</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">mosi</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">d_received</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v</arg>&quot; line <arg fmt="%s" index="2">31</arg>: Output port &lt;<arg fmt="%s" index="3">dout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v</arg>&quot; line <arg fmt="%s" index="2">31</arg>: Output port &lt;<arg fmt="%s" index="3">mosi</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v</arg>&quot; line <arg fmt="%s" index="2">31</arg>: Output port &lt;<arg fmt="%s" index="3">cs</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v</arg>&quot; line <arg fmt="%s" index="2">31</arg>: Output port &lt;<arg fmt="%s" index="3">sck1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v</arg>&quot; line <arg fmt="%s" index="2">31</arg>: Output port &lt;<arg fmt="%s" index="3">transfer_succeded</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">miso</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">d_send</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">enable</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+</messages>
+

@@ -1,0 +1,2497 @@
+ISim log file
+Running: C:\Users\Ari\Desktop\xilinx\fehervari\memtest\test_bench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Ari/Desktop/xilinx/fehervari/memtest/test_bench_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+WARNING: at 5 ns: Timing violation in /test_bench/uut/  $width( SCK:0 ps, :5 ns, 25 ns)
+
+
+WARNING: at 10 ns: Timing violation in /test_bench/uut/  $width( SCK:5 ns, :10 ns, 25 ns)
+
+
+WARNING: at 15 ns: Timing violation in /test_bench/uut/  $width( SCK:10 ns, :15 ns, 25 ns)
+
+
+WARNING: at 20 ns: Timing violation in /test_bench/uut/  $width( SCK:15 ns, :20 ns, 25 ns)
+
+
+WARNING: at 25 ns: Timing violation in /test_bench/uut/  $width( SCK:20 ns, :25 ns, 25 ns)
+
+
+WARNING: at 30 ns: Timing violation in /test_bench/uut/  $width( SCK:25 ns, :30 ns, 25 ns)
+
+
+WARNING: at 35 ns: Timing violation in /test_bench/uut/  $width( SCK:30 ns, :35 ns, 25 ns)
+
+
+WARNING: at 40 ns: Timing violation in /test_bench/uut/  $width( SCK:35 ns, :40 ns, 25 ns)
+
+
+WARNING: at 45 ns: Timing violation in /test_bench/uut/  $width( SCK:40 ns, :45 ns, 25 ns)
+
+
+WARNING: at 50 ns: Timing violation in /test_bench/uut/  $width( SCK:45 ns, :50 ns, 25 ns)
+
+
+WARNING: at 55 ns: Timing violation in /test_bench/uut/  $width( SCK:50 ns, :55 ns, 25 ns)
+
+
+WARNING: at 60 ns: Timing violation in /test_bench/uut/  $width( SCK:55 ns, :60 ns, 25 ns)
+
+
+WARNING: at 65 ns: Timing violation in /test_bench/uut/  $width( SCK:60 ns, :65 ns, 25 ns)
+
+
+WARNING: at 70 ns: Timing violation in /test_bench/uut/  $width( SCK:65 ns, :70 ns, 25 ns)
+
+
+WARNING: at 75 ns: Timing violation in /test_bench/uut/  $width( SCK:70 ns, :75 ns, 25 ns)
+
+
+WARNING: at 80 ns: Timing violation in /test_bench/uut/  $width( SCK:75 ns, :80 ns, 25 ns)
+
+
+WARNING: at 85 ns: Timing violation in /test_bench/uut/  $width( SCK:80 ns, :85 ns, 25 ns)
+
+
+WARNING: at 90 ns: Timing violation in /test_bench/uut/  $width( SCK:85 ns, :90 ns, 25 ns)
+
+
+WARNING: at 95 ns: Timing violation in /test_bench/uut/  $width( SCK:90 ns, :95 ns, 25 ns)
+
+
+WARNING: at 100 ns: Timing violation in /test_bench/uut/  $width( SCK:95 ns, :100 ns, 25 ns)
+
+
+WARNING: at 105 ns: Timing violation in /test_bench/uut/  $width( SCK:100 ns, :105 ns, 25 ns)
+
+
+WARNING: at 110 ns: Timing violation in /test_bench/uut/  $width( SCK:105 ns, :110 ns, 25 ns)
+
+
+WARNING: at 115 ns: Timing violation in /test_bench/uut/  $width( SCK:110 ns, :115 ns, 25 ns)
+
+
+WARNING: at 115 ns: Timing violation in /test_bench/uut/  $setup( CS_N:110 ns, SCK:115 ns,25 ns)
+
+
+WARNING: at 115 ns: Timing violation in /test_bench/uut/  $setup( SI_SIO0:110 ns, SCK:115 ns,10 ns)
+
+
+WARNING: at 120 ns: Timing violation in /test_bench/uut/  $width( SCK:115 ns, :120 ns, 25 ns)
+
+
+WARNING: at 125 ns: Timing violation in /test_bench/uut/  $width( SCK:120 ns, :125 ns, 25 ns)
+
+
+WARNING: at 125 ns: Timing violation in /test_bench/uut/  $setup( CS_N:110 ns, SCK:125 ns,25 ns)
+
+
+WARNING: at 130 ns: Timing violation in /test_bench/uut/  $width( SCK:125 ns, :130 ns, 25 ns)
+
+
+WARNING: at 135 ns: Timing violation in /test_bench/uut/  $width( SCK:130 ns, :135 ns, 25 ns)
+
+
+WARNING: at 140 ns: Timing violation in /test_bench/uut/  $width( SCK:135 ns, :140 ns, 25 ns)
+
+
+WARNING: at 145 ns: Timing violation in /test_bench/uut/  $width( SCK:140 ns, :145 ns, 25 ns)
+
+
+WARNING: at 150 ns: Timing violation in /test_bench/uut/  $width( SCK:145 ns, :150 ns, 25 ns)
+
+
+WARNING: at 155 ns: Timing violation in /test_bench/uut/  $width( SCK:150 ns, :155 ns, 25 ns)
+
+
+WARNING: at 160 ns: Timing violation in /test_bench/uut/  $width( SCK:155 ns, :160 ns, 25 ns)
+
+
+WARNING: at 165 ns: Timing violation in /test_bench/uut/  $width( SCK:160 ns, :165 ns, 25 ns)
+
+
+WARNING: at 170 ns: Timing violation in /test_bench/uut/  $width( SCK:165 ns, :170 ns, 25 ns)
+
+
+WARNING: at 175 ns: Timing violation in /test_bench/uut/  $width( SCK:170 ns, :175 ns, 25 ns)
+
+
+WARNING: at 175 ns: Timing violation in /test_bench/uut/  $setup( SI_SIO0:170 ns, SCK:175 ns,10 ns)
+
+
+WARNING: at 180 ns: Timing violation in /test_bench/uut/  $width( SCK:175 ns, :180 ns, 25 ns)
+
+
+WARNING: at 185 ns: Timing violation in /test_bench/uut/  $width( SCK:180 ns, :185 ns, 25 ns)
+
+
+WARNING: at 190 ns: Timing violation in /test_bench/uut/  $width( SCK:185 ns, :190 ns, 25 ns)
+
+
+WARNING: at 195 ns: Timing violation in /test_bench/uut/  $width( SCK:190 ns, :195 ns, 25 ns)
+
+
+WARNING: at 195 ns: Timing violation in /test_bench/uut/  $setup( SI_SIO0:190 ns, SCK:195 ns,10 ns)
+
+
+WARNING: at 200 ns: Timing violation in /test_bench/uut/  $width( SCK:195 ns, :200 ns, 25 ns)
+
+
+WARNING: at 205 ns: Timing violation in /test_bench/uut/  $width( SCK:200 ns, :205 ns, 25 ns)
+
+
+WARNING: at 210 ns: Timing violation in /test_bench/uut/  $width( SCK:205 ns, :210 ns, 25 ns)
+
+
+WARNING: at 215 ns: Timing violation in /test_bench/uut/  $width( SCK:210 ns, :215 ns, 25 ns)
+
+
+WARNING: at 220 ns: Timing violation in /test_bench/uut/  $width( SCK:215 ns, :220 ns, 25 ns)
+
+
+WARNING: at 225 ns: Timing violation in /test_bench/uut/  $width( SCK:220 ns, :225 ns, 25 ns)
+
+
+WARNING: at 230 ns: Timing violation in /test_bench/uut/  $width( SCK:225 ns, :230 ns, 25 ns)
+
+
+WARNING: at 235 ns: Timing violation in /test_bench/uut/  $width( SCK:230 ns, :235 ns, 25 ns)
+
+
+WARNING: at 240 ns: Timing violation in /test_bench/uut/  $width( SCK:235 ns, :240 ns, 25 ns)
+
+
+WARNING: at 245 ns: Timing violation in /test_bench/uut/  $width( SCK:240 ns, :245 ns, 25 ns)
+
+
+WARNING: at 250 ns: Timing violation in /test_bench/uut/  $width( SCK:245 ns, :250 ns, 25 ns)
+
+
+WARNING: at 255 ns: Timing violation in /test_bench/uut/  $width( SCK:250 ns, :255 ns, 25 ns)
+
+
+WARNING: at 260 ns: Timing violation in /test_bench/uut/  $width( SCK:255 ns, :260 ns, 25 ns)
+
+
+WARNING: at 265 ns: Timing violation in /test_bench/uut/  $width( SCK:260 ns, :265 ns, 25 ns)
+
+
+WARNING: at 270 ns: Timing violation in /test_bench/uut/  $width( SCK:265 ns, :270 ns, 25 ns)
+
+
+WARNING: at 275 ns: Timing violation in /test_bench/uut/  $width( SCK:270 ns, :275 ns, 25 ns)
+
+
+WARNING: at 280 ns: Timing violation in /test_bench/uut/  $width( SCK:275 ns, :280 ns, 25 ns)
+
+
+WARNING: at 285 ns: Timing violation in /test_bench/uut/  $width( SCK:280 ns, :285 ns, 25 ns)
+
+
+WARNING: at 290 ns: Timing violation in /test_bench/uut/  $width( SCK:285 ns, :290 ns, 25 ns)
+
+
+WARNING: at 295 ns: Timing violation in /test_bench/uut/  $width( SCK:290 ns, :295 ns, 25 ns)
+
+
+WARNING: at 300 ns: Timing violation in /test_bench/uut/  $width( SCK:295 ns, :300 ns, 25 ns)
+
+
+WARNING: at 305 ns: Timing violation in /test_bench/uut/  $width( SCK:300 ns, :305 ns, 25 ns)
+
+
+WARNING: at 310 ns: Timing violation in /test_bench/uut/  $width( SCK:305 ns, :310 ns, 25 ns)
+
+
+WARNING: at 315 ns: Timing violation in /test_bench/uut/  $width( SCK:310 ns, :315 ns, 25 ns)
+
+
+WARNING: at 320 ns: Timing violation in /test_bench/uut/  $width( SCK:315 ns, :320 ns, 25 ns)
+
+
+WARNING: at 325 ns: Timing violation in /test_bench/uut/  $width( SCK:320 ns, :325 ns, 25 ns)
+
+
+WARNING: at 330 ns: Timing violation in /test_bench/uut/  $width( SCK:325 ns, :330 ns, 25 ns)
+
+
+WARNING: at 335 ns: Timing violation in /test_bench/uut/  $width( SCK:330 ns, :335 ns, 25 ns)
+
+
+WARNING: at 340 ns: Timing violation in /test_bench/uut/  $width( SCK:335 ns, :340 ns, 25 ns)
+
+
+WARNING: at 345 ns: Timing violation in /test_bench/uut/  $width( SCK:340 ns, :345 ns, 25 ns)
+
+
+WARNING: at 350 ns: Timing violation in /test_bench/uut/  $width( SCK:345 ns, :350 ns, 25 ns)
+
+
+WARNING: at 355 ns: Timing violation in /test_bench/uut/  $width( SCK:350 ns, :355 ns, 25 ns)
+
+
+WARNING: at 360 ns: Timing violation in /test_bench/uut/  $width( SCK:355 ns, :360 ns, 25 ns)
+
+
+WARNING: at 365 ns: Timing violation in /test_bench/uut/  $width( SCK:360 ns, :365 ns, 25 ns)
+
+
+WARNING: at 370 ns: Timing violation in /test_bench/uut/  $width( SCK:365 ns, :370 ns, 25 ns)
+
+
+WARNING: at 375 ns: Timing violation in /test_bench/uut/  $width( SCK:370 ns, :375 ns, 25 ns)
+
+
+WARNING: at 380 ns: Timing violation in /test_bench/uut/  $width( SCK:375 ns, :380 ns, 25 ns)
+
+
+WARNING: at 385 ns: Timing violation in /test_bench/uut/  $width( SCK:380 ns, :385 ns, 25 ns)
+
+
+WARNING: at 390 ns: Timing violation in /test_bench/uut/  $width( SCK:385 ns, :390 ns, 25 ns)
+
+
+WARNING: at 395 ns: Timing violation in /test_bench/uut/  $width( SCK:390 ns, :395 ns, 25 ns)
+
+
+WARNING: at 400 ns: Timing violation in /test_bench/uut/  $width( SCK:395 ns, :400 ns, 25 ns)
+
+
+WARNING: at 405 ns: Timing violation in /test_bench/uut/  $width( SCK:400 ns, :405 ns, 25 ns)
+
+
+WARNING: at 410 ns: Timing violation in /test_bench/uut/  $width( SCK:405 ns, :410 ns, 25 ns)
+
+
+WARNING: at 415 ns: Timing violation in /test_bench/uut/  $width( SCK:410 ns, :415 ns, 25 ns)
+
+
+WARNING: at 420 ns: Timing violation in /test_bench/uut/  $width( SCK:415 ns, :420 ns, 25 ns)
+
+
+WARNING: at 425 ns: Timing violation in /test_bench/uut/  $width( SCK:420 ns, :425 ns, 25 ns)
+
+
+WARNING: at 430 ns: Timing violation in /test_bench/uut/  $width( SCK:425 ns, :430 ns, 25 ns)
+
+
+WARNING: at 435 ns: Timing violation in /test_bench/uut/  $width( SCK:430 ns, :435 ns, 25 ns)
+
+
+WARNING: at 440 ns: Timing violation in /test_bench/uut/  $width( SCK:435 ns, :440 ns, 25 ns)
+
+
+WARNING: at 445 ns: Timing violation in /test_bench/uut/  $width( SCK:440 ns, :445 ns, 25 ns)
+
+
+WARNING: at 450 ns: Timing violation in /test_bench/uut/  $width( SCK:445 ns, :450 ns, 25 ns)
+
+
+WARNING: at 455 ns: Timing violation in /test_bench/uut/  $width( SCK:450 ns, :455 ns, 25 ns)
+
+
+WARNING: at 460 ns: Timing violation in /test_bench/uut/  $width( SCK:455 ns, :460 ns, 25 ns)
+
+
+WARNING: at 465 ns: Timing violation in /test_bench/uut/  $width( SCK:460 ns, :465 ns, 25 ns)
+
+
+WARNING: at 470 ns: Timing violation in /test_bench/uut/  $width( SCK:465 ns, :470 ns, 25 ns)
+
+
+WARNING: at 475 ns: Timing violation in /test_bench/uut/  $width( SCK:470 ns, :475 ns, 25 ns)
+
+
+WARNING: at 480 ns: Timing violation in /test_bench/uut/  $width( SCK:475 ns, :480 ns, 25 ns)
+
+
+WARNING: at 485 ns: Timing violation in /test_bench/uut/  $width( SCK:480 ns, :485 ns, 25 ns)
+
+
+WARNING: at 490 ns: Timing violation in /test_bench/uut/  $width( SCK:485 ns, :490 ns, 25 ns)
+
+
+WARNING: at 495 ns: Timing violation in /test_bench/uut/  $width( SCK:490 ns, :495 ns, 25 ns)
+
+
+WARNING: at 500 ns: Timing violation in /test_bench/uut/  $width( SCK:495 ns, :500 ns, 25 ns)
+
+
+WARNING: at 505 ns: Timing violation in /test_bench/uut/  $width( SCK:500 ns, :505 ns, 25 ns)
+
+
+WARNING: at 510 ns: Timing violation in /test_bench/uut/  $width( SCK:505 ns, :510 ns, 25 ns)
+
+
+WARNING: at 515 ns: Timing violation in /test_bench/uut/  $width( SCK:510 ns, :515 ns, 25 ns)
+
+
+WARNING: at 520 ns: Timing violation in /test_bench/uut/  $width( SCK:515 ns, :520 ns, 25 ns)
+
+
+WARNING: at 525 ns: Timing violation in /test_bench/uut/  $width( SCK:520 ns, :525 ns, 25 ns)
+
+
+WARNING: at 530 ns: Timing violation in /test_bench/uut/  $width( SCK:525 ns, :530 ns, 25 ns)
+
+
+WARNING: at 535 ns: Timing violation in /test_bench/uut/  $width( SCK:530 ns, :535 ns, 25 ns)
+
+
+WARNING: at 540 ns: Timing violation in /test_bench/uut/  $width( SCK:535 ns, :540 ns, 25 ns)
+
+
+WARNING: at 545 ns: Timing violation in /test_bench/uut/  $width( SCK:540 ns, :545 ns, 25 ns)
+
+
+WARNING: at 550 ns: Timing violation in /test_bench/uut/  $width( SCK:545 ns, :550 ns, 25 ns)
+
+
+WARNING: at 555 ns: Timing violation in /test_bench/uut/  $width( SCK:550 ns, :555 ns, 25 ns)
+
+
+WARNING: at 560 ns: Timing violation in /test_bench/uut/  $width( SCK:555 ns, :560 ns, 25 ns)
+
+
+WARNING: at 565 ns: Timing violation in /test_bench/uut/  $width( SCK:560 ns, :565 ns, 25 ns)
+
+
+WARNING: at 570 ns: Timing violation in /test_bench/uut/  $width( SCK:565 ns, :570 ns, 25 ns)
+
+
+WARNING: at 575 ns: Timing violation in /test_bench/uut/  $width( SCK:570 ns, :575 ns, 25 ns)
+
+
+WARNING: at 580 ns: Timing violation in /test_bench/uut/  $width( SCK:575 ns, :580 ns, 25 ns)
+
+
+WARNING: at 585 ns: Timing violation in /test_bench/uut/  $width( SCK:580 ns, :585 ns, 25 ns)
+
+
+WARNING: at 590 ns: Timing violation in /test_bench/uut/  $width( SCK:585 ns, :590 ns, 25 ns)
+
+
+WARNING: at 595 ns: Timing violation in /test_bench/uut/  $width( SCK:590 ns, :595 ns, 25 ns)
+
+
+WARNING: at 600 ns: Timing violation in /test_bench/uut/  $width( SCK:595 ns, :600 ns, 25 ns)
+
+
+WARNING: at 605 ns: Timing violation in /test_bench/uut/  $width( SCK:600 ns, :605 ns, 25 ns)
+
+
+WARNING: at 610 ns: Timing violation in /test_bench/uut/  $width( SCK:605 ns, :610 ns, 25 ns)
+
+
+WARNING: at 615 ns: Timing violation in /test_bench/uut/  $width( SCK:610 ns, :615 ns, 25 ns)
+
+
+WARNING: at 620 ns: Timing violation in /test_bench/uut/  $width( SCK:615 ns, :620 ns, 25 ns)
+
+
+WARNING: at 625 ns: Timing violation in /test_bench/uut/  $width( SCK:620 ns, :625 ns, 25 ns)
+
+
+WARNING: at 630 ns: Timing violation in /test_bench/uut/  $width( SCK:625 ns, :630 ns, 25 ns)
+
+
+WARNING: at 635 ns: Timing violation in /test_bench/uut/  $width( SCK:630 ns, :635 ns, 25 ns)
+
+
+WARNING: at 640 ns: Timing violation in /test_bench/uut/  $width( SCK:635 ns, :640 ns, 25 ns)
+
+
+WARNING: at 645 ns: Timing violation in /test_bench/uut/  $width( SCK:640 ns, :645 ns, 25 ns)
+
+
+WARNING: at 650 ns: Timing violation in /test_bench/uut/  $width( SCK:645 ns, :650 ns, 25 ns)
+
+
+WARNING: at 655 ns: Timing violation in /test_bench/uut/  $width( SCK:650 ns, :655 ns, 25 ns)
+
+
+WARNING: at 660 ns: Timing violation in /test_bench/uut/  $width( SCK:655 ns, :660 ns, 25 ns)
+
+
+WARNING: at 665 ns: Timing violation in /test_bench/uut/  $width( SCK:660 ns, :665 ns, 25 ns)
+
+
+WARNING: at 670 ns: Timing violation in /test_bench/uut/  $width( SCK:665 ns, :670 ns, 25 ns)
+
+
+WARNING: at 675 ns: Timing violation in /test_bench/uut/  $width( SCK:670 ns, :675 ns, 25 ns)
+
+
+WARNING: at 680 ns: Timing violation in /test_bench/uut/  $width( SCK:675 ns, :680 ns, 25 ns)
+
+
+WARNING: at 685 ns: Timing violation in /test_bench/uut/  $width( SCK:680 ns, :685 ns, 25 ns)
+
+
+WARNING: at 690 ns: Timing violation in /test_bench/uut/  $width( SCK:685 ns, :690 ns, 25 ns)
+
+
+WARNING: at 695 ns: Timing violation in /test_bench/uut/  $width( SCK:690 ns, :695 ns, 25 ns)
+
+
+WARNING: at 700 ns: Timing violation in /test_bench/uut/  $width( SCK:695 ns, :700 ns, 25 ns)
+
+
+WARNING: at 705 ns: Timing violation in /test_bench/uut/  $width( SCK:700 ns, :705 ns, 25 ns)
+
+
+WARNING: at 710 ns: Timing violation in /test_bench/uut/  $width( SCK:705 ns, :710 ns, 25 ns)
+
+
+WARNING: at 715 ns: Timing violation in /test_bench/uut/  $width( SCK:710 ns, :715 ns, 25 ns)
+
+
+WARNING: at 720 ns: Timing violation in /test_bench/uut/  $width( SCK:715 ns, :720 ns, 25 ns)
+
+
+WARNING: at 725 ns: Timing violation in /test_bench/uut/  $width( SCK:720 ns, :725 ns, 25 ns)
+
+
+WARNING: at 730 ns: Timing violation in /test_bench/uut/  $width( SCK:725 ns, :730 ns, 25 ns)
+
+
+WARNING: at 735 ns: Timing violation in /test_bench/uut/  $width( SCK:730 ns, :735 ns, 25 ns)
+
+
+WARNING: at 740 ns: Timing violation in /test_bench/uut/  $width( SCK:735 ns, :740 ns, 25 ns)
+
+
+WARNING: at 745 ns: Timing violation in /test_bench/uut/  $width( SCK:740 ns, :745 ns, 25 ns)
+
+
+WARNING: at 750 ns: Timing violation in /test_bench/uut/  $width( SCK:745 ns, :750 ns, 25 ns)
+
+
+WARNING: at 755 ns: Timing violation in /test_bench/uut/  $width( SCK:750 ns, :755 ns, 25 ns)
+
+
+WARNING: at 760 ns: Timing violation in /test_bench/uut/  $width( SCK:755 ns, :760 ns, 25 ns)
+
+
+WARNING: at 765 ns: Timing violation in /test_bench/uut/  $width( SCK:760 ns, :765 ns, 25 ns)
+
+
+WARNING: at 770 ns: Timing violation in /test_bench/uut/  $width( SCK:765 ns, :770 ns, 25 ns)
+
+
+WARNING: at 775 ns: Timing violation in /test_bench/uut/  $width( SCK:770 ns, :775 ns, 25 ns)
+
+
+WARNING: at 780 ns: Timing violation in /test_bench/uut/  $width( SCK:775 ns, :780 ns, 25 ns)
+
+
+WARNING: at 785 ns: Timing violation in /test_bench/uut/  $width( SCK:780 ns, :785 ns, 25 ns)
+
+
+WARNING: at 790 ns: Timing violation in /test_bench/uut/  $width( SCK:785 ns, :790 ns, 25 ns)
+
+
+WARNING: at 795 ns: Timing violation in /test_bench/uut/  $width( SCK:790 ns, :795 ns, 25 ns)
+
+
+WARNING: at 800 ns: Timing violation in /test_bench/uut/  $width( SCK:795 ns, :800 ns, 25 ns)
+
+
+WARNING: at 805 ns: Timing violation in /test_bench/uut/  $width( SCK:800 ns, :805 ns, 25 ns)
+
+
+WARNING: at 810 ns: Timing violation in /test_bench/uut/  $width( SCK:805 ns, :810 ns, 25 ns)
+
+
+WARNING: at 815 ns: Timing violation in /test_bench/uut/  $width( SCK:810 ns, :815 ns, 25 ns)
+
+
+WARNING: at 820 ns: Timing violation in /test_bench/uut/  $width( SCK:815 ns, :820 ns, 25 ns)
+
+
+WARNING: at 825 ns: Timing violation in /test_bench/uut/  $width( SCK:820 ns, :825 ns, 25 ns)
+
+
+WARNING: at 830 ns: Timing violation in /test_bench/uut/  $width( SCK:825 ns, :830 ns, 25 ns)
+
+
+WARNING: at 835 ns: Timing violation in /test_bench/uut/  $width( SCK:830 ns, :835 ns, 25 ns)
+
+
+WARNING: at 840 ns: Timing violation in /test_bench/uut/  $width( SCK:835 ns, :840 ns, 25 ns)
+
+
+WARNING: at 845 ns: Timing violation in /test_bench/uut/  $width( SCK:840 ns, :845 ns, 25 ns)
+
+
+WARNING: at 850 ns: Timing violation in /test_bench/uut/  $width( SCK:845 ns, :850 ns, 25 ns)
+
+
+WARNING: at 855 ns: Timing violation in /test_bench/uut/  $width( SCK:850 ns, :855 ns, 25 ns)
+
+
+WARNING: at 860 ns: Timing violation in /test_bench/uut/  $width( SCK:855 ns, :860 ns, 25 ns)
+
+
+WARNING: at 865 ns: Timing violation in /test_bench/uut/  $width( SCK:860 ns, :865 ns, 25 ns)
+
+
+WARNING: at 870 ns: Timing violation in /test_bench/uut/  $width( SCK:865 ns, :870 ns, 25 ns)
+
+
+WARNING: at 875 ns: Timing violation in /test_bench/uut/  $width( SCK:870 ns, :875 ns, 25 ns)
+
+
+WARNING: at 880 ns: Timing violation in /test_bench/uut/  $width( SCK:875 ns, :880 ns, 25 ns)
+
+
+WARNING: at 885 ns: Timing violation in /test_bench/uut/  $width( SCK:880 ns, :885 ns, 25 ns)
+
+
+WARNING: at 890 ns: Timing violation in /test_bench/uut/  $width( SCK:885 ns, :890 ns, 25 ns)
+
+
+WARNING: at 895 ns: Timing violation in /test_bench/uut/  $width( SCK:890 ns, :895 ns, 25 ns)
+
+
+WARNING: at 900 ns: Timing violation in /test_bench/uut/  $width( SCK:895 ns, :900 ns, 25 ns)
+
+
+WARNING: at 905 ns: Timing violation in /test_bench/uut/  $width( SCK:900 ns, :905 ns, 25 ns)
+
+
+WARNING: at 910 ns: Timing violation in /test_bench/uut/  $width( SCK:905 ns, :910 ns, 25 ns)
+
+
+WARNING: at 915 ns: Timing violation in /test_bench/uut/  $width( SCK:910 ns, :915 ns, 25 ns)
+
+
+WARNING: at 920 ns: Timing violation in /test_bench/uut/  $width( SCK:915 ns, :920 ns, 25 ns)
+
+
+WARNING: at 925 ns: Timing violation in /test_bench/uut/  $width( SCK:920 ns, :925 ns, 25 ns)
+
+
+WARNING: at 930 ns: Timing violation in /test_bench/uut/  $width( SCK:925 ns, :930 ns, 25 ns)
+
+
+WARNING: at 935 ns: Timing violation in /test_bench/uut/  $width( SCK:930 ns, :935 ns, 25 ns)
+
+
+WARNING: at 940 ns: Timing violation in /test_bench/uut/  $width( SCK:935 ns, :940 ns, 25 ns)
+
+
+WARNING: at 945 ns: Timing violation in /test_bench/uut/  $width( SCK:940 ns, :945 ns, 25 ns)
+
+
+WARNING: at 950 ns: Timing violation in /test_bench/uut/  $width( SCK:945 ns, :950 ns, 25 ns)
+
+
+WARNING: at 955 ns: Timing violation in /test_bench/uut/  $width( SCK:950 ns, :955 ns, 25 ns)
+
+
+WARNING: at 960 ns: Timing violation in /test_bench/uut/  $width( SCK:955 ns, :960 ns, 25 ns)
+
+
+WARNING: at 965 ns: Timing violation in /test_bench/uut/  $width( SCK:960 ns, :965 ns, 25 ns)
+
+
+WARNING: at 970 ns: Timing violation in /test_bench/uut/  $width( SCK:965 ns, :970 ns, 25 ns)
+
+
+WARNING: at 975 ns: Timing violation in /test_bench/uut/  $width( SCK:970 ns, :975 ns, 25 ns)
+
+
+WARNING: at 980 ns: Timing violation in /test_bench/uut/  $width( SCK:975 ns, :980 ns, 25 ns)
+
+
+WARNING: at 985 ns: Timing violation in /test_bench/uut/  $width( SCK:980 ns, :985 ns, 25 ns)
+
+
+WARNING: at 990 ns: Timing violation in /test_bench/uut/  $width( SCK:985 ns, :990 ns, 25 ns)
+
+
+WARNING: at 995 ns: Timing violation in /test_bench/uut/  $width( SCK:990 ns, :995 ns, 25 ns)
+
+
+WARNING: at 1 us: Timing violation in /test_bench/uut/  $width( SCK:995 ns, :1 us, 25 ns)
+
+
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+WARNING: at 5 ns: Timing violation in /test_bench/uut/  $width( SCK:0 ps, :5 ns, 25 ns)
+
+
+WARNING: at 10 ns: Timing violation in /test_bench/uut/  $width( SCK:5 ns, :10 ns, 25 ns)
+
+
+WARNING: at 15 ns: Timing violation in /test_bench/uut/  $width( SCK:10 ns, :15 ns, 25 ns)
+
+
+WARNING: at 20 ns: Timing violation in /test_bench/uut/  $width( SCK:15 ns, :20 ns, 25 ns)
+
+
+WARNING: at 25 ns: Timing violation in /test_bench/uut/  $width( SCK:20 ns, :25 ns, 25 ns)
+
+
+WARNING: at 30 ns: Timing violation in /test_bench/uut/  $width( SCK:25 ns, :30 ns, 25 ns)
+
+
+WARNING: at 35 ns: Timing violation in /test_bench/uut/  $width( SCK:30 ns, :35 ns, 25 ns)
+
+
+WARNING: at 40 ns: Timing violation in /test_bench/uut/  $width( SCK:35 ns, :40 ns, 25 ns)
+
+
+WARNING: at 45 ns: Timing violation in /test_bench/uut/  $width( SCK:40 ns, :45 ns, 25 ns)
+
+
+WARNING: at 50 ns: Timing violation in /test_bench/uut/  $width( SCK:45 ns, :50 ns, 25 ns)
+
+
+WARNING: at 55 ns: Timing violation in /test_bench/uut/  $width( SCK:50 ns, :55 ns, 25 ns)
+
+
+WARNING: at 60 ns: Timing violation in /test_bench/uut/  $width( SCK:55 ns, :60 ns, 25 ns)
+
+
+WARNING: at 65 ns: Timing violation in /test_bench/uut/  $width( SCK:60 ns, :65 ns, 25 ns)
+
+
+WARNING: at 70 ns: Timing violation in /test_bench/uut/  $width( SCK:65 ns, :70 ns, 25 ns)
+
+
+WARNING: at 75 ns: Timing violation in /test_bench/uut/  $width( SCK:70 ns, :75 ns, 25 ns)
+
+
+WARNING: at 80 ns: Timing violation in /test_bench/uut/  $width( SCK:75 ns, :80 ns, 25 ns)
+
+
+WARNING: at 85 ns: Timing violation in /test_bench/uut/  $width( SCK:80 ns, :85 ns, 25 ns)
+
+
+WARNING: at 90 ns: Timing violation in /test_bench/uut/  $width( SCK:85 ns, :90 ns, 25 ns)
+
+
+WARNING: at 95 ns: Timing violation in /test_bench/uut/  $width( SCK:90 ns, :95 ns, 25 ns)
+
+
+WARNING: at 100 ns: Timing violation in /test_bench/uut/  $width( SCK:95 ns, :100 ns, 25 ns)
+
+
+WARNING: at 105 ns: Timing violation in /test_bench/uut/  $width( SCK:100 ns, :105 ns, 25 ns)
+
+
+WARNING: at 110 ns: Timing violation in /test_bench/uut/  $width( SCK:105 ns, :110 ns, 25 ns)
+
+
+WARNING: at 115 ns: Timing violation in /test_bench/uut/  $width( SCK:110 ns, :115 ns, 25 ns)
+
+
+WARNING: at 115 ns: Timing violation in /test_bench/uut/  $setup( CS_N:110 ns, SCK:115 ns,25 ns)
+
+
+WARNING: at 115 ns: Timing violation in /test_bench/uut/  $setup( SI_SIO0:110 ns, SCK:115 ns,10 ns)
+
+
+WARNING: at 120 ns: Timing violation in /test_bench/uut/  $width( SCK:115 ns, :120 ns, 25 ns)
+
+
+WARNING: at 125 ns: Timing violation in /test_bench/uut/  $width( SCK:120 ns, :125 ns, 25 ns)
+
+
+WARNING: at 125 ns: Timing violation in /test_bench/uut/  $setup( CS_N:110 ns, SCK:125 ns,25 ns)
+
+
+WARNING: at 130 ns: Timing violation in /test_bench/uut/  $width( SCK:125 ns, :130 ns, 25 ns)
+
+
+WARNING: at 135 ns: Timing violation in /test_bench/uut/  $width( SCK:130 ns, :135 ns, 25 ns)
+
+
+WARNING: at 140 ns: Timing violation in /test_bench/uut/  $width( SCK:135 ns, :140 ns, 25 ns)
+
+
+WARNING: at 145 ns: Timing violation in /test_bench/uut/  $width( SCK:140 ns, :145 ns, 25 ns)
+
+
+WARNING: at 150 ns: Timing violation in /test_bench/uut/  $width( SCK:145 ns, :150 ns, 25 ns)
+
+
+WARNING: at 155 ns: Timing violation in /test_bench/uut/  $width( SCK:150 ns, :155 ns, 25 ns)
+
+
+WARNING: at 160 ns: Timing violation in /test_bench/uut/  $width( SCK:155 ns, :160 ns, 25 ns)
+
+
+WARNING: at 165 ns: Timing violation in /test_bench/uut/  $width( SCK:160 ns, :165 ns, 25 ns)
+
+
+WARNING: at 170 ns: Timing violation in /test_bench/uut/  $width( SCK:165 ns, :170 ns, 25 ns)
+
+
+WARNING: at 175 ns: Timing violation in /test_bench/uut/  $width( SCK:170 ns, :175 ns, 25 ns)
+
+
+WARNING: at 175 ns: Timing violation in /test_bench/uut/  $setup( SI_SIO0:170 ns, SCK:175 ns,10 ns)
+
+
+WARNING: at 180 ns: Timing violation in /test_bench/uut/  $width( SCK:175 ns, :180 ns, 25 ns)
+
+
+WARNING: at 185 ns: Timing violation in /test_bench/uut/  $width( SCK:180 ns, :185 ns, 25 ns)
+
+
+WARNING: at 190 ns: Timing violation in /test_bench/uut/  $width( SCK:185 ns, :190 ns, 25 ns)
+
+
+WARNING: at 195 ns: Timing violation in /test_bench/uut/  $width( SCK:190 ns, :195 ns, 25 ns)
+
+
+WARNING: at 195 ns: Timing violation in /test_bench/uut/  $setup( SI_SIO0:190 ns, SCK:195 ns,10 ns)
+
+
+WARNING: at 200 ns: Timing violation in /test_bench/uut/  $width( SCK:195 ns, :200 ns, 25 ns)
+
+
+WARNING: at 205 ns: Timing violation in /test_bench/uut/  $width( SCK:200 ns, :205 ns, 25 ns)
+
+
+WARNING: at 210 ns: Timing violation in /test_bench/uut/  $width( SCK:205 ns, :210 ns, 25 ns)
+
+
+WARNING: at 215 ns: Timing violation in /test_bench/uut/  $width( SCK:210 ns, :215 ns, 25 ns)
+
+
+WARNING: at 220 ns: Timing violation in /test_bench/uut/  $width( SCK:215 ns, :220 ns, 25 ns)
+
+
+WARNING: at 225 ns: Timing violation in /test_bench/uut/  $width( SCK:220 ns, :225 ns, 25 ns)
+
+
+WARNING: at 230 ns: Timing violation in /test_bench/uut/  $width( SCK:225 ns, :230 ns, 25 ns)
+
+
+WARNING: at 235 ns: Timing violation in /test_bench/uut/  $width( SCK:230 ns, :235 ns, 25 ns)
+
+
+WARNING: at 240 ns: Timing violation in /test_bench/uut/  $width( SCK:235 ns, :240 ns, 25 ns)
+
+
+WARNING: at 245 ns: Timing violation in /test_bench/uut/  $width( SCK:240 ns, :245 ns, 25 ns)
+
+
+WARNING: at 250 ns: Timing violation in /test_bench/uut/  $width( SCK:245 ns, :250 ns, 25 ns)
+
+
+WARNING: at 255 ns: Timing violation in /test_bench/uut/  $width( SCK:250 ns, :255 ns, 25 ns)
+
+
+WARNING: at 260 ns: Timing violation in /test_bench/uut/  $width( SCK:255 ns, :260 ns, 25 ns)
+
+
+WARNING: at 265 ns: Timing violation in /test_bench/uut/  $width( SCK:260 ns, :265 ns, 25 ns)
+
+
+WARNING: at 270 ns: Timing violation in /test_bench/uut/  $width( SCK:265 ns, :270 ns, 25 ns)
+
+
+WARNING: at 275 ns: Timing violation in /test_bench/uut/  $width( SCK:270 ns, :275 ns, 25 ns)
+
+
+WARNING: at 280 ns: Timing violation in /test_bench/uut/  $width( SCK:275 ns, :280 ns, 25 ns)
+
+
+WARNING: at 285 ns: Timing violation in /test_bench/uut/  $width( SCK:280 ns, :285 ns, 25 ns)
+
+
+WARNING: at 290 ns: Timing violation in /test_bench/uut/  $width( SCK:285 ns, :290 ns, 25 ns)
+
+
+WARNING: at 295 ns: Timing violation in /test_bench/uut/  $width( SCK:290 ns, :295 ns, 25 ns)
+
+
+WARNING: at 300 ns: Timing violation in /test_bench/uut/  $width( SCK:295 ns, :300 ns, 25 ns)
+
+
+WARNING: at 305 ns: Timing violation in /test_bench/uut/  $width( SCK:300 ns, :305 ns, 25 ns)
+
+
+WARNING: at 310 ns: Timing violation in /test_bench/uut/  $width( SCK:305 ns, :310 ns, 25 ns)
+
+
+WARNING: at 315 ns: Timing violation in /test_bench/uut/  $width( SCK:310 ns, :315 ns, 25 ns)
+
+
+WARNING: at 320 ns: Timing violation in /test_bench/uut/  $width( SCK:315 ns, :320 ns, 25 ns)
+
+
+WARNING: at 325 ns: Timing violation in /test_bench/uut/  $width( SCK:320 ns, :325 ns, 25 ns)
+
+
+WARNING: at 330 ns: Timing violation in /test_bench/uut/  $width( SCK:325 ns, :330 ns, 25 ns)
+
+
+WARNING: at 335 ns: Timing violation in /test_bench/uut/  $width( SCK:330 ns, :335 ns, 25 ns)
+
+
+WARNING: at 340 ns: Timing violation in /test_bench/uut/  $width( SCK:335 ns, :340 ns, 25 ns)
+
+
+WARNING: at 345 ns: Timing violation in /test_bench/uut/  $width( SCK:340 ns, :345 ns, 25 ns)
+
+
+WARNING: at 350 ns: Timing violation in /test_bench/uut/  $width( SCK:345 ns, :350 ns, 25 ns)
+
+
+WARNING: at 355 ns: Timing violation in /test_bench/uut/  $width( SCK:350 ns, :355 ns, 25 ns)
+
+
+WARNING: at 360 ns: Timing violation in /test_bench/uut/  $width( SCK:355 ns, :360 ns, 25 ns)
+
+
+WARNING: at 365 ns: Timing violation in /test_bench/uut/  $width( SCK:360 ns, :365 ns, 25 ns)
+
+
+WARNING: at 370 ns: Timing violation in /test_bench/uut/  $width( SCK:365 ns, :370 ns, 25 ns)
+
+
+WARNING: at 375 ns: Timing violation in /test_bench/uut/  $width( SCK:370 ns, :375 ns, 25 ns)
+
+
+WARNING: at 380 ns: Timing violation in /test_bench/uut/  $width( SCK:375 ns, :380 ns, 25 ns)
+
+
+WARNING: at 385 ns: Timing violation in /test_bench/uut/  $width( SCK:380 ns, :385 ns, 25 ns)
+
+
+WARNING: at 390 ns: Timing violation in /test_bench/uut/  $width( SCK:385 ns, :390 ns, 25 ns)
+
+
+WARNING: at 395 ns: Timing violation in /test_bench/uut/  $width( SCK:390 ns, :395 ns, 25 ns)
+
+
+WARNING: at 400 ns: Timing violation in /test_bench/uut/  $width( SCK:395 ns, :400 ns, 25 ns)
+
+
+WARNING: at 405 ns: Timing violation in /test_bench/uut/  $width( SCK:400 ns, :405 ns, 25 ns)
+
+
+WARNING: at 410 ns: Timing violation in /test_bench/uut/  $width( SCK:405 ns, :410 ns, 25 ns)
+
+
+WARNING: at 415 ns: Timing violation in /test_bench/uut/  $width( SCK:410 ns, :415 ns, 25 ns)
+
+
+WARNING: at 420 ns: Timing violation in /test_bench/uut/  $width( SCK:415 ns, :420 ns, 25 ns)
+
+
+WARNING: at 425 ns: Timing violation in /test_bench/uut/  $width( SCK:420 ns, :425 ns, 25 ns)
+
+
+WARNING: at 430 ns: Timing violation in /test_bench/uut/  $width( SCK:425 ns, :430 ns, 25 ns)
+
+
+WARNING: at 435 ns: Timing violation in /test_bench/uut/  $width( SCK:430 ns, :435 ns, 25 ns)
+
+
+WARNING: at 440 ns: Timing violation in /test_bench/uut/  $width( SCK:435 ns, :440 ns, 25 ns)
+
+
+WARNING: at 445 ns: Timing violation in /test_bench/uut/  $width( SCK:440 ns, :445 ns, 25 ns)
+
+
+WARNING: at 450 ns: Timing violation in /test_bench/uut/  $width( SCK:445 ns, :450 ns, 25 ns)
+
+
+WARNING: at 455 ns: Timing violation in /test_bench/uut/  $width( SCK:450 ns, :455 ns, 25 ns)
+
+
+WARNING: at 460 ns: Timing violation in /test_bench/uut/  $width( SCK:455 ns, :460 ns, 25 ns)
+
+
+WARNING: at 465 ns: Timing violation in /test_bench/uut/  $width( SCK:460 ns, :465 ns, 25 ns)
+
+
+WARNING: at 470 ns: Timing violation in /test_bench/uut/  $width( SCK:465 ns, :470 ns, 25 ns)
+
+
+WARNING: at 475 ns: Timing violation in /test_bench/uut/  $width( SCK:470 ns, :475 ns, 25 ns)
+
+
+WARNING: at 480 ns: Timing violation in /test_bench/uut/  $width( SCK:475 ns, :480 ns, 25 ns)
+
+
+WARNING: at 485 ns: Timing violation in /test_bench/uut/  $width( SCK:480 ns, :485 ns, 25 ns)
+
+
+WARNING: at 490 ns: Timing violation in /test_bench/uut/  $width( SCK:485 ns, :490 ns, 25 ns)
+
+
+WARNING: at 495 ns: Timing violation in /test_bench/uut/  $width( SCK:490 ns, :495 ns, 25 ns)
+
+
+WARNING: at 500 ns: Timing violation in /test_bench/uut/  $width( SCK:495 ns, :500 ns, 25 ns)
+
+
+WARNING: at 505 ns: Timing violation in /test_bench/uut/  $width( SCK:500 ns, :505 ns, 25 ns)
+
+
+WARNING: at 510 ns: Timing violation in /test_bench/uut/  $width( SCK:505 ns, :510 ns, 25 ns)
+
+
+WARNING: at 515 ns: Timing violation in /test_bench/uut/  $width( SCK:510 ns, :515 ns, 25 ns)
+
+
+WARNING: at 520 ns: Timing violation in /test_bench/uut/  $width( SCK:515 ns, :520 ns, 25 ns)
+
+
+WARNING: at 525 ns: Timing violation in /test_bench/uut/  $width( SCK:520 ns, :525 ns, 25 ns)
+
+
+WARNING: at 530 ns: Timing violation in /test_bench/uut/  $width( SCK:525 ns, :530 ns, 25 ns)
+
+
+WARNING: at 535 ns: Timing violation in /test_bench/uut/  $width( SCK:530 ns, :535 ns, 25 ns)
+
+
+WARNING: at 540 ns: Timing violation in /test_bench/uut/  $width( SCK:535 ns, :540 ns, 25 ns)
+
+
+WARNING: at 545 ns: Timing violation in /test_bench/uut/  $width( SCK:540 ns, :545 ns, 25 ns)
+
+
+WARNING: at 550 ns: Timing violation in /test_bench/uut/  $width( SCK:545 ns, :550 ns, 25 ns)
+
+
+WARNING: at 555 ns: Timing violation in /test_bench/uut/  $width( SCK:550 ns, :555 ns, 25 ns)
+
+
+WARNING: at 560 ns: Timing violation in /test_bench/uut/  $width( SCK:555 ns, :560 ns, 25 ns)
+
+
+WARNING: at 565 ns: Timing violation in /test_bench/uut/  $width( SCK:560 ns, :565 ns, 25 ns)
+
+
+WARNING: at 570 ns: Timing violation in /test_bench/uut/  $width( SCK:565 ns, :570 ns, 25 ns)
+
+
+WARNING: at 575 ns: Timing violation in /test_bench/uut/  $width( SCK:570 ns, :575 ns, 25 ns)
+
+
+WARNING: at 580 ns: Timing violation in /test_bench/uut/  $width( SCK:575 ns, :580 ns, 25 ns)
+
+
+WARNING: at 585 ns: Timing violation in /test_bench/uut/  $width( SCK:580 ns, :585 ns, 25 ns)
+
+
+WARNING: at 590 ns: Timing violation in /test_bench/uut/  $width( SCK:585 ns, :590 ns, 25 ns)
+
+
+WARNING: at 595 ns: Timing violation in /test_bench/uut/  $width( SCK:590 ns, :595 ns, 25 ns)
+
+
+WARNING: at 600 ns: Timing violation in /test_bench/uut/  $width( SCK:595 ns, :600 ns, 25 ns)
+
+
+WARNING: at 605 ns: Timing violation in /test_bench/uut/  $width( SCK:600 ns, :605 ns, 25 ns)
+
+
+WARNING: at 610 ns: Timing violation in /test_bench/uut/  $width( SCK:605 ns, :610 ns, 25 ns)
+
+
+WARNING: at 615 ns: Timing violation in /test_bench/uut/  $width( SCK:610 ns, :615 ns, 25 ns)
+
+
+WARNING: at 620 ns: Timing violation in /test_bench/uut/  $width( SCK:615 ns, :620 ns, 25 ns)
+
+
+WARNING: at 625 ns: Timing violation in /test_bench/uut/  $width( SCK:620 ns, :625 ns, 25 ns)
+
+
+WARNING: at 630 ns: Timing violation in /test_bench/uut/  $width( SCK:625 ns, :630 ns, 25 ns)
+
+
+WARNING: at 635 ns: Timing violation in /test_bench/uut/  $width( SCK:630 ns, :635 ns, 25 ns)
+
+
+WARNING: at 640 ns: Timing violation in /test_bench/uut/  $width( SCK:635 ns, :640 ns, 25 ns)
+
+
+WARNING: at 645 ns: Timing violation in /test_bench/uut/  $width( SCK:640 ns, :645 ns, 25 ns)
+
+
+WARNING: at 650 ns: Timing violation in /test_bench/uut/  $width( SCK:645 ns, :650 ns, 25 ns)
+
+
+WARNING: at 655 ns: Timing violation in /test_bench/uut/  $width( SCK:650 ns, :655 ns, 25 ns)
+
+
+WARNING: at 660 ns: Timing violation in /test_bench/uut/  $width( SCK:655 ns, :660 ns, 25 ns)
+
+
+WARNING: at 665 ns: Timing violation in /test_bench/uut/  $width( SCK:660 ns, :665 ns, 25 ns)
+
+
+WARNING: at 670 ns: Timing violation in /test_bench/uut/  $width( SCK:665 ns, :670 ns, 25 ns)
+
+
+WARNING: at 675 ns: Timing violation in /test_bench/uut/  $width( SCK:670 ns, :675 ns, 25 ns)
+
+
+WARNING: at 680 ns: Timing violation in /test_bench/uut/  $width( SCK:675 ns, :680 ns, 25 ns)
+
+
+WARNING: at 685 ns: Timing violation in /test_bench/uut/  $width( SCK:680 ns, :685 ns, 25 ns)
+
+
+WARNING: at 690 ns: Timing violation in /test_bench/uut/  $width( SCK:685 ns, :690 ns, 25 ns)
+
+
+WARNING: at 695 ns: Timing violation in /test_bench/uut/  $width( SCK:690 ns, :695 ns, 25 ns)
+
+
+WARNING: at 700 ns: Timing violation in /test_bench/uut/  $width( SCK:695 ns, :700 ns, 25 ns)
+
+
+WARNING: at 705 ns: Timing violation in /test_bench/uut/  $width( SCK:700 ns, :705 ns, 25 ns)
+
+
+WARNING: at 710 ns: Timing violation in /test_bench/uut/  $width( SCK:705 ns, :710 ns, 25 ns)
+
+
+WARNING: at 715 ns: Timing violation in /test_bench/uut/  $width( SCK:710 ns, :715 ns, 25 ns)
+
+
+WARNING: at 720 ns: Timing violation in /test_bench/uut/  $width( SCK:715 ns, :720 ns, 25 ns)
+
+
+WARNING: at 725 ns: Timing violation in /test_bench/uut/  $width( SCK:720 ns, :725 ns, 25 ns)
+
+
+WARNING: at 730 ns: Timing violation in /test_bench/uut/  $width( SCK:725 ns, :730 ns, 25 ns)
+
+
+WARNING: at 735 ns: Timing violation in /test_bench/uut/  $width( SCK:730 ns, :735 ns, 25 ns)
+
+
+WARNING: at 740 ns: Timing violation in /test_bench/uut/  $width( SCK:735 ns, :740 ns, 25 ns)
+
+
+WARNING: at 745 ns: Timing violation in /test_bench/uut/  $width( SCK:740 ns, :745 ns, 25 ns)
+
+
+WARNING: at 750 ns: Timing violation in /test_bench/uut/  $width( SCK:745 ns, :750 ns, 25 ns)
+
+
+WARNING: at 755 ns: Timing violation in /test_bench/uut/  $width( SCK:750 ns, :755 ns, 25 ns)
+
+
+WARNING: at 760 ns: Timing violation in /test_bench/uut/  $width( SCK:755 ns, :760 ns, 25 ns)
+
+
+WARNING: at 765 ns: Timing violation in /test_bench/uut/  $width( SCK:760 ns, :765 ns, 25 ns)
+
+
+WARNING: at 770 ns: Timing violation in /test_bench/uut/  $width( SCK:765 ns, :770 ns, 25 ns)
+
+
+WARNING: at 775 ns: Timing violation in /test_bench/uut/  $width( SCK:770 ns, :775 ns, 25 ns)
+
+
+WARNING: at 780 ns: Timing violation in /test_bench/uut/  $width( SCK:775 ns, :780 ns, 25 ns)
+
+
+WARNING: at 785 ns: Timing violation in /test_bench/uut/  $width( SCK:780 ns, :785 ns, 25 ns)
+
+
+WARNING: at 790 ns: Timing violation in /test_bench/uut/  $width( SCK:785 ns, :790 ns, 25 ns)
+
+
+WARNING: at 795 ns: Timing violation in /test_bench/uut/  $width( SCK:790 ns, :795 ns, 25 ns)
+
+
+WARNING: at 800 ns: Timing violation in /test_bench/uut/  $width( SCK:795 ns, :800 ns, 25 ns)
+
+
+WARNING: at 805 ns: Timing violation in /test_bench/uut/  $width( SCK:800 ns, :805 ns, 25 ns)
+
+
+WARNING: at 810 ns: Timing violation in /test_bench/uut/  $width( SCK:805 ns, :810 ns, 25 ns)
+
+
+WARNING: at 815 ns: Timing violation in /test_bench/uut/  $width( SCK:810 ns, :815 ns, 25 ns)
+
+
+WARNING: at 820 ns: Timing violation in /test_bench/uut/  $width( SCK:815 ns, :820 ns, 25 ns)
+
+
+WARNING: at 825 ns: Timing violation in /test_bench/uut/  $width( SCK:820 ns, :825 ns, 25 ns)
+
+
+WARNING: at 830 ns: Timing violation in /test_bench/uut/  $width( SCK:825 ns, :830 ns, 25 ns)
+
+
+WARNING: at 835 ns: Timing violation in /test_bench/uut/  $width( SCK:830 ns, :835 ns, 25 ns)
+
+
+WARNING: at 840 ns: Timing violation in /test_bench/uut/  $width( SCK:835 ns, :840 ns, 25 ns)
+
+
+WARNING: at 845 ns: Timing violation in /test_bench/uut/  $width( SCK:840 ns, :845 ns, 25 ns)
+
+
+WARNING: at 850 ns: Timing violation in /test_bench/uut/  $width( SCK:845 ns, :850 ns, 25 ns)
+
+
+WARNING: at 855 ns: Timing violation in /test_bench/uut/  $width( SCK:850 ns, :855 ns, 25 ns)
+
+
+WARNING: at 860 ns: Timing violation in /test_bench/uut/  $width( SCK:855 ns, :860 ns, 25 ns)
+
+
+WARNING: at 865 ns: Timing violation in /test_bench/uut/  $width( SCK:860 ns, :865 ns, 25 ns)
+
+
+WARNING: at 870 ns: Timing violation in /test_bench/uut/  $width( SCK:865 ns, :870 ns, 25 ns)
+
+
+WARNING: at 875 ns: Timing violation in /test_bench/uut/  $width( SCK:870 ns, :875 ns, 25 ns)
+
+
+WARNING: at 880 ns: Timing violation in /test_bench/uut/  $width( SCK:875 ns, :880 ns, 25 ns)
+
+
+WARNING: at 885 ns: Timing violation in /test_bench/uut/  $width( SCK:880 ns, :885 ns, 25 ns)
+
+
+WARNING: at 890 ns: Timing violation in /test_bench/uut/  $width( SCK:885 ns, :890 ns, 25 ns)
+
+
+WARNING: at 895 ns: Timing violation in /test_bench/uut/  $width( SCK:890 ns, :895 ns, 25 ns)
+
+
+WARNING: at 900 ns: Timing violation in /test_bench/uut/  $width( SCK:895 ns, :900 ns, 25 ns)
+
+
+WARNING: at 905 ns: Timing violation in /test_bench/uut/  $width( SCK:900 ns, :905 ns, 25 ns)
+
+
+WARNING: at 910 ns: Timing violation in /test_bench/uut/  $width( SCK:905 ns, :910 ns, 25 ns)
+
+
+WARNING: at 915 ns: Timing violation in /test_bench/uut/  $width( SCK:910 ns, :915 ns, 25 ns)
+
+
+WARNING: at 920 ns: Timing violation in /test_bench/uut/  $width( SCK:915 ns, :920 ns, 25 ns)
+
+
+WARNING: at 925 ns: Timing violation in /test_bench/uut/  $width( SCK:920 ns, :925 ns, 25 ns)
+
+
+WARNING: at 930 ns: Timing violation in /test_bench/uut/  $width( SCK:925 ns, :930 ns, 25 ns)
+
+
+WARNING: at 935 ns: Timing violation in /test_bench/uut/  $width( SCK:930 ns, :935 ns, 25 ns)
+
+
+WARNING: at 940 ns: Timing violation in /test_bench/uut/  $width( SCK:935 ns, :940 ns, 25 ns)
+
+
+WARNING: at 945 ns: Timing violation in /test_bench/uut/  $width( SCK:940 ns, :945 ns, 25 ns)
+
+
+WARNING: at 950 ns: Timing violation in /test_bench/uut/  $width( SCK:945 ns, :950 ns, 25 ns)
+
+
+WARNING: at 955 ns: Timing violation in /test_bench/uut/  $width( SCK:950 ns, :955 ns, 25 ns)
+
+
+WARNING: at 960 ns: Timing violation in /test_bench/uut/  $width( SCK:955 ns, :960 ns, 25 ns)
+
+
+WARNING: at 965 ns: Timing violation in /test_bench/uut/  $width( SCK:960 ns, :965 ns, 25 ns)
+
+
+WARNING: at 970 ns: Timing violation in /test_bench/uut/  $width( SCK:965 ns, :970 ns, 25 ns)
+
+
+WARNING: at 975 ns: Timing violation in /test_bench/uut/  $width( SCK:970 ns, :975 ns, 25 ns)
+
+
+WARNING: at 980 ns: Timing violation in /test_bench/uut/  $width( SCK:975 ns, :980 ns, 25 ns)
+
+
+WARNING: at 985 ns: Timing violation in /test_bench/uut/  $width( SCK:980 ns, :985 ns, 25 ns)
+
+
+WARNING: at 990 ns: Timing violation in /test_bench/uut/  $width( SCK:985 ns, :990 ns, 25 ns)
+
+
+WARNING: at 995 ns: Timing violation in /test_bench/uut/  $width( SCK:990 ns, :995 ns, 25 ns)
+
+
+WARNING: at 1 us: Timing violation in /test_bench/uut/  $width( SCK:995 ns, :1 us, 25 ns)
+
+
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+WARNING: at 5 ns: Timing violation in /test_bench/uut/  $width( SCK:0 ps, :5 ns, 25 ns)
+
+
+WARNING: at 10 ns: Timing violation in /test_bench/uut/  $width( SCK:5 ns, :10 ns, 25 ns)
+
+
+WARNING: at 15 ns: Timing violation in /test_bench/uut/  $width( SCK:10 ns, :15 ns, 25 ns)
+
+
+WARNING: at 20 ns: Timing violation in /test_bench/uut/  $width( SCK:15 ns, :20 ns, 25 ns)
+
+
+WARNING: at 25 ns: Timing violation in /test_bench/uut/  $width( SCK:20 ns, :25 ns, 25 ns)
+
+
+WARNING: at 30 ns: Timing violation in /test_bench/uut/  $width( SCK:25 ns, :30 ns, 25 ns)
+
+
+WARNING: at 35 ns: Timing violation in /test_bench/uut/  $width( SCK:30 ns, :35 ns, 25 ns)
+
+
+WARNING: at 40 ns: Timing violation in /test_bench/uut/  $width( SCK:35 ns, :40 ns, 25 ns)
+
+
+WARNING: at 45 ns: Timing violation in /test_bench/uut/  $width( SCK:40 ns, :45 ns, 25 ns)
+
+
+WARNING: at 50 ns: Timing violation in /test_bench/uut/  $width( SCK:45 ns, :50 ns, 25 ns)
+
+
+WARNING: at 55 ns: Timing violation in /test_bench/uut/  $width( SCK:50 ns, :55 ns, 25 ns)
+
+
+WARNING: at 60 ns: Timing violation in /test_bench/uut/  $width( SCK:55 ns, :60 ns, 25 ns)
+
+
+WARNING: at 65 ns: Timing violation in /test_bench/uut/  $width( SCK:60 ns, :65 ns, 25 ns)
+
+
+WARNING: at 70 ns: Timing violation in /test_bench/uut/  $width( SCK:65 ns, :70 ns, 25 ns)
+
+
+WARNING: at 75 ns: Timing violation in /test_bench/uut/  $width( SCK:70 ns, :75 ns, 25 ns)
+
+
+WARNING: at 80 ns: Timing violation in /test_bench/uut/  $width( SCK:75 ns, :80 ns, 25 ns)
+
+
+WARNING: at 85 ns: Timing violation in /test_bench/uut/  $width( SCK:80 ns, :85 ns, 25 ns)
+
+
+WARNING: at 90 ns: Timing violation in /test_bench/uut/  $width( SCK:85 ns, :90 ns, 25 ns)
+
+
+WARNING: at 95 ns: Timing violation in /test_bench/uut/  $width( SCK:90 ns, :95 ns, 25 ns)
+
+
+WARNING: at 100 ns: Timing violation in /test_bench/uut/  $width( SCK:95 ns, :100 ns, 25 ns)
+
+
+WARNING: at 105 ns: Timing violation in /test_bench/uut/  $width( SCK:100 ns, :105 ns, 25 ns)
+
+
+WARNING: at 110 ns: Timing violation in /test_bench/uut/  $width( SCK:105 ns, :110 ns, 25 ns)
+
+
+WARNING: at 115 ns: Timing violation in /test_bench/uut/  $width( SCK:110 ns, :115 ns, 25 ns)
+
+
+WARNING: at 115 ns: Timing violation in /test_bench/uut/  $setup( CS_N:110 ns, SCK:115 ns,25 ns)
+
+
+WARNING: at 115 ns: Timing violation in /test_bench/uut/  $setup( SI_SIO0:110 ns, SCK:115 ns,10 ns)
+
+
+WARNING: at 120 ns: Timing violation in /test_bench/uut/  $width( SCK:115 ns, :120 ns, 25 ns)
+
+
+WARNING: at 125 ns: Timing violation in /test_bench/uut/  $width( SCK:120 ns, :125 ns, 25 ns)
+
+
+WARNING: at 125 ns: Timing violation in /test_bench/uut/  $setup( CS_N:110 ns, SCK:125 ns,25 ns)
+
+
+WARNING: at 130 ns: Timing violation in /test_bench/uut/  $width( SCK:125 ns, :130 ns, 25 ns)
+
+
+WARNING: at 135 ns: Timing violation in /test_bench/uut/  $width( SCK:130 ns, :135 ns, 25 ns)
+
+
+WARNING: at 140 ns: Timing violation in /test_bench/uut/  $width( SCK:135 ns, :140 ns, 25 ns)
+
+
+WARNING: at 145 ns: Timing violation in /test_bench/uut/  $width( SCK:140 ns, :145 ns, 25 ns)
+
+
+WARNING: at 150 ns: Timing violation in /test_bench/uut/  $width( SCK:145 ns, :150 ns, 25 ns)
+
+
+WARNING: at 155 ns: Timing violation in /test_bench/uut/  $width( SCK:150 ns, :155 ns, 25 ns)
+
+
+WARNING: at 160 ns: Timing violation in /test_bench/uut/  $width( SCK:155 ns, :160 ns, 25 ns)
+
+
+WARNING: at 165 ns: Timing violation in /test_bench/uut/  $width( SCK:160 ns, :165 ns, 25 ns)
+
+
+WARNING: at 170 ns: Timing violation in /test_bench/uut/  $width( SCK:165 ns, :170 ns, 25 ns)
+
+
+WARNING: at 175 ns: Timing violation in /test_bench/uut/  $width( SCK:170 ns, :175 ns, 25 ns)
+
+
+WARNING: at 175 ns: Timing violation in /test_bench/uut/  $setup( SI_SIO0:170 ns, SCK:175 ns,10 ns)
+
+
+WARNING: at 180 ns: Timing violation in /test_bench/uut/  $width( SCK:175 ns, :180 ns, 25 ns)
+
+
+WARNING: at 185 ns: Timing violation in /test_bench/uut/  $width( SCK:180 ns, :185 ns, 25 ns)
+
+
+WARNING: at 190 ns: Timing violation in /test_bench/uut/  $width( SCK:185 ns, :190 ns, 25 ns)
+
+
+WARNING: at 195 ns: Timing violation in /test_bench/uut/  $width( SCK:190 ns, :195 ns, 25 ns)
+
+
+WARNING: at 195 ns: Timing violation in /test_bench/uut/  $setup( SI_SIO0:190 ns, SCK:195 ns,10 ns)
+
+
+WARNING: at 200 ns: Timing violation in /test_bench/uut/  $width( SCK:195 ns, :200 ns, 25 ns)
+
+
+WARNING: at 205 ns: Timing violation in /test_bench/uut/  $width( SCK:200 ns, :205 ns, 25 ns)
+
+
+WARNING: at 210 ns: Timing violation in /test_bench/uut/  $width( SCK:205 ns, :210 ns, 25 ns)
+
+
+WARNING: at 215 ns: Timing violation in /test_bench/uut/  $width( SCK:210 ns, :215 ns, 25 ns)
+
+
+WARNING: at 220 ns: Timing violation in /test_bench/uut/  $width( SCK:215 ns, :220 ns, 25 ns)
+
+
+WARNING: at 225 ns: Timing violation in /test_bench/uut/  $width( SCK:220 ns, :225 ns, 25 ns)
+
+
+WARNING: at 230 ns: Timing violation in /test_bench/uut/  $width( SCK:225 ns, :230 ns, 25 ns)
+
+
+WARNING: at 235 ns: Timing violation in /test_bench/uut/  $width( SCK:230 ns, :235 ns, 25 ns)
+
+
+WARNING: at 240 ns: Timing violation in /test_bench/uut/  $width( SCK:235 ns, :240 ns, 25 ns)
+
+
+WARNING: at 245 ns: Timing violation in /test_bench/uut/  $width( SCK:240 ns, :245 ns, 25 ns)
+
+
+WARNING: at 250 ns: Timing violation in /test_bench/uut/  $width( SCK:245 ns, :250 ns, 25 ns)
+
+
+WARNING: at 255 ns: Timing violation in /test_bench/uut/  $width( SCK:250 ns, :255 ns, 25 ns)
+
+
+WARNING: at 260 ns: Timing violation in /test_bench/uut/  $width( SCK:255 ns, :260 ns, 25 ns)
+
+
+WARNING: at 265 ns: Timing violation in /test_bench/uut/  $width( SCK:260 ns, :265 ns, 25 ns)
+
+
+WARNING: at 270 ns: Timing violation in /test_bench/uut/  $width( SCK:265 ns, :270 ns, 25 ns)
+
+
+WARNING: at 275 ns: Timing violation in /test_bench/uut/  $width( SCK:270 ns, :275 ns, 25 ns)
+
+
+WARNING: at 280 ns: Timing violation in /test_bench/uut/  $width( SCK:275 ns, :280 ns, 25 ns)
+
+
+WARNING: at 285 ns: Timing violation in /test_bench/uut/  $width( SCK:280 ns, :285 ns, 25 ns)
+
+
+WARNING: at 290 ns: Timing violation in /test_bench/uut/  $width( SCK:285 ns, :290 ns, 25 ns)
+
+
+WARNING: at 295 ns: Timing violation in /test_bench/uut/  $width( SCK:290 ns, :295 ns, 25 ns)
+
+
+WARNING: at 300 ns: Timing violation in /test_bench/uut/  $width( SCK:295 ns, :300 ns, 25 ns)
+
+
+WARNING: at 305 ns: Timing violation in /test_bench/uut/  $width( SCK:300 ns, :305 ns, 25 ns)
+
+
+WARNING: at 310 ns: Timing violation in /test_bench/uut/  $width( SCK:305 ns, :310 ns, 25 ns)
+
+
+WARNING: at 315 ns: Timing violation in /test_bench/uut/  $width( SCK:310 ns, :315 ns, 25 ns)
+
+
+WARNING: at 320 ns: Timing violation in /test_bench/uut/  $width( SCK:315 ns, :320 ns, 25 ns)
+
+
+WARNING: at 325 ns: Timing violation in /test_bench/uut/  $width( SCK:320 ns, :325 ns, 25 ns)
+
+
+WARNING: at 330 ns: Timing violation in /test_bench/uut/  $width( SCK:325 ns, :330 ns, 25 ns)
+
+
+WARNING: at 335 ns: Timing violation in /test_bench/uut/  $width( SCK:330 ns, :335 ns, 25 ns)
+
+
+WARNING: at 340 ns: Timing violation in /test_bench/uut/  $width( SCK:335 ns, :340 ns, 25 ns)
+
+
+WARNING: at 345 ns: Timing violation in /test_bench/uut/  $width( SCK:340 ns, :345 ns, 25 ns)
+
+
+WARNING: at 350 ns: Timing violation in /test_bench/uut/  $width( SCK:345 ns, :350 ns, 25 ns)
+
+
+WARNING: at 355 ns: Timing violation in /test_bench/uut/  $width( SCK:350 ns, :355 ns, 25 ns)
+
+
+WARNING: at 360 ns: Timing violation in /test_bench/uut/  $width( SCK:355 ns, :360 ns, 25 ns)
+
+
+WARNING: at 365 ns: Timing violation in /test_bench/uut/  $width( SCK:360 ns, :365 ns, 25 ns)
+
+
+WARNING: at 370 ns: Timing violation in /test_bench/uut/  $width( SCK:365 ns, :370 ns, 25 ns)
+
+
+WARNING: at 375 ns: Timing violation in /test_bench/uut/  $width( SCK:370 ns, :375 ns, 25 ns)
+
+
+WARNING: at 380 ns: Timing violation in /test_bench/uut/  $width( SCK:375 ns, :380 ns, 25 ns)
+
+
+WARNING: at 385 ns: Timing violation in /test_bench/uut/  $width( SCK:380 ns, :385 ns, 25 ns)
+
+
+WARNING: at 390 ns: Timing violation in /test_bench/uut/  $width( SCK:385 ns, :390 ns, 25 ns)
+
+
+WARNING: at 395 ns: Timing violation in /test_bench/uut/  $width( SCK:390 ns, :395 ns, 25 ns)
+
+
+WARNING: at 400 ns: Timing violation in /test_bench/uut/  $width( SCK:395 ns, :400 ns, 25 ns)
+
+
+WARNING: at 405 ns: Timing violation in /test_bench/uut/  $width( SCK:400 ns, :405 ns, 25 ns)
+
+
+WARNING: at 410 ns: Timing violation in /test_bench/uut/  $width( SCK:405 ns, :410 ns, 25 ns)
+
+
+WARNING: at 415 ns: Timing violation in /test_bench/uut/  $width( SCK:410 ns, :415 ns, 25 ns)
+
+
+WARNING: at 420 ns: Timing violation in /test_bench/uut/  $width( SCK:415 ns, :420 ns, 25 ns)
+
+
+WARNING: at 425 ns: Timing violation in /test_bench/uut/  $width( SCK:420 ns, :425 ns, 25 ns)
+
+
+WARNING: at 430 ns: Timing violation in /test_bench/uut/  $width( SCK:425 ns, :430 ns, 25 ns)
+
+
+WARNING: at 435 ns: Timing violation in /test_bench/uut/  $width( SCK:430 ns, :435 ns, 25 ns)
+
+
+WARNING: at 440 ns: Timing violation in /test_bench/uut/  $width( SCK:435 ns, :440 ns, 25 ns)
+
+
+WARNING: at 445 ns: Timing violation in /test_bench/uut/  $width( SCK:440 ns, :445 ns, 25 ns)
+
+
+WARNING: at 450 ns: Timing violation in /test_bench/uut/  $width( SCK:445 ns, :450 ns, 25 ns)
+
+
+WARNING: at 455 ns: Timing violation in /test_bench/uut/  $width( SCK:450 ns, :455 ns, 25 ns)
+
+
+WARNING: at 460 ns: Timing violation in /test_bench/uut/  $width( SCK:455 ns, :460 ns, 25 ns)
+
+
+WARNING: at 465 ns: Timing violation in /test_bench/uut/  $width( SCK:460 ns, :465 ns, 25 ns)
+
+
+WARNING: at 470 ns: Timing violation in /test_bench/uut/  $width( SCK:465 ns, :470 ns, 25 ns)
+
+
+WARNING: at 475 ns: Timing violation in /test_bench/uut/  $width( SCK:470 ns, :475 ns, 25 ns)
+
+
+WARNING: at 480 ns: Timing violation in /test_bench/uut/  $width( SCK:475 ns, :480 ns, 25 ns)
+
+
+WARNING: at 485 ns: Timing violation in /test_bench/uut/  $width( SCK:480 ns, :485 ns, 25 ns)
+
+
+WARNING: at 490 ns: Timing violation in /test_bench/uut/  $width( SCK:485 ns, :490 ns, 25 ns)
+
+
+WARNING: at 495 ns: Timing violation in /test_bench/uut/  $width( SCK:490 ns, :495 ns, 25 ns)
+
+
+WARNING: at 500 ns: Timing violation in /test_bench/uut/  $width( SCK:495 ns, :500 ns, 25 ns)
+
+
+WARNING: at 505 ns: Timing violation in /test_bench/uut/  $width( SCK:500 ns, :505 ns, 25 ns)
+
+
+WARNING: at 510 ns: Timing violation in /test_bench/uut/  $width( SCK:505 ns, :510 ns, 25 ns)
+
+
+WARNING: at 515 ns: Timing violation in /test_bench/uut/  $width( SCK:510 ns, :515 ns, 25 ns)
+
+
+WARNING: at 520 ns: Timing violation in /test_bench/uut/  $width( SCK:515 ns, :520 ns, 25 ns)
+
+
+WARNING: at 525 ns: Timing violation in /test_bench/uut/  $width( SCK:520 ns, :525 ns, 25 ns)
+
+
+WARNING: at 530 ns: Timing violation in /test_bench/uut/  $width( SCK:525 ns, :530 ns, 25 ns)
+
+
+WARNING: at 535 ns: Timing violation in /test_bench/uut/  $width( SCK:530 ns, :535 ns, 25 ns)
+
+
+WARNING: at 540 ns: Timing violation in /test_bench/uut/  $width( SCK:535 ns, :540 ns, 25 ns)
+
+
+WARNING: at 545 ns: Timing violation in /test_bench/uut/  $width( SCK:540 ns, :545 ns, 25 ns)
+
+
+WARNING: at 550 ns: Timing violation in /test_bench/uut/  $width( SCK:545 ns, :550 ns, 25 ns)
+
+
+WARNING: at 555 ns: Timing violation in /test_bench/uut/  $width( SCK:550 ns, :555 ns, 25 ns)
+
+
+WARNING: at 560 ns: Timing violation in /test_bench/uut/  $width( SCK:555 ns, :560 ns, 25 ns)
+
+
+WARNING: at 565 ns: Timing violation in /test_bench/uut/  $width( SCK:560 ns, :565 ns, 25 ns)
+
+
+WARNING: at 570 ns: Timing violation in /test_bench/uut/  $width( SCK:565 ns, :570 ns, 25 ns)
+
+
+WARNING: at 575 ns: Timing violation in /test_bench/uut/  $width( SCK:570 ns, :575 ns, 25 ns)
+
+
+WARNING: at 580 ns: Timing violation in /test_bench/uut/  $width( SCK:575 ns, :580 ns, 25 ns)
+
+
+WARNING: at 585 ns: Timing violation in /test_bench/uut/  $width( SCK:580 ns, :585 ns, 25 ns)
+
+
+WARNING: at 590 ns: Timing violation in /test_bench/uut/  $width( SCK:585 ns, :590 ns, 25 ns)
+
+
+WARNING: at 595 ns: Timing violation in /test_bench/uut/  $width( SCK:590 ns, :595 ns, 25 ns)
+
+
+WARNING: at 600 ns: Timing violation in /test_bench/uut/  $width( SCK:595 ns, :600 ns, 25 ns)
+
+
+WARNING: at 605 ns: Timing violation in /test_bench/uut/  $width( SCK:600 ns, :605 ns, 25 ns)
+
+
+WARNING: at 610 ns: Timing violation in /test_bench/uut/  $width( SCK:605 ns, :610 ns, 25 ns)
+
+
+WARNING: at 615 ns: Timing violation in /test_bench/uut/  $width( SCK:610 ns, :615 ns, 25 ns)
+
+
+WARNING: at 620 ns: Timing violation in /test_bench/uut/  $width( SCK:615 ns, :620 ns, 25 ns)
+
+
+WARNING: at 625 ns: Timing violation in /test_bench/uut/  $width( SCK:620 ns, :625 ns, 25 ns)
+
+
+WARNING: at 630 ns: Timing violation in /test_bench/uut/  $width( SCK:625 ns, :630 ns, 25 ns)
+
+
+WARNING: at 635 ns: Timing violation in /test_bench/uut/  $width( SCK:630 ns, :635 ns, 25 ns)
+
+
+WARNING: at 640 ns: Timing violation in /test_bench/uut/  $width( SCK:635 ns, :640 ns, 25 ns)
+
+
+WARNING: at 645 ns: Timing violation in /test_bench/uut/  $width( SCK:640 ns, :645 ns, 25 ns)
+
+
+WARNING: at 650 ns: Timing violation in /test_bench/uut/  $width( SCK:645 ns, :650 ns, 25 ns)
+
+
+WARNING: at 655 ns: Timing violation in /test_bench/uut/  $width( SCK:650 ns, :655 ns, 25 ns)
+
+
+WARNING: at 660 ns: Timing violation in /test_bench/uut/  $width( SCK:655 ns, :660 ns, 25 ns)
+
+
+WARNING: at 665 ns: Timing violation in /test_bench/uut/  $width( SCK:660 ns, :665 ns, 25 ns)
+
+
+WARNING: at 670 ns: Timing violation in /test_bench/uut/  $width( SCK:665 ns, :670 ns, 25 ns)
+
+
+WARNING: at 675 ns: Timing violation in /test_bench/uut/  $width( SCK:670 ns, :675 ns, 25 ns)
+
+
+WARNING: at 680 ns: Timing violation in /test_bench/uut/  $width( SCK:675 ns, :680 ns, 25 ns)
+
+
+WARNING: at 685 ns: Timing violation in /test_bench/uut/  $width( SCK:680 ns, :685 ns, 25 ns)
+
+
+WARNING: at 690 ns: Timing violation in /test_bench/uut/  $width( SCK:685 ns, :690 ns, 25 ns)
+
+
+WARNING: at 695 ns: Timing violation in /test_bench/uut/  $width( SCK:690 ns, :695 ns, 25 ns)
+
+
+WARNING: at 700 ns: Timing violation in /test_bench/uut/  $width( SCK:695 ns, :700 ns, 25 ns)
+
+
+WARNING: at 705 ns: Timing violation in /test_bench/uut/  $width( SCK:700 ns, :705 ns, 25 ns)
+
+
+WARNING: at 710 ns: Timing violation in /test_bench/uut/  $width( SCK:705 ns, :710 ns, 25 ns)
+
+
+WARNING: at 715 ns: Timing violation in /test_bench/uut/  $width( SCK:710 ns, :715 ns, 25 ns)
+
+
+WARNING: at 720 ns: Timing violation in /test_bench/uut/  $width( SCK:715 ns, :720 ns, 25 ns)
+
+
+WARNING: at 725 ns: Timing violation in /test_bench/uut/  $width( SCK:720 ns, :725 ns, 25 ns)
+
+
+WARNING: at 730 ns: Timing violation in /test_bench/uut/  $width( SCK:725 ns, :730 ns, 25 ns)
+
+
+WARNING: at 735 ns: Timing violation in /test_bench/uut/  $width( SCK:730 ns, :735 ns, 25 ns)
+
+
+WARNING: at 740 ns: Timing violation in /test_bench/uut/  $width( SCK:735 ns, :740 ns, 25 ns)
+
+
+WARNING: at 745 ns: Timing violation in /test_bench/uut/  $width( SCK:740 ns, :745 ns, 25 ns)
+
+
+WARNING: at 750 ns: Timing violation in /test_bench/uut/  $width( SCK:745 ns, :750 ns, 25 ns)
+
+
+WARNING: at 755 ns: Timing violation in /test_bench/uut/  $width( SCK:750 ns, :755 ns, 25 ns)
+
+
+WARNING: at 760 ns: Timing violation in /test_bench/uut/  $width( SCK:755 ns, :760 ns, 25 ns)
+
+
+WARNING: at 765 ns: Timing violation in /test_bench/uut/  $width( SCK:760 ns, :765 ns, 25 ns)
+
+
+WARNING: at 770 ns: Timing violation in /test_bench/uut/  $width( SCK:765 ns, :770 ns, 25 ns)
+
+
+WARNING: at 775 ns: Timing violation in /test_bench/uut/  $width( SCK:770 ns, :775 ns, 25 ns)
+
+
+WARNING: at 780 ns: Timing violation in /test_bench/uut/  $width( SCK:775 ns, :780 ns, 25 ns)
+
+
+WARNING: at 785 ns: Timing violation in /test_bench/uut/  $width( SCK:780 ns, :785 ns, 25 ns)
+
+
+WARNING: at 790 ns: Timing violation in /test_bench/uut/  $width( SCK:785 ns, :790 ns, 25 ns)
+
+
+WARNING: at 795 ns: Timing violation in /test_bench/uut/  $width( SCK:790 ns, :795 ns, 25 ns)
+
+
+WARNING: at 800 ns: Timing violation in /test_bench/uut/  $width( SCK:795 ns, :800 ns, 25 ns)
+
+
+WARNING: at 805 ns: Timing violation in /test_bench/uut/  $width( SCK:800 ns, :805 ns, 25 ns)
+
+
+WARNING: at 810 ns: Timing violation in /test_bench/uut/  $width( SCK:805 ns, :810 ns, 25 ns)
+
+
+WARNING: at 815 ns: Timing violation in /test_bench/uut/  $width( SCK:810 ns, :815 ns, 25 ns)
+
+
+WARNING: at 820 ns: Timing violation in /test_bench/uut/  $width( SCK:815 ns, :820 ns, 25 ns)
+
+
+WARNING: at 825 ns: Timing violation in /test_bench/uut/  $width( SCK:820 ns, :825 ns, 25 ns)
+
+
+WARNING: at 830 ns: Timing violation in /test_bench/uut/  $width( SCK:825 ns, :830 ns, 25 ns)
+
+
+WARNING: at 835 ns: Timing violation in /test_bench/uut/  $width( SCK:830 ns, :835 ns, 25 ns)
+
+
+WARNING: at 840 ns: Timing violation in /test_bench/uut/  $width( SCK:835 ns, :840 ns, 25 ns)
+
+
+WARNING: at 845 ns: Timing violation in /test_bench/uut/  $width( SCK:840 ns, :845 ns, 25 ns)
+
+
+WARNING: at 850 ns: Timing violation in /test_bench/uut/  $width( SCK:845 ns, :850 ns, 25 ns)
+
+
+WARNING: at 855 ns: Timing violation in /test_bench/uut/  $width( SCK:850 ns, :855 ns, 25 ns)
+
+
+WARNING: at 860 ns: Timing violation in /test_bench/uut/  $width( SCK:855 ns, :860 ns, 25 ns)
+
+
+WARNING: at 865 ns: Timing violation in /test_bench/uut/  $width( SCK:860 ns, :865 ns, 25 ns)
+
+
+WARNING: at 870 ns: Timing violation in /test_bench/uut/  $width( SCK:865 ns, :870 ns, 25 ns)
+
+
+WARNING: at 875 ns: Timing violation in /test_bench/uut/  $width( SCK:870 ns, :875 ns, 25 ns)
+
+
+WARNING: at 880 ns: Timing violation in /test_bench/uut/  $width( SCK:875 ns, :880 ns, 25 ns)
+
+
+WARNING: at 885 ns: Timing violation in /test_bench/uut/  $width( SCK:880 ns, :885 ns, 25 ns)
+
+
+WARNING: at 890 ns: Timing violation in /test_bench/uut/  $width( SCK:885 ns, :890 ns, 25 ns)
+
+
+WARNING: at 895 ns: Timing violation in /test_bench/uut/  $width( SCK:890 ns, :895 ns, 25 ns)
+
+
+WARNING: at 900 ns: Timing violation in /test_bench/uut/  $width( SCK:895 ns, :900 ns, 25 ns)
+
+
+WARNING: at 905 ns: Timing violation in /test_bench/uut/  $width( SCK:900 ns, :905 ns, 25 ns)
+
+
+WARNING: at 910 ns: Timing violation in /test_bench/uut/  $width( SCK:905 ns, :910 ns, 25 ns)
+
+
+WARNING: at 915 ns: Timing violation in /test_bench/uut/  $width( SCK:910 ns, :915 ns, 25 ns)
+
+
+WARNING: at 920 ns: Timing violation in /test_bench/uut/  $width( SCK:915 ns, :920 ns, 25 ns)
+
+
+WARNING: at 925 ns: Timing violation in /test_bench/uut/  $width( SCK:920 ns, :925 ns, 25 ns)
+
+
+WARNING: at 930 ns: Timing violation in /test_bench/uut/  $width( SCK:925 ns, :930 ns, 25 ns)
+
+
+WARNING: at 935 ns: Timing violation in /test_bench/uut/  $width( SCK:930 ns, :935 ns, 25 ns)
+
+
+WARNING: at 940 ns: Timing violation in /test_bench/uut/  $width( SCK:935 ns, :940 ns, 25 ns)
+
+
+WARNING: at 945 ns: Timing violation in /test_bench/uut/  $width( SCK:940 ns, :945 ns, 25 ns)
+
+
+WARNING: at 950 ns: Timing violation in /test_bench/uut/  $width( SCK:945 ns, :950 ns, 25 ns)
+
+
+WARNING: at 955 ns: Timing violation in /test_bench/uut/  $width( SCK:950 ns, :955 ns, 25 ns)
+
+
+WARNING: at 960 ns: Timing violation in /test_bench/uut/  $width( SCK:955 ns, :960 ns, 25 ns)
+
+
+WARNING: at 965 ns: Timing violation in /test_bench/uut/  $width( SCK:960 ns, :965 ns, 25 ns)
+
+
+WARNING: at 970 ns: Timing violation in /test_bench/uut/  $width( SCK:965 ns, :970 ns, 25 ns)
+
+
+WARNING: at 975 ns: Timing violation in /test_bench/uut/  $width( SCK:970 ns, :975 ns, 25 ns)
+
+
+WARNING: at 980 ns: Timing violation in /test_bench/uut/  $width( SCK:975 ns, :980 ns, 25 ns)
+
+
+WARNING: at 985 ns: Timing violation in /test_bench/uut/  $width( SCK:980 ns, :985 ns, 25 ns)
+
+
+WARNING: at 990 ns: Timing violation in /test_bench/uut/  $width( SCK:985 ns, :990 ns, 25 ns)
+
+
+WARNING: at 995 ns: Timing violation in /test_bench/uut/  $width( SCK:990 ns, :995 ns, 25 ns)
+
+
+WARNING: at 1 us: Timing violation in /test_bench/uut/  $width( SCK:995 ns, :1 us, 25 ns)
+
+
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+WARNING: at 5 ns: Timing violation in /test_bench/uut/  $width( SCK:0 ps, :5 ns, 25 ns)
+
+
+WARNING: at 10 ns: Timing violation in /test_bench/uut/  $width( SCK:5 ns, :10 ns, 25 ns)
+
+
+WARNING: at 15 ns: Timing violation in /test_bench/uut/  $width( SCK:10 ns, :15 ns, 25 ns)
+
+
+WARNING: at 20 ns: Timing violation in /test_bench/uut/  $width( SCK:15 ns, :20 ns, 25 ns)
+
+
+WARNING: at 25 ns: Timing violation in /test_bench/uut/  $width( SCK:20 ns, :25 ns, 25 ns)
+
+
+WARNING: at 30 ns: Timing violation in /test_bench/uut/  $width( SCK:25 ns, :30 ns, 25 ns)
+
+
+WARNING: at 35 ns: Timing violation in /test_bench/uut/  $width( SCK:30 ns, :35 ns, 25 ns)
+
+
+WARNING: at 40 ns: Timing violation in /test_bench/uut/  $width( SCK:35 ns, :40 ns, 25 ns)
+
+
+WARNING: at 45 ns: Timing violation in /test_bench/uut/  $width( SCK:40 ns, :45 ns, 25 ns)
+
+
+WARNING: at 50 ns: Timing violation in /test_bench/uut/  $width( SCK:45 ns, :50 ns, 25 ns)
+
+
+WARNING: at 55 ns: Timing violation in /test_bench/uut/  $width( SCK:50 ns, :55 ns, 25 ns)
+
+
+WARNING: at 60 ns: Timing violation in /test_bench/uut/  $width( SCK:55 ns, :60 ns, 25 ns)
+
+
+WARNING: at 65 ns: Timing violation in /test_bench/uut/  $width( SCK:60 ns, :65 ns, 25 ns)
+
+
+WARNING: at 70 ns: Timing violation in /test_bench/uut/  $width( SCK:65 ns, :70 ns, 25 ns)
+
+
+WARNING: at 75 ns: Timing violation in /test_bench/uut/  $width( SCK:70 ns, :75 ns, 25 ns)
+
+
+WARNING: at 80 ns: Timing violation in /test_bench/uut/  $width( SCK:75 ns, :80 ns, 25 ns)
+
+
+WARNING: at 85 ns: Timing violation in /test_bench/uut/  $width( SCK:80 ns, :85 ns, 25 ns)
+
+
+WARNING: at 90 ns: Timing violation in /test_bench/uut/  $width( SCK:85 ns, :90 ns, 25 ns)
+
+
+WARNING: at 95 ns: Timing violation in /test_bench/uut/  $width( SCK:90 ns, :95 ns, 25 ns)
+
+
+WARNING: at 100 ns: Timing violation in /test_bench/uut/  $width( SCK:95 ns, :100 ns, 25 ns)
+
+
+WARNING: at 105 ns: Timing violation in /test_bench/uut/  $width( SCK:100 ns, :105 ns, 25 ns)
+
+
+WARNING: at 110 ns: Timing violation in /test_bench/uut/  $width( SCK:105 ns, :110 ns, 25 ns)
+
+
+WARNING: at 115 ns: Timing violation in /test_bench/uut/  $width( SCK:110 ns, :115 ns, 25 ns)
+
+
+WARNING: at 115 ns: Timing violation in /test_bench/uut/  $setup( CS_N:110 ns, SCK:115 ns,25 ns)
+
+
+WARNING: at 115 ns: Timing violation in /test_bench/uut/  $setup( SI_SIO0:110 ns, SCK:115 ns,10 ns)
+
+
+WARNING: at 120 ns: Timing violation in /test_bench/uut/  $width( SCK:115 ns, :120 ns, 25 ns)
+
+
+WARNING: at 125 ns: Timing violation in /test_bench/uut/  $width( SCK:120 ns, :125 ns, 25 ns)
+
+
+WARNING: at 125 ns: Timing violation in /test_bench/uut/  $setup( CS_N:110 ns, SCK:125 ns,25 ns)
+
+
+WARNING: at 130 ns: Timing violation in /test_bench/uut/  $width( SCK:125 ns, :130 ns, 25 ns)
+
+
+WARNING: at 135 ns: Timing violation in /test_bench/uut/  $width( SCK:130 ns, :135 ns, 25 ns)
+
+
+WARNING: at 140 ns: Timing violation in /test_bench/uut/  $width( SCK:135 ns, :140 ns, 25 ns)
+
+
+WARNING: at 145 ns: Timing violation in /test_bench/uut/  $width( SCK:140 ns, :145 ns, 25 ns)
+
+
+WARNING: at 150 ns: Timing violation in /test_bench/uut/  $width( SCK:145 ns, :150 ns, 25 ns)
+
+
+WARNING: at 155 ns: Timing violation in /test_bench/uut/  $width( SCK:150 ns, :155 ns, 25 ns)
+
+
+WARNING: at 160 ns: Timing violation in /test_bench/uut/  $width( SCK:155 ns, :160 ns, 25 ns)
+
+
+WARNING: at 165 ns: Timing violation in /test_bench/uut/  $width( SCK:160 ns, :165 ns, 25 ns)
+
+
+WARNING: at 170 ns: Timing violation in /test_bench/uut/  $width( SCK:165 ns, :170 ns, 25 ns)
+
+
+WARNING: at 175 ns: Timing violation in /test_bench/uut/  $width( SCK:170 ns, :175 ns, 25 ns)
+
+
+WARNING: at 175 ns: Timing violation in /test_bench/uut/  $setup( SI_SIO0:170 ns, SCK:175 ns,10 ns)
+
+
+WARNING: at 180 ns: Timing violation in /test_bench/uut/  $width( SCK:175 ns, :180 ns, 25 ns)
+
+
+WARNING: at 185 ns: Timing violation in /test_bench/uut/  $width( SCK:180 ns, :185 ns, 25 ns)
+
+
+WARNING: at 190 ns: Timing violation in /test_bench/uut/  $width( SCK:185 ns, :190 ns, 25 ns)
+
+
+WARNING: at 195 ns: Timing violation in /test_bench/uut/  $width( SCK:190 ns, :195 ns, 25 ns)
+
+
+WARNING: at 195 ns: Timing violation in /test_bench/uut/  $setup( SI_SIO0:190 ns, SCK:195 ns,10 ns)
+
+
+WARNING: at 200 ns: Timing violation in /test_bench/uut/  $width( SCK:195 ns, :200 ns, 25 ns)
+
+
+WARNING: at 205 ns: Timing violation in /test_bench/uut/  $width( SCK:200 ns, :205 ns, 25 ns)
+
+
+WARNING: at 210 ns: Timing violation in /test_bench/uut/  $width( SCK:205 ns, :210 ns, 25 ns)
+
+
+WARNING: at 215 ns: Timing violation in /test_bench/uut/  $width( SCK:210 ns, :215 ns, 25 ns)
+
+
+WARNING: at 220 ns: Timing violation in /test_bench/uut/  $width( SCK:215 ns, :220 ns, 25 ns)
+
+
+WARNING: at 225 ns: Timing violation in /test_bench/uut/  $width( SCK:220 ns, :225 ns, 25 ns)
+
+
+WARNING: at 230 ns: Timing violation in /test_bench/uut/  $width( SCK:225 ns, :230 ns, 25 ns)
+
+
+WARNING: at 235 ns: Timing violation in /test_bench/uut/  $width( SCK:230 ns, :235 ns, 25 ns)
+
+
+WARNING: at 240 ns: Timing violation in /test_bench/uut/  $width( SCK:235 ns, :240 ns, 25 ns)
+
+
+WARNING: at 245 ns: Timing violation in /test_bench/uut/  $width( SCK:240 ns, :245 ns, 25 ns)
+
+
+WARNING: at 250 ns: Timing violation in /test_bench/uut/  $width( SCK:245 ns, :250 ns, 25 ns)
+
+
+WARNING: at 255 ns: Timing violation in /test_bench/uut/  $width( SCK:250 ns, :255 ns, 25 ns)
+
+
+WARNING: at 260 ns: Timing violation in /test_bench/uut/  $width( SCK:255 ns, :260 ns, 25 ns)
+
+
+WARNING: at 265 ns: Timing violation in /test_bench/uut/  $width( SCK:260 ns, :265 ns, 25 ns)
+
+
+WARNING: at 270 ns: Timing violation in /test_bench/uut/  $width( SCK:265 ns, :270 ns, 25 ns)
+
+
+WARNING: at 275 ns: Timing violation in /test_bench/uut/  $width( SCK:270 ns, :275 ns, 25 ns)
+
+
+WARNING: at 280 ns: Timing violation in /test_bench/uut/  $width( SCK:275 ns, :280 ns, 25 ns)
+
+
+WARNING: at 285 ns: Timing violation in /test_bench/uut/  $width( SCK:280 ns, :285 ns, 25 ns)
+
+
+WARNING: at 290 ns: Timing violation in /test_bench/uut/  $width( SCK:285 ns, :290 ns, 25 ns)
+
+
+WARNING: at 295 ns: Timing violation in /test_bench/uut/  $width( SCK:290 ns, :295 ns, 25 ns)
+
+
+WARNING: at 300 ns: Timing violation in /test_bench/uut/  $width( SCK:295 ns, :300 ns, 25 ns)
+
+
+WARNING: at 305 ns: Timing violation in /test_bench/uut/  $width( SCK:300 ns, :305 ns, 25 ns)
+
+
+WARNING: at 310 ns: Timing violation in /test_bench/uut/  $width( SCK:305 ns, :310 ns, 25 ns)
+
+
+WARNING: at 315 ns: Timing violation in /test_bench/uut/  $width( SCK:310 ns, :315 ns, 25 ns)
+
+
+WARNING: at 320 ns: Timing violation in /test_bench/uut/  $width( SCK:315 ns, :320 ns, 25 ns)
+
+
+WARNING: at 325 ns: Timing violation in /test_bench/uut/  $width( SCK:320 ns, :325 ns, 25 ns)
+
+
+WARNING: at 330 ns: Timing violation in /test_bench/uut/  $width( SCK:325 ns, :330 ns, 25 ns)
+
+
+WARNING: at 335 ns: Timing violation in /test_bench/uut/  $width( SCK:330 ns, :335 ns, 25 ns)
+
+
+WARNING: at 340 ns: Timing violation in /test_bench/uut/  $width( SCK:335 ns, :340 ns, 25 ns)
+
+
+WARNING: at 345 ns: Timing violation in /test_bench/uut/  $width( SCK:340 ns, :345 ns, 25 ns)
+
+
+WARNING: at 350 ns: Timing violation in /test_bench/uut/  $width( SCK:345 ns, :350 ns, 25 ns)
+
+
+WARNING: at 355 ns: Timing violation in /test_bench/uut/  $width( SCK:350 ns, :355 ns, 25 ns)
+
+
+WARNING: at 360 ns: Timing violation in /test_bench/uut/  $width( SCK:355 ns, :360 ns, 25 ns)
+
+
+WARNING: at 365 ns: Timing violation in /test_bench/uut/  $width( SCK:360 ns, :365 ns, 25 ns)
+
+
+WARNING: at 370 ns: Timing violation in /test_bench/uut/  $width( SCK:365 ns, :370 ns, 25 ns)
+
+
+WARNING: at 375 ns: Timing violation in /test_bench/uut/  $width( SCK:370 ns, :375 ns, 25 ns)
+
+
+WARNING: at 380 ns: Timing violation in /test_bench/uut/  $width( SCK:375 ns, :380 ns, 25 ns)
+
+
+WARNING: at 385 ns: Timing violation in /test_bench/uut/  $width( SCK:380 ns, :385 ns, 25 ns)
+
+
+WARNING: at 390 ns: Timing violation in /test_bench/uut/  $width( SCK:385 ns, :390 ns, 25 ns)
+
+
+WARNING: at 395 ns: Timing violation in /test_bench/uut/  $width( SCK:390 ns, :395 ns, 25 ns)
+
+
+WARNING: at 400 ns: Timing violation in /test_bench/uut/  $width( SCK:395 ns, :400 ns, 25 ns)
+
+
+WARNING: at 405 ns: Timing violation in /test_bench/uut/  $width( SCK:400 ns, :405 ns, 25 ns)
+
+
+WARNING: at 410 ns: Timing violation in /test_bench/uut/  $width( SCK:405 ns, :410 ns, 25 ns)
+
+
+WARNING: at 415 ns: Timing violation in /test_bench/uut/  $width( SCK:410 ns, :415 ns, 25 ns)
+
+
+WARNING: at 420 ns: Timing violation in /test_bench/uut/  $width( SCK:415 ns, :420 ns, 25 ns)
+
+
+WARNING: at 425 ns: Timing violation in /test_bench/uut/  $width( SCK:420 ns, :425 ns, 25 ns)
+
+
+WARNING: at 430 ns: Timing violation in /test_bench/uut/  $width( SCK:425 ns, :430 ns, 25 ns)
+
+
+WARNING: at 435 ns: Timing violation in /test_bench/uut/  $width( SCK:430 ns, :435 ns, 25 ns)
+
+
+WARNING: at 440 ns: Timing violation in /test_bench/uut/  $width( SCK:435 ns, :440 ns, 25 ns)
+
+
+WARNING: at 445 ns: Timing violation in /test_bench/uut/  $width( SCK:440 ns, :445 ns, 25 ns)
+
+
+WARNING: at 450 ns: Timing violation in /test_bench/uut/  $width( SCK:445 ns, :450 ns, 25 ns)
+
+
+WARNING: at 455 ns: Timing violation in /test_bench/uut/  $width( SCK:450 ns, :455 ns, 25 ns)
+
+
+WARNING: at 460 ns: Timing violation in /test_bench/uut/  $width( SCK:455 ns, :460 ns, 25 ns)
+
+
+WARNING: at 465 ns: Timing violation in /test_bench/uut/  $width( SCK:460 ns, :465 ns, 25 ns)
+
+
+WARNING: at 470 ns: Timing violation in /test_bench/uut/  $width( SCK:465 ns, :470 ns, 25 ns)
+
+
+WARNING: at 475 ns: Timing violation in /test_bench/uut/  $width( SCK:470 ns, :475 ns, 25 ns)
+
+
+WARNING: at 480 ns: Timing violation in /test_bench/uut/  $width( SCK:475 ns, :480 ns, 25 ns)
+
+
+WARNING: at 485 ns: Timing violation in /test_bench/uut/  $width( SCK:480 ns, :485 ns, 25 ns)
+
+
+WARNING: at 490 ns: Timing violation in /test_bench/uut/  $width( SCK:485 ns, :490 ns, 25 ns)
+
+
+WARNING: at 495 ns: Timing violation in /test_bench/uut/  $width( SCK:490 ns, :495 ns, 25 ns)
+
+
+WARNING: at 500 ns: Timing violation in /test_bench/uut/  $width( SCK:495 ns, :500 ns, 25 ns)
+
+
+WARNING: at 505 ns: Timing violation in /test_bench/uut/  $width( SCK:500 ns, :505 ns, 25 ns)
+
+
+WARNING: at 510 ns: Timing violation in /test_bench/uut/  $width( SCK:505 ns, :510 ns, 25 ns)
+
+
+WARNING: at 515 ns: Timing violation in /test_bench/uut/  $width( SCK:510 ns, :515 ns, 25 ns)
+
+
+WARNING: at 520 ns: Timing violation in /test_bench/uut/  $width( SCK:515 ns, :520 ns, 25 ns)
+
+
+WARNING: at 525 ns: Timing violation in /test_bench/uut/  $width( SCK:520 ns, :525 ns, 25 ns)
+
+
+WARNING: at 530 ns: Timing violation in /test_bench/uut/  $width( SCK:525 ns, :530 ns, 25 ns)
+
+
+WARNING: at 535 ns: Timing violation in /test_bench/uut/  $width( SCK:530 ns, :535 ns, 25 ns)
+
+
+WARNING: at 540 ns: Timing violation in /test_bench/uut/  $width( SCK:535 ns, :540 ns, 25 ns)
+
+
+WARNING: at 545 ns: Timing violation in /test_bench/uut/  $width( SCK:540 ns, :545 ns, 25 ns)
+
+
+WARNING: at 550 ns: Timing violation in /test_bench/uut/  $width( SCK:545 ns, :550 ns, 25 ns)
+
+
+WARNING: at 555 ns: Timing violation in /test_bench/uut/  $width( SCK:550 ns, :555 ns, 25 ns)
+
+
+WARNING: at 560 ns: Timing violation in /test_bench/uut/  $width( SCK:555 ns, :560 ns, 25 ns)
+
+
+WARNING: at 565 ns: Timing violation in /test_bench/uut/  $width( SCK:560 ns, :565 ns, 25 ns)
+
+
+WARNING: at 570 ns: Timing violation in /test_bench/uut/  $width( SCK:565 ns, :570 ns, 25 ns)
+
+
+WARNING: at 575 ns: Timing violation in /test_bench/uut/  $width( SCK:570 ns, :575 ns, 25 ns)
+
+
+WARNING: at 580 ns: Timing violation in /test_bench/uut/  $width( SCK:575 ns, :580 ns, 25 ns)
+
+
+WARNING: at 585 ns: Timing violation in /test_bench/uut/  $width( SCK:580 ns, :585 ns, 25 ns)
+
+
+WARNING: at 590 ns: Timing violation in /test_bench/uut/  $width( SCK:585 ns, :590 ns, 25 ns)
+
+
+WARNING: at 595 ns: Timing violation in /test_bench/uut/  $width( SCK:590 ns, :595 ns, 25 ns)
+
+
+WARNING: at 600 ns: Timing violation in /test_bench/uut/  $width( SCK:595 ns, :600 ns, 25 ns)
+
+
+WARNING: at 605 ns: Timing violation in /test_bench/uut/  $width( SCK:600 ns, :605 ns, 25 ns)
+
+
+WARNING: at 610 ns: Timing violation in /test_bench/uut/  $width( SCK:605 ns, :610 ns, 25 ns)
+
+
+WARNING: at 615 ns: Timing violation in /test_bench/uut/  $width( SCK:610 ns, :615 ns, 25 ns)
+
+
+WARNING: at 620 ns: Timing violation in /test_bench/uut/  $width( SCK:615 ns, :620 ns, 25 ns)
+
+
+WARNING: at 625 ns: Timing violation in /test_bench/uut/  $width( SCK:620 ns, :625 ns, 25 ns)
+
+
+WARNING: at 630 ns: Timing violation in /test_bench/uut/  $width( SCK:625 ns, :630 ns, 25 ns)
+
+
+WARNING: at 635 ns: Timing violation in /test_bench/uut/  $width( SCK:630 ns, :635 ns, 25 ns)
+
+
+WARNING: at 640 ns: Timing violation in /test_bench/uut/  $width( SCK:635 ns, :640 ns, 25 ns)
+
+
+WARNING: at 645 ns: Timing violation in /test_bench/uut/  $width( SCK:640 ns, :645 ns, 25 ns)
+
+
+WARNING: at 650 ns: Timing violation in /test_bench/uut/  $width( SCK:645 ns, :650 ns, 25 ns)
+
+
+WARNING: at 655 ns: Timing violation in /test_bench/uut/  $width( SCK:650 ns, :655 ns, 25 ns)
+
+
+WARNING: at 660 ns: Timing violation in /test_bench/uut/  $width( SCK:655 ns, :660 ns, 25 ns)
+
+
+WARNING: at 665 ns: Timing violation in /test_bench/uut/  $width( SCK:660 ns, :665 ns, 25 ns)
+
+
+WARNING: at 670 ns: Timing violation in /test_bench/uut/  $width( SCK:665 ns, :670 ns, 25 ns)
+
+
+WARNING: at 675 ns: Timing violation in /test_bench/uut/  $width( SCK:670 ns, :675 ns, 25 ns)
+
+
+WARNING: at 680 ns: Timing violation in /test_bench/uut/  $width( SCK:675 ns, :680 ns, 25 ns)
+
+
+WARNING: at 685 ns: Timing violation in /test_bench/uut/  $width( SCK:680 ns, :685 ns, 25 ns)
+
+
+WARNING: at 690 ns: Timing violation in /test_bench/uut/  $width( SCK:685 ns, :690 ns, 25 ns)
+
+
+WARNING: at 695 ns: Timing violation in /test_bench/uut/  $width( SCK:690 ns, :695 ns, 25 ns)
+
+
+WARNING: at 700 ns: Timing violation in /test_bench/uut/  $width( SCK:695 ns, :700 ns, 25 ns)
+
+
+WARNING: at 705 ns: Timing violation in /test_bench/uut/  $width( SCK:700 ns, :705 ns, 25 ns)
+
+
+WARNING: at 710 ns: Timing violation in /test_bench/uut/  $width( SCK:705 ns, :710 ns, 25 ns)
+
+
+WARNING: at 715 ns: Timing violation in /test_bench/uut/  $width( SCK:710 ns, :715 ns, 25 ns)
+
+
+WARNING: at 720 ns: Timing violation in /test_bench/uut/  $width( SCK:715 ns, :720 ns, 25 ns)
+
+
+WARNING: at 725 ns: Timing violation in /test_bench/uut/  $width( SCK:720 ns, :725 ns, 25 ns)
+
+
+WARNING: at 730 ns: Timing violation in /test_bench/uut/  $width( SCK:725 ns, :730 ns, 25 ns)
+
+
+WARNING: at 735 ns: Timing violation in /test_bench/uut/  $width( SCK:730 ns, :735 ns, 25 ns)
+
+
+WARNING: at 740 ns: Timing violation in /test_bench/uut/  $width( SCK:735 ns, :740 ns, 25 ns)
+
+
+WARNING: at 745 ns: Timing violation in /test_bench/uut/  $width( SCK:740 ns, :745 ns, 25 ns)
+
+
+WARNING: at 750 ns: Timing violation in /test_bench/uut/  $width( SCK:745 ns, :750 ns, 25 ns)
+
+
+WARNING: at 755 ns: Timing violation in /test_bench/uut/  $width( SCK:750 ns, :755 ns, 25 ns)
+
+
+WARNING: at 760 ns: Timing violation in /test_bench/uut/  $width( SCK:755 ns, :760 ns, 25 ns)
+
+
+WARNING: at 765 ns: Timing violation in /test_bench/uut/  $width( SCK:760 ns, :765 ns, 25 ns)
+
+
+WARNING: at 770 ns: Timing violation in /test_bench/uut/  $width( SCK:765 ns, :770 ns, 25 ns)
+
+
+WARNING: at 775 ns: Timing violation in /test_bench/uut/  $width( SCK:770 ns, :775 ns, 25 ns)
+
+
+WARNING: at 780 ns: Timing violation in /test_bench/uut/  $width( SCK:775 ns, :780 ns, 25 ns)
+
+
+WARNING: at 785 ns: Timing violation in /test_bench/uut/  $width( SCK:780 ns, :785 ns, 25 ns)
+
+
+WARNING: at 790 ns: Timing violation in /test_bench/uut/  $width( SCK:785 ns, :790 ns, 25 ns)
+
+
+WARNING: at 795 ns: Timing violation in /test_bench/uut/  $width( SCK:790 ns, :795 ns, 25 ns)
+
+
+WARNING: at 800 ns: Timing violation in /test_bench/uut/  $width( SCK:795 ns, :800 ns, 25 ns)
+
+
+WARNING: at 805 ns: Timing violation in /test_bench/uut/  $width( SCK:800 ns, :805 ns, 25 ns)
+
+
+WARNING: at 810 ns: Timing violation in /test_bench/uut/  $width( SCK:805 ns, :810 ns, 25 ns)
+
+
+WARNING: at 815 ns: Timing violation in /test_bench/uut/  $width( SCK:810 ns, :815 ns, 25 ns)
+
+
+WARNING: at 820 ns: Timing violation in /test_bench/uut/  $width( SCK:815 ns, :820 ns, 25 ns)
+
+
+WARNING: at 825 ns: Timing violation in /test_bench/uut/  $width( SCK:820 ns, :825 ns, 25 ns)
+
+
+WARNING: at 830 ns: Timing violation in /test_bench/uut/  $width( SCK:825 ns, :830 ns, 25 ns)
+
+
+WARNING: at 835 ns: Timing violation in /test_bench/uut/  $width( SCK:830 ns, :835 ns, 25 ns)
+
+
+WARNING: at 840 ns: Timing violation in /test_bench/uut/  $width( SCK:835 ns, :840 ns, 25 ns)
+
+
+WARNING: at 845 ns: Timing violation in /test_bench/uut/  $width( SCK:840 ns, :845 ns, 25 ns)
+
+
+WARNING: at 850 ns: Timing violation in /test_bench/uut/  $width( SCK:845 ns, :850 ns, 25 ns)
+
+
+WARNING: at 855 ns: Timing violation in /test_bench/uut/  $width( SCK:850 ns, :855 ns, 25 ns)
+
+
+WARNING: at 860 ns: Timing violation in /test_bench/uut/  $width( SCK:855 ns, :860 ns, 25 ns)
+
+
+WARNING: at 865 ns: Timing violation in /test_bench/uut/  $width( SCK:860 ns, :865 ns, 25 ns)
+
+
+WARNING: at 870 ns: Timing violation in /test_bench/uut/  $width( SCK:865 ns, :870 ns, 25 ns)
+
+
+WARNING: at 875 ns: Timing violation in /test_bench/uut/  $width( SCK:870 ns, :875 ns, 25 ns)
+
+
+WARNING: at 880 ns: Timing violation in /test_bench/uut/  $width( SCK:875 ns, :880 ns, 25 ns)
+
+
+WARNING: at 885 ns: Timing violation in /test_bench/uut/  $width( SCK:880 ns, :885 ns, 25 ns)
+
+
+WARNING: at 890 ns: Timing violation in /test_bench/uut/  $width( SCK:885 ns, :890 ns, 25 ns)
+
+
+WARNING: at 895 ns: Timing violation in /test_bench/uut/  $width( SCK:890 ns, :895 ns, 25 ns)
+
+
+WARNING: at 900 ns: Timing violation in /test_bench/uut/  $width( SCK:895 ns, :900 ns, 25 ns)
+
+
+WARNING: at 905 ns: Timing violation in /test_bench/uut/  $width( SCK:900 ns, :905 ns, 25 ns)
+
+
+WARNING: at 910 ns: Timing violation in /test_bench/uut/  $width( SCK:905 ns, :910 ns, 25 ns)
+
+
+WARNING: at 915 ns: Timing violation in /test_bench/uut/  $width( SCK:910 ns, :915 ns, 25 ns)
+
+
+WARNING: at 920 ns: Timing violation in /test_bench/uut/  $width( SCK:915 ns, :920 ns, 25 ns)
+
+
+WARNING: at 925 ns: Timing violation in /test_bench/uut/  $width( SCK:920 ns, :925 ns, 25 ns)
+
+
+WARNING: at 930 ns: Timing violation in /test_bench/uut/  $width( SCK:925 ns, :930 ns, 25 ns)
+
+
+WARNING: at 935 ns: Timing violation in /test_bench/uut/  $width( SCK:930 ns, :935 ns, 25 ns)
+
+
+WARNING: at 940 ns: Timing violation in /test_bench/uut/  $width( SCK:935 ns, :940 ns, 25 ns)
+
+
+WARNING: at 945 ns: Timing violation in /test_bench/uut/  $width( SCK:940 ns, :945 ns, 25 ns)
+
+
+WARNING: at 950 ns: Timing violation in /test_bench/uut/  $width( SCK:945 ns, :950 ns, 25 ns)
+
+
+WARNING: at 955 ns: Timing violation in /test_bench/uut/  $width( SCK:950 ns, :955 ns, 25 ns)
+
+
+WARNING: at 960 ns: Timing violation in /test_bench/uut/  $width( SCK:955 ns, :960 ns, 25 ns)
+
+
+WARNING: at 965 ns: Timing violation in /test_bench/uut/  $width( SCK:960 ns, :965 ns, 25 ns)
+
+
+WARNING: at 970 ns: Timing violation in /test_bench/uut/  $width( SCK:965 ns, :970 ns, 25 ns)
+
+
+WARNING: at 975 ns: Timing violation in /test_bench/uut/  $width( SCK:970 ns, :975 ns, 25 ns)
+
+
+WARNING: at 980 ns: Timing violation in /test_bench/uut/  $width( SCK:975 ns, :980 ns, 25 ns)
+
+
+WARNING: at 985 ns: Timing violation in /test_bench/uut/  $width( SCK:980 ns, :985 ns, 25 ns)
+
+
+WARNING: at 990 ns: Timing violation in /test_bench/uut/  $width( SCK:985 ns, :990 ns, 25 ns)
+
+
+WARNING: at 995 ns: Timing violation in /test_bench/uut/  $width( SCK:990 ns, :995 ns, 25 ns)
+
+
+WARNING: at 1 us: Timing violation in /test_bench/uut/  $width( SCK:995 ns, :1 us, 25 ns)
+
+

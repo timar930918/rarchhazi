@@ -1,0 +1,4 @@
+verilog work "spi.v"
+verilog work "spi_interface.v"
+verilog work "amba.v"
+verilog work "top_module.v"

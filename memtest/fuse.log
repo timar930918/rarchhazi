@@ -1,0 +1,22 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Ari/Desktop/xilinx/fehervari/memtest/test_bench_isim_beh.exe" -prj "C:/Users/Ari/Desktop/xilinx/fehervari/memtest/test_bench_beh.prj" "work.test_bench" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Ari/Desktop/xilinx/fehervari/memtest/23A1024.v" into library work
+Analyzing Verilog file "C:/Users/Ari/Desktop/xilinx/fehervari/memtest/test_bench.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:188 - "C:/Users/Ari/Desktop/xilinx/fehervari/memtest/23A1024.v" Line 478: Actual bit length 32 differs from formal bit length 1
+WARNING:HDLCompiler:188 - "C:/Users/Ari/Desktop/xilinx/fehervari/memtest/23A1024.v" Line 479: Actual bit length 32 differs from formal bit length 1
+WARNING:HDLCompiler:188 - "C:/Users/Ari/Desktop/xilinx/fehervari/memtest/23A1024.v" Line 480: Actual bit length 32 differs from formal bit length 1
+Completed static elaboration
+Compiling module M23A1024
+Compiling module test_bench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable C:/Users/Ari/Desktop/xilinx/fehervari/memtest/test_bench_isim_beh.exe
+Fuse Memory Usage: 28372 KB
+Fuse CPU Usage: 671 ms

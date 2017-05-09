@@ -1,0 +1,5 @@
+verilog work "spi.v"
+verilog work "23A1024.v"
+verilog work "top_module.v"
+verilog work "test_bench.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
