@@ -27,7 +27,6 @@ module test_bench;
 	// Inputs
 	reg rst;
 	reg clk;
-	reg [31:0] d_send;
 
 	// Outputs
 	wire miso;
@@ -42,7 +41,9 @@ module test_bench;
 		.clk(clk),  
 		.HOLD_ENABLE(HOLD_ENABLE),
 		.miso(miso),
-		.mosi(mosi)
+		.mosi(mosi),
+		.sck(sck),
+		.cs(cs)
 	);
 	
 	M23A1024 memoria (
@@ -68,7 +69,7 @@ module test_bench;
 		// Add stimulus here
 	end
    
-	always #25 clk = ~clk;
+	always #31.25 clk = ~clk;
    
 endmodule
 

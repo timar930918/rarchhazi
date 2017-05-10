@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: top_module.prj
@@ -124,9 +124,9 @@ WARNING:HDLCompiler:872 - "C:\Company\GitProject\rarchhazi\spi_rom_proba\top_mod
 Elaborating module <spi_interface>.
 
 Elaborating module <spi>.
+WARNING:HDLCompiler:413 - "C:\Company\GitProject\rarchhazi\spi_rom_proba\spi.v" Line 95: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:1127 - "C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v" Line 46: Assignment to mosi ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "C:\Company\GitProject\rarchhazi\spi_rom_proba\top_module.v" Line 41: Size mismatch in connection of port <amba_command>. Formal port size is 1-bit while actual signal size is 2-bit.
-WARNING:HDLCompiler:189 - "C:\Company\GitProject\rarchhazi\spi_rom_proba\top_module.v" Line 42: Size mismatch in connection of port <amba_reg_select>. Formal port size is 2-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v" Line 49: Size mismatch in connection of port <freq>. Formal port size is 2-bit while actual signal size is 1-bit.
 WARNING:HDLCompiler:1127 - "C:\Company\GitProject\rarchhazi\spi_rom_proba\top_module.v" Line 47: Assignment to miso ignored, since the identifier is never used
 
 Elaborating module <amba>.
@@ -151,28 +151,40 @@ Synthesizing Unit <spi_interface>.
 WARNING:Xst:647 - Input <mosi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 INFO:Xst:3210 - "C:\Company\GitProject\rarchhazi\spi_rom_proba\spi_interface.v" line 41: Output port <mosi> of the instance <spi> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <miso> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <ena>.
+    Found 2-bit register for signal <reg_state>.
+    Found 8-bit register for signal <reg_command>.
+    Found 24-bit register for signal <reg_address>.
+    Found 32-bit register for signal <reg_data_in>.
     Found 32-bit register for signal <reg_data_out>.
     Found 32-bit register for signal <reg_spi_data_in>.
+    Found finite state machine <FSM_0> for signal <reg_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (falling_edge)                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
     WARNING:Xst:2404 -  FFs/Latches <cntr<7:0>> (without init value) have a constant value of 0 in block <spi_interface>.
-    WARNING:Xst:2404 -  FFs/Latches <ena<0:0>> (without init value) have a constant value of 0 in block <spi_interface>.
     Summary:
-	inferred  64 D-type flip-flop(s).
+	inferred 129 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
 Unit <spi_interface> synthesized.
 
 Synthesizing Unit <spi>.
     Related source file is "C:\Company\GitProject\rarchhazi\spi_rom_proba\spi.v".
+WARNING:Xst:647 - Input <freq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 11-bit register for signal <cntr>.
-    Found 2-bit register for signal <sck2>.
     Found 1-bit register for signal <sck_reg>.
-    Found 11-bit register for signal <transfer_end>.
     Found 1-bit register for signal <cs_reg>.
     Found 32-bit register for signal <shr_miso>.
     Found 33-bit register for signal <shr_mosi>.
-    Found 2-bit register for signal <cs_reg2>.
-    Found 2-bit register for signal <frq>.
-    Found 11-bit adder for signal <cntr[10]_GND_3_o_add_5_OUT> created at line 33.
-    Found 12-bit adder for signal <_n0113> created at line 106.
-    Found 4x11-bit Read Only RAM for signal <frq[1]_GND_3_o_wide_mux_15_OUT>
+    Found 1-bit register for signal <frq>.
+    Found 1-bit adder for signal <frq_PWR_3_o_add_3_OUT<0>> created at line 24.
+    Found 11-bit adder for signal <cntr[10]_GND_3_o_add_7_OUT> created at line 33.
 WARNING:Xst:737 - Found 1-bit latch for signal <dout<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <dout<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <dout<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -205,40 +217,32 @@ WARNING:Xst:737 - Found 1-bit latch for signal <dout<3>>. Latches may be generat
 WARNING:Xst:737 - Found 1-bit latch for signal <dout<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <dout<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <dout<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 11-bit comparator equal for signal <cntr[10]_transfer_end[10]_equal_25_o> created at line 85
-    Found 12-bit comparator equal for signal <GND_3_o_GND_3_o_equal_38_o> created at line 106
+    WARNING:Xst:2404 -  FFs/Latches <transfer_end<1:4>> (without init value) have a constant value of 0 in block <spi>.
+    WARNING:Xst:2404 -  FFs/Latches <transfer_end<4:10>> (without init value) have a constant value of 1 in block <spi>.
     Summary:
-	inferred   1 RAM(s).
 	inferred   2 Adder/Subtractor(s).
-	inferred  95 D-type flip-flop(s).
+	inferred  79 D-type flip-flop(s).
 	inferred  32 Latch(s).
-	inferred   2 Comparator(s).
-	inferred   4 Multiplexer(s).
+	inferred   1 Multiplexer(s).
 Unit <spi> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
- 4x11-bit single-port Read Only RAM                    : 1
 # Adders/Subtractors                                   : 2
+ 1-bit adder                                           : 1
  11-bit adder                                          : 1
- 12-bit adder                                          : 1
 # Registers                                            : 11
- 1-bit register                                        : 2
- 11-bit register                                       : 2
- 2-bit register                                        : 3
- 32-bit register                                       : 3
+ 1-bit register                                        : 4
+ 11-bit register                                       : 1
+ 32-bit register                                       : 5
  33-bit register                                       : 1
 # Latches                                              : 32
  1-bit latch                                           : 32
-# Comparators                                          : 2
- 11-bit comparator equal                               : 1
- 12-bit comparator equal                               : 1
-# Multiplexers                                         : 4
- 1-bit 2-to-1 multiplexer                              : 3
+# Multiplexers                                         : 1
  33-bit 2-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
 
 =========================================================================
 
@@ -246,127 +250,145 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1710 - FF/Latch <cs_reg> (without init value) has a constant value of 1 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <frq_1> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <frq_0> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_0> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_1> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_2> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_3> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_4> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_5> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_6> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_7> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_8> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_9> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_10> is unconnected in block <spi>.
+INFO:Xst:2261 - The FF/Latch <reg_command_0> in Unit <interface> is equivalent to the following FF/Latch, which will be removed : <reg_command_1> 
+INFO:Xst:2261 - The FF/Latch <reg_command_2> in Unit <interface> is equivalent to the following 5 FFs/Latches, which will be removed : <reg_command_3> <reg_command_4> <reg_command_5> <reg_command_6> <reg_command_7> 
+WARNING:Xst:1710 - FF/Latch <reg_command_2> (without init value) has a constant value of 0 in block <interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <reg_address_0> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_1> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_2> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_3> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_4> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_5> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_6> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_7> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_8> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_9> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_10> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_11> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_12> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_13> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_14> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_15> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_16> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_17> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_18> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_19> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_20> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_21> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_22> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2677 - Node <reg_address_23> of sequential type is unconnected in block <interface>.
+WARNING:Xst:2404 -  FFs/Latches <reg_command,reg_address<0:25>> (without init value) have a constant value of 0 in block <spi_interface>.
 
 Synthesizing (advanced) Unit <spi>.
 The following registers are absorbed into counter <cntr>: 1 register on signal <cntr>.
-INFO:Xst:3231 - The small RAM <Mram_frq[1]_GND_3_o_wide_mux_15_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 4-word x 11-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <frq>           |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
+The following registers are absorbed into counter <frq>: 1 register on signal <frq>.
 Unit <spi> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
- 4x11-bit single-port distributed Read Only RAM        : 1
-# Adders/Subtractors                                   : 1
- 12-bit adder                                          : 1
-# Counters                                             : 1
+# Counters                                             : 2
+ 1-bit up counter                                      : 1
  11-bit up counter                                     : 1
-# Registers                                            : 148
- Flip-Flops                                            : 148
-# Comparators                                          : 2
- 11-bit comparator equal                               : 1
- 12-bit comparator equal                               : 1
-# Multiplexers                                         : 4
- 1-bit 2-to-1 multiplexer                              : 3
+# Registers                                            : 190
+ Flip-Flops                                            : 190
+# Multiplexers                                         : 1
  33-bit 2-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <reg_spi_data_in_0> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_1> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_2> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_3> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_4> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_5> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_6> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_7> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_8> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_9> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_10> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_11> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_12> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_13> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_14> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_15> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_16> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_17> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_18> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_19> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_20> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_21> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_22> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_23> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_24> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_25> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_26> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_27> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_28> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_29> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_data_in_28> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_29> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_30> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_31> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_25> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_24> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_23> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_22> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_21> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_20> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_19> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_18> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_17> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_16> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_15> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_14> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_13> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_12> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_11> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_10> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_9> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_8> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_7> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_6> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_5> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_4> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_3> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_command,reg_address_2> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_0> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_1> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_2> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_3> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_4> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_5> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_6> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_7> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_8> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_9> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_10> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_11> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_12> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_13> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_14> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_15> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_16> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_17> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_18> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_19> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_20> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_21> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_22> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_23> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_24> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_25> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_26> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_in_27> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_spi_data_in_31> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_30> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_31> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_0> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_1> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_2> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_3> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_4> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_5> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_6> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_7> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_8> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_9> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_10> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_11> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_12> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_13> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_14> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_15> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_16> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_17> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_18> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_19> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_20> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_21> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_22> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_23> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_24> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_25> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_26> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_27> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_28> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_29> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_30> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_data_out_31> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <frq_1> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <frq_0> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_0> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_29> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_28> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_27> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_26> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_23> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_22> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_21> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_20> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_19> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_18> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_17> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_16> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_15> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_14> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_13> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_12> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_11> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_10> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_9> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_8> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_7> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_6> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_5> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_4> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_3> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_2> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_1> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_spi_data_in_0> (without init value) has a constant value of 0 in block <spi_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <shr_miso_0> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_0> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_1> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_1> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
@@ -375,147 +397,158 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_3> (withou
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_2> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_3> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_4> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_4> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_5> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_5> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_4> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_6> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_5> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_7> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_6> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_8> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_7> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_8> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_9> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_8> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_10> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_9> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_11> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_10> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_11> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_12> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_12> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_11> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_13> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_13> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_12> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_14> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_13> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_15> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_14> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_16> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_15> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_16> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_17> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_16> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_18> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_17> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_19> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_18> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_20> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_19> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_20> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_20> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_21> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_21> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_22> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_22> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_23> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_23> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_22> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_24> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_23> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_24> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_25> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_26> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_25> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_27> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_26> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_27> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_27> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_28> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_28> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_29> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_28> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_29> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_30> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_30> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_miso_31> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dout_31> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <sck2_0> in Unit <spi> is equivalent to the following FF/Latch, which will be removed : <sck_reg> 
-WARNING:Xst:1710 - FF/Latch <cs_reg> (without init value) has a constant value of 1 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cs_reg2_0> (without init value) has a constant value of 1 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cs_reg2_1> (without init value) has a constant value of 1 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_0> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_1> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_2> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_3> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_4> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_5> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_6> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_7> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_8> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_9> is unconnected in block <spi>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <transfer_end_10> is unconnected in block <spi>.
-WARNING:Xst:1710 - FF/Latch <shr_mosi_32> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_31> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_30> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_29> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_28> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_27> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_26> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_25> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_24> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_23> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <reg_command,reg_address_1> in Unit <spi_interface> is equivalent to the following FF/Latch, which will be removed : <reg_command,reg_address_0> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <interface/FSM_0> on signal <reg_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 11    | 11
+-------------------
+WARNING:Xst:1710 - FF/Latch <shr_mosi_23> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_22> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_21> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_20> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_19> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_18> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_17> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_0> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_1> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_2> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_3> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_4> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_5> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_6> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_7> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_8> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_9> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_10> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_11> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_12> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_13> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_14> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_15> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_16> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <cntr_5> of sequential type is unconnected in block <spi>.
-WARNING:Xst:2677 - Node <cntr_6> of sequential type is unconnected in block <spi>.
-WARNING:Xst:2677 - Node <cntr_7> of sequential type is unconnected in block <spi>.
-WARNING:Xst:2677 - Node <cntr_8> of sequential type is unconnected in block <spi>.
-WARNING:Xst:2677 - Node <cntr_9> of sequential type is unconnected in block <spi>.
-WARNING:Xst:2677 - Node <cntr_10> of sequential type is unconnected in block <spi>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_15> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_14> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_13> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_12> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_11> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_10> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_9> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_8> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_7> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_6> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_5> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_4> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_3> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_2> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_1> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shr_mosi_0> (without init value) has a constant value of 0 in block <spi>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <top_module> ...
 
+Optimizing unit <spi_interface> ...
+
 Optimizing unit <spi> ...
+WARNING:Xst:2677 - Node <interface/reg_data_out_31> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_30> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_29> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_28> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_27> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_26> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_25> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_24> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_23> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_22> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_21> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_20> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_19> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_18> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_17> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_16> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_15> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_14> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_13> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_12> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_11> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_10> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_9> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_8> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_7> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_6> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_5> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_4> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_3> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_2> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_1> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_data_out_0> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_spi_data_in_25> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/reg_spi_data_in_24> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/spi/sck_reg> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/spi/shr_mosi_32> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/spi/shr_mosi_31> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/spi/shr_mosi_30> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/spi/shr_mosi_29> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/spi/shr_mosi_28> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/spi/shr_mosi_27> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/spi/shr_mosi_26> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/spi/shr_mosi_25> of sequential type is unconnected in block <top_module>.
+WARNING:Xst:2677 - Node <interface/spi/shr_mosi_24> of sequential type is unconnected in block <top_module>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-WARNING:Xst:1426 - The value init of the FF/Latch interface/spi/cntr_0 hinder the constant cleaning in the block top_module.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch interface/spi/cntr_1 hinder the constant cleaning in the block top_module.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch interface/spi/cntr_2 hinder the constant cleaning in the block top_module.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch interface/spi/cntr_3 hinder the constant cleaning in the block top_module.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch interface/spi/cntr_4 hinder the constant cleaning in the block top_module.
-   You should achieve better results by setting this init to 1.
-INFO:Xst:2261 - The FF/Latch <interface/spi/cntr_4> in Unit <top_module> is equivalent to the following 4 FFs/Latches, which will be removed : <interface/spi/cntr_3> <interface/spi/cntr_2> <interface/spi/cntr_1> <interface/spi/cntr_0> 
-Found area constraint ratio of 100 (+ 5) on block top_module, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block top_module, actual ratio is 2.
 
 Final Macro Processing ...
-
-Processing Unit <top_module> :
-	Found 3-bit shift register for signal <interface/spi/sck2_1>.
-Unit <top_module> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Shift Registers                                      : 1
- 3-bit shift register                                  : 1
+# Registers                                            : 17
+ Flip-Flops                                            : 17
 
 =========================================================================
 
@@ -538,16 +571,28 @@ Top Level Output File Name         : top_module.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2
+# BELS                             : 58
 #      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 10
+#      LUT2                        : 2
+#      LUT3                        : 11
+#      LUT5                        : 3
+#      LUT6                        : 6
+#      MUXCY                       : 10
 #      VCC                         : 1
-# FlipFlops/Latches                : 1
-#      FDE                         : 1
-# Shift Registers                  : 1
-#      SRLC16E                     : 1
+#      XORCY                       : 11
+# FlipFlops/Latches                : 17
+#      FD                          : 11
+#      FD_1                        : 2
+#      FDR                         : 1
+#      FDRE_1                      : 1
+#      FDS                         : 1
+#      FDSE                        : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 4
+# IO Buffers                       : 5
+#      IBUF                        : 1
 #      OBUF                        : 4
 # Others                           : 1
 #      amba                        : 1
@@ -559,21 +604,20 @@ Selected Device : 6slx4tqg144-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:               1  out of   4800     0%  
- Number of Slice LUTs:                    1  out of   2400     0%  
-    Number used as Memory:                1  out of   1200     0%  
-       Number used as SRL:                1
+ Number of Slice Registers:              17  out of   4800     0%  
+ Number of Slice LUTs:                   35  out of   2400     1%  
+    Number used as Logic:                35  out of   2400     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      2
-   Number with an unused Flip Flop:       1  out of      2    50%  
-   Number with an unused LUT:             1  out of      2    50%  
-   Number of fully used LUT-FF pairs:     0  out of      2     0%  
-   Number of unique control sets:         1
+ Number of LUT Flip Flop pairs used:     36
+   Number with an unused Flip Flop:      19  out of     36    52%  
+   Number with an unused LUT:             1  out of     36     2%  
+   Number of fully used LUT-FF pairs:    16  out of     36    44%  
+   Number of unique control sets:         5
 
 IO Utilization: 
  Number of IOs:                           7
- Number of bonded IOBs:                   5  out of    102     4%  
+ Number of bonded IOBs:                   6  out of    102     5%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -599,7 +643,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 2     |
+clk                                | BUFGP                  | 17    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -610,9 +654,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 1.415ns (Maximum Frequency: 706.714MHz)
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 3.597ns
+   Minimum period: 5.396ns (Maximum Frequency: 185.333MHz)
+   Minimum input arrival time before clock: 3.786ns
+   Maximum output required time after clock: 4.045ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -621,43 +665,66 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 1.415ns (frequency: 706.714MHz)
-  Total number of paths / destination ports: 1 / 1
+  Clock period: 5.396ns (frequency: 185.333MHz)
+  Total number of paths / destination ports: 135 / 19
 -------------------------------------------------------------------------
-Delay:               1.415ns (Levels of Logic = 0)
-  Source:            interface/spi/Mshreg_sck2_1 (FF)
-  Destination:       interface/spi/sck2_1 (FF)
+Delay:               2.698ns (Levels of Logic = 2)
+  Source:            interface/spi/cntr_8 (FF)
+  Destination:       interface/reg_state_FSM_FFd2 (FF)
   Source Clock:      clk rising
-  Destination Clock: clk rising
+  Destination Clock: clk falling
 
-  Data Path: interface/spi/Mshreg_sck2_1 to interface/spi/sck2_1
+  Data Path: interface/spi/cntr_8 to interface/reg_state_FSM_FFd2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     SRLC16E:CLK->Q        1   1.313   0.000  interface/spi/Mshreg_sck2_1 (interface/spi/Mshreg_sck2_1)
-     FDE:D                     0.102          interface/spi/sck2_1
+     FD:C->Q               5   0.447   1.059  interface/spi/cntr_8 (interface/spi/cntr_8)
+     LUT5:I0->O            1   0.203   0.684  interface/spi/cntr[10]_transfer_end[10]_equal_24_o<10>_SW1 (N6)
+     LUT6:I4->O            1   0.203   0.000  interface/reg_state_FSM_FFd2-In1 (interface/reg_state_FSM_FFd2-In)
+     FD_1:D                    0.102          interface/reg_state_FSM_FFd2
     ----------------------------------------
-    Total                      1.415ns (1.415ns logic, 0.000ns route)
-                                       (100.0% logic, 0.0% route)
+    Total                      2.698ns (0.955ns logic, 1.743ns route)
+                                       (35.4% logic, 64.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 17 / 17
+-------------------------------------------------------------------------
+Offset:              3.786ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       interface/reg_state_FSM_FFd1 (FF)
+  Destination Clock: clk falling
+
+  Data Path: rst to interface/reg_state_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   1.222   1.372  rst_IBUF (rst_IBUF)
+     LUT5:I0->O            1   0.203   0.684  interface/spi/cntr[10]_transfer_end[10]_equal_24_o<10>_SW2 (N8)
+     LUT6:I4->O            1   0.203   0.000  interface/reg_state_FSM_FFd1-In1 (interface/reg_state_FSM_FFd1-In)
+     FD_1:D                    0.102          interface/reg_state_FSM_FFd1
+    ----------------------------------------
+    Total                      3.786ns (1.730ns logic, 2.056ns route)
+                                       (45.7% logic, 54.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              3.597ns (Levels of Logic = 1)
-  Source:            interface/spi/sck2_1 (FF)
-  Destination:       sck (PAD)
+Offset:              4.045ns (Levels of Logic = 1)
+  Source:            interface/spi/cs_reg (FF)
+  Destination:       cs (PAD)
   Source Clock:      clk rising
 
-  Data Path: interface/spi/sck2_1 to sck
+  Data Path: interface/spi/cs_reg to cs
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              1   0.447   0.579  interface/spi/sck2_1 (interface/spi/sck2_1)
-     OBUF:I->O                 2.571          sck_OBUF (sck)
+     FDS:C->Q             17   0.447   1.027  interface/spi/cs_reg (interface/spi/cs_reg)
+     OBUF:I->O                 2.571          cs_OBUF (cs)
     ----------------------------------------
-    Total                      3.597ns (3.018ns logic, 0.579ns route)
-                                       (83.9% logic, 16.1% route)
+    Total                      4.045ns (3.018ns logic, 1.027ns route)
+                                       (74.6% logic, 25.4% route)
 
 =========================================================================
 
@@ -669,20 +736,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    1.415|         |         |         |
+clk            |    3.770|    2.278|    2.698|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.89 secs
+Total CPU time to Xst completion: 7.08 secs
  
 --> 
 
 Total memory usage is 227756 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  246 (   0 filtered)
+Number of warnings :  290 (   0 filtered)
 Number of infos    :    6 (   0 filtered)
 

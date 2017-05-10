@@ -46,10 +46,10 @@ spi spi(
 	 .mosi(mosi),								   //output
     .dout(spi_data_out),   				   //output
 	 .din(spi_data_in),  	//input
-	 .freq(2'b00),				//input
+	 .freq(clk),				//input
 	 .en(spi_enable),					//input
 	 .transfer_succeded(transfer_success), //output
-	 .sck1(sck)
+	 .sck(sck)
     );
 
 reg ena;
@@ -59,14 +59,22 @@ reg [7:0] reg_command;
 reg [31:0] reg_data_in;
 reg [31:0] reg_data_out;
 reg [31:0] reg_spi_data_in;
-reg [7:0] cntr;
+reg [5:0] cntr;
 
 always@ (posedge clk) begin
 	if (ena) begin
-		case (reg_state)
-		2'b00 : reg_spi_data_in = {reg_command,reg_address};
-		2'b01 : reg_spi_data_in = reg_data_in;
-		endcase
+		if(amba_command==1) begin
+			case (reg_state)
+				2'b00 : reg_spi_data_in = {reg_command,reg_address};
+				2'b01 : reg_spi_data_in = reg_data_in;
+			endcase 
+		end
+		else if(amba_command==0) begin
+			case (reg_state)
+				2'b00 : reg_spi_data_in = {reg_command,reg_address}; 
+				2'b01 : begin reg_data_out = spi_data_out; reg_spi_data_in = 32'b0; end
+			endcase		
+		end
 	end
 end
 
@@ -76,34 +84,31 @@ assign amba_dout = reg_data_out;
 assign spi_enable = ena;
 assign HOLD_ENABLE = 1; //fixen futtatjuk a memoriat
 
+//always@ (posedge transfer_success)
+//	cntr <=0;
+
 always@ (negedge clk) begin
-	if(rst || amba_command==8'b0)
-		cntr <=8'b0;
+	if(rst)
+		cntr <=6'b0;
 	else
 		cntr <= cntr + 1'b1;
-//always@ (posedge clk) 
+		
 	if(rst)
 		ena <= 1'b0;
 	else begin 
-		if(reg_command != 8'b0000_0010 && cntr==2'h02) begin
+		if(reg_command == 8'b00000010 && reg_state==2'b00) begin
 			ena <= 1'b1;
-			cntr <= 0;
 		end
-		else if(reg_command != 8'b0000_0011 && cntr==2'h02) begin
+		else if(reg_command == 8'b0000_0011 && reg_state==2'b00) begin
 			ena <= 1'b1;
-			cntr <= 0;
 		end
-		else if(reg_command != 8'b0000_0011 && ena == 1 && reg_state == 2'b01) begin
+		else if(reg_command == 8'b0000_0011 && ena == 1 && cntr==6'b111111) begin
 			ena <= 0;
-			cntr <= 0;
 			reg_state <= 2'b00;
 		end
-		else if(reg_command != 8'b0000_0010 && ena == 1 && reg_state == 2'b11) begin
+		else if(reg_command == 8'b00000010 && ena == 1 && cntr==6'b1111111) begin
 			ena <= 0;
-			cntr <= 0;
 		end
-		else
-			ena <= 0;
 	end
 /*end
 

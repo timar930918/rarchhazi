@@ -38,8 +38,8 @@ spi_interface interface(
 	.clk(clk),
 	.rst(rst),
 	.amba_din(amba_data_in),
-	.amba_command(amba_reg_select), //read-write select
-	.amba_reg_select(amba_comm_in),	//interface register select
+	.amba_command(amba_comm_in), //read-write select
+	.amba_reg_select(amba_reg_select),	//interface register select
 	.amba_dout(),		
 	//memory fele
 	.mosi(mosi),
@@ -53,17 +53,26 @@ spi_interface interface(
     );
 
 initial begin
-	#150
+	#125
 	amba_reg_select <= 2'b01;
 	amba_comm_in <= 1;
 	amba_data_in <= 32'h00000001;
 	//amba_data_in <= 32'b0;
 	
-	#500000
+	#3000
 	amba_reg_select <= 2'b10;
 	amba_comm_in <= 1;
-	amba_data_in <= 32'hfbfbfbfb;
-	//amba_data_in <= 32'b0;
+	amba_data_in <= 32'h0fffffff;
+	
+	#2400
+	amba_reg_select <= 2'b01;
+	amba_comm_in <= 1;
+	amba_data_in <= 32'h00000001;
+	
+	#2000
+	amba_reg_select <= 2'b11;
+	amba_comm_in <= 0;
+	//amba_data_in <= 32'h00000001;
 	
 end
 

@@ -5,6 +5,7 @@ Turning on mult-threading, number of parallel sub-compilation jobs: 16
 Determining compilation order of HDL files
 Analyzing Verilog file "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi.v" into library work
 Analyzing Verilog file "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" into library work
+WARNING:HDLCompiler:568 - "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 109: Constant value is truncated to fit in <6> bits.
 Analyzing Verilog file "C:/Company/GitProject/rarchhazi/spi_rom_proba/amba.v" into library work
 Analyzing Verilog file "C:/Company/GitProject/rarchhazi/spi_rom_proba/top_module.v" into library work
 Analyzing Verilog file "C:/Company/GitProject/rarchhazi/spi_rom_proba/23A1024.v" into library work
@@ -14,9 +15,7 @@ Starting static elaboration
 WARNING:HDLCompiler:188 - "C:/Company/GitProject/rarchhazi/spi_rom_proba/23A1024.v" Line 479: Actual bit length 32 differs from formal bit length 1
 WARNING:HDLCompiler:188 - "C:/Company/GitProject/rarchhazi/spi_rom_proba/23A1024.v" Line 480: Actual bit length 32 differs from formal bit length 1
 WARNING:HDLCompiler:188 - "C:/Company/GitProject/rarchhazi/spi_rom_proba/23A1024.v" Line 481: Actual bit length 32 differs from formal bit length 1
-WARNING:HDLCompiler:1016 - "C:/Company/GitProject/rarchhazi/spi_rom_proba/test_bench.v" Line 40: Port sck is not connected to this instance
-WARNING:HDLCompiler:189 - "C:/Company/GitProject/rarchhazi/spi_rom_proba/top_module.v" Line 41: Size mismatch in connection of port <amba_command>. Formal port size is 1-bit while actual signal size is 2-bit.
-WARNING:HDLCompiler:189 - "C:/Company/GitProject/rarchhazi/spi_rom_proba/top_module.v" Line 42: Size mismatch in connection of port <amba_reg_select>. Formal port size is 2-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 49: Size mismatch in connection of port <freq>. Formal port size is 2-bit while actual signal size is 1-bit.
 Completed static elaboration
 Compiling module spi
 Compiling module spi_interface
@@ -30,5 +29,5 @@ Waiting for 1 sub-compilation(s) to finish...
 WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: A rendszer nem találja a megadott elérési utat, "isim\test_bench_isim_beh.exe.sim\libPortability.dll".
 Compiled 7 Verilog Units
 Built simulation executable C:/Company/GitProject/rarchhazi/spi_rom_proba/test_bench_isim_beh.exe
-Fuse Memory Usage: 30380 KB
+Fuse Memory Usage: 30448 KB
 Fuse CPU Usage: 546 ms
