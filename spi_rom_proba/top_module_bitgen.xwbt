@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Company\GitProject\rarchhazi\spi_rom_proba\top_module.ncd
+OUTFILE=C:\Company\GitProject\rarchhazi\spi_rom_proba\top_module.bit
+FAMILY=Spartan6
+PART=xc6slx4-3tqg144
+WORKINGDIR=C:\Company\GitProject\rarchhazi\spi_rom_proba
+LICENSE=WebPack
+USER_INFO=__0_0_0
