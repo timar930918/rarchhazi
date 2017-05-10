@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Company/GitProject/rarchhazi/spi_rom_proba/test_bench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_bench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/test_bench/miso" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">miso</obj_property>
+      <obj_property name="ObjectShortName">miso</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/mosi" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mosi</obj_property>
+      <obj_property name="ObjectShortName">mosi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/cs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs</obj_property>
+      <obj_property name="ObjectShortName">cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/sck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sck</obj_property>
+      <obj_property name="ObjectShortName">sck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/HOLD_ENABLE" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">HOLD_ENABLE</obj_property>
+      <obj_property name="ObjectShortName">HOLD_ENABLE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/uut/interface/sck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sck</obj_property>
+      <obj_property name="ObjectShortName">sck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/uut/interface/transfer_success" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">transfer_success</obj_property>
+      <obj_property name="ObjectShortName">transfer_success</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/uut/interface/spi/shr_mosi" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">shr_mosi[31:0]</obj_property>
+      <obj_property name="ObjectShortName">shr_mosi[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/uut/interface/spi/en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/uut/interface/cs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs</obj_property>
+      <obj_property name="ObjectShortName">cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/uut/interface/spi/sck_rise" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sck_rise</obj_property>
+      <obj_property name="ObjectShortName">sck_rise</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/uut/interface/spi/mosi" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mosi</obj_property>
+      <obj_property name="ObjectShortName">mosi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/uut/interface/cntr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cntr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cntr[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/uut/interface/reg_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/uut/interface/reg_command" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_command[7:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_command[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/uut/interface/reg_spi_data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_spi_data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_spi_data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/uut/interface/amba_reg_select" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">amba_reg_select[1:0]</obj_property>
+      <obj_property name="ObjectShortName">amba_reg_select[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/uut/interface/spi/cntr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cntr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">cntr[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/uut/miso" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">miso</obj_property>
+      <obj_property name="ObjectShortName">miso</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/uut/interface/amba_dout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">amba_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">amba_dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/memoria/SO_SIO1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SO_SIO1</obj_property>
+      <obj_property name="ObjectShortName">SO_SIO1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/memoria/SI_SIO0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SI_SIO0</obj_property>
+      <obj_property name="ObjectShortName">SI_SIO0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/memoria/SCK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SCK</obj_property>
+      <obj_property name="ObjectShortName">SCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/memoria/DataShifterI" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataShifterI[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DataShifterI[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/memoria/InstRegister" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">InstRegister[7:0]</obj_property>
+      <obj_property name="ObjectShortName">InstRegister[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/memoria/AddrRegister" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">AddrRegister[16:0]</obj_property>
+      <obj_property name="ObjectShortName">AddrRegister[16:0]</obj_property>
+   </wvobject>
+</wave_config>
