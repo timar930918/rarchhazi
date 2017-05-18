@@ -57,6 +57,9 @@ reg t_ip2bus_rdack;
 
 assign status_reg = {4'b0,tx_fifo_full,tx_fifo_empty,rx_fifo_full,rx_fifo_empty};
 
+
+reg [1:0]rdack_help;
+
 always@ (posedge clk)
 	if (rst)
 	begin
@@ -129,6 +132,7 @@ always@ (posedge clk)
 							t_ip2bus_rdack <= 1;
 							rx_fifo_rd <= 1;
 							tempip2bus_data <= rx_fifo_dataout;
+							rdack_help <= {rdack_help[0], 1'b1};
 							end
 						else
 							begin
@@ -140,7 +144,7 @@ always@ (posedge clk)
 	else 
 		begin
 			if(tx_fifo_wr) begin tx_fifo_wr <= 0; state <= 0; end
-			if(rx_fifo_rd) begin rx_fifo_rd <= 0; state <= 0; end
+			if(rx_fifo_rd) begin rx_fifo_rd <= 0;end
 			if(state == 2'b11)
 			begin
 				t_ip2bus_rdack <= 0;
@@ -154,9 +158,30 @@ always@ (posedge clk)
 		end
 
 
-assign ip2bus_data = (bus2ip_addr == 2'b10)? rx_fifo_dataout[7:0] : status_reg[7:0];
+wire t_ip_rd_reg;
+assign t_ip_rd_reg = (bus2ip_addr == 2'b11)? ((t_ip2bus_rdack)? 1'b1 : 1'b0) : (1'b0);
+
+reg delay_rdack;
+
+always@( * )
+	delay_rdack <= t_ip_rd_reg;
+
+reg delay_rdack2;
+always@(posedge clk)
+	delay_rdack2 <= delay_rdack;
+	
+reg delay_rdack3;
+always@(posedge clk)
+	delay_rdack3 <= delay_rdack2;	
+	
+reg delay_rdack4;
+always@(posedge clk)
+	delay_rdack4 <= delay_rdack3;
+	
+
+assign ip2bus_data = (bus2ip_addr == 2'b11)? rx_fifo_dataout[7:0] : status_reg[7:0];
 assign ip2bus_wrack = t_ip2bus_wrack;
-assign ip2bus_rdack = t_ip2bus_rdack;
+assign ip2bus_rdack = (bus2ip_addr == 2'b11)? delay_rdack3 : t_ip2bus_rdack;
 
 
 wire tx_fifo_full;

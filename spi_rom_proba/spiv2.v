@@ -160,7 +160,7 @@ else
 			rx_fifo_wr_reg <= 1;
 	end
 
-assign rx_fifo_wr = rx_fifo_wr_reg & rd_wr;
+assign rx_fifo_wr = rx_fifo_wr_reg & ~rd_wr;
 
 
 reg [7:0] tx_fifo_rd_delay;
@@ -181,13 +181,14 @@ begin
 	if(sck_rise)
 		if(datapos == 4'b1000 & ~tx_fifo_empty)
 			datapos <= 4'b0001;
+		else if(datapos == 4'b1000 & tx_fifo_empty & (|tx_fifo_rd_delay))
+			datapos <= 4'b1;
 		else if(datapos == 4'b1000 & tx_fifo_empty)
-			datapos <= 4'b0;
-		else if(datapos == 4'b0 & tx_fifo_empty & (|tx_fifo_rd_delay) & tx_fifo_rd)
-				datapos <= 4'b1001;
+				datapos <= 4'b0;
 		else
 			datapos <= datapos + 1'b1;
 end
+
 
 always@ (posedge clk)
 if (rst)
@@ -209,24 +210,13 @@ else
 		`DATA		: begin 
 							if(datacntr == 8'b0)
 								status <= `IDLE;
-							else if(datapos == 4'b1000 & datacntr != 8'b0 & tx_fifo_empty & sck_rise)
+							else if(datapos == 4'b1000 & datacntr != 8'b0 & tx_fifo_empty & sck_rise & tx_fifo_rd)
 								status <= `WAIT;
 							else status <= `DATA;
 					  end
 		`WAIT		: if(~tx_fifo_empty) status <= `DATA;
 	endcase
 
-/*
- if(~tx_fifo_empty)
-						if(tx_fifo_rd == 0)
-							begin
-							tx_fifo_rd <= 1;
-							end
-						else if(tx_fifo_rd == 1)
-							begin
-							tx_fifo <=0;
-							end
-*/
 
 reg [8:0] temp_mosi;
 reg [8:0] temp_miso;

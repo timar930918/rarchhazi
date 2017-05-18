@@ -76,7 +76,7 @@ module spiv2_testbench;
 		#30;
 		din = 9'b111111111;
 		tx_fifo_empty = 0;
-		#300;
+		#400;
 		din = 9'b011101111;
 		tx_fifo_empty = 1;
 

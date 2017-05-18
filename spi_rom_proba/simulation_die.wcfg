@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/gitproject/rarchhazi/spi_rom_proba/test_top_mmodule_alles_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_top_mmodule_alles" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="64" />
+   <wvobject fp_name="/test_top_mmodule_alles/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/controll" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">controll[2:0]</obj_property>
+      <obj_property name="ObjectShortName">controll[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/pwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pwrite</obj_property>
+      <obj_property name="ObjectShortName">pwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/psel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">psel</obj_property>
+      <obj_property name="ObjectShortName">psel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/pen" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pen</obj_property>
+      <obj_property name="ObjectShortName">pen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/pready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pready</obj_property>
+      <obj_property name="ObjectShortName">pready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/t_ip_rd_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">t_ip_rd_reg</obj_property>
+      <obj_property name="ObjectShortName">t_ip_rd_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/ip2bus_rdack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ip2bus_rdack</obj_property>
+      <obj_property name="ObjectShortName">ip2bus_rdack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/delay_rdack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">delay_rdack</obj_property>
+      <obj_property name="ObjectShortName">delay_rdack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/pwdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pwdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pwdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/prdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">prdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">prdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/rx_fifo_empty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/bus2ip_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_clk</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/bus2ip_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_addr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_addr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/bus2ip_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_data[8:0]</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_data[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/bus2ip_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_wr</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/bus2ip_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_rd</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/ip2bus_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ip2bus_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ip2bus_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/ip2bus_wrack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ip2bus_wrack</obj_property>
+      <obj_property name="ObjectShortName">ip2bus_wrack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/amba/cntr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cntr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cntr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/bus2ip_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_clk</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/bus2ip_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_data[8:0]</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_data[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/bus2ip_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_addr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_addr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/bus2ip_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_wr</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/bus2ip_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_rd</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/ip2bus_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ip2bus_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ip2bus_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/ip2bus_rdack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ip2bus_rdack</obj_property>
+      <obj_property name="ObjectShortName">ip2bus_rdack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/ip2bus_wrack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ip2bus_wrack</obj_property>
+      <obj_property name="ObjectShortName">ip2bus_wrack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/mosi" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mosi</obj_property>
+      <obj_property name="ObjectShortName">mosi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/HOLD_ENABLE" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">HOLD_ENABLE</obj_property>
+      <obj_property name="ObjectShortName">HOLD_ENABLE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/miso" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">miso</obj_property>
+      <obj_property name="ObjectShortName">miso</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/sck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sck</obj_property>
+      <obj_property name="ObjectShortName">sck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/cs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs</obj_property>
+      <obj_property name="ObjectShortName">cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/status_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">status_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">status_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/t_ip_rd_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">t_ip_rd_reg</obj_property>
+      <obj_property name="ObjectShortName">t_ip_rd_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/tx_fifo_full" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_fifo_full</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/tx_fifo_dataout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_fifo_dataout[8:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_dataout[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/tx_fifo_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_fifo_rd</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/tx_fifo_empty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/rx_fifo_full" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_full</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/rx_fifo_datain" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_datain[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_datain[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/rx_fifo_dataout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_dataout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_dataout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/rx_fifo_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_wr</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/bus_ip_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bus_ip_wr</obj_property>
+      <obj_property name="ObjectShortName">bus_ip_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/cmd_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cmd_reg[8:0]</obj_property>
+      <obj_property name="ObjectShortName">cmd_reg[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/tempip2bus_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tempip2bus_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tempip2bus_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/t_ip2bus_wrack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">t_ip2bus_wrack</obj_property>
+      <obj_property name="ObjectShortName">t_ip2bus_wrack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/t_ip2bus_rdack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">t_ip2bus_rdack</obj_property>
+      <obj_property name="ObjectShortName">t_ip2bus_rdack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/rdack_help" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rdack_help[1:0]</obj_property>
+      <obj_property name="ObjectShortName">rdack_help[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/delay_rdack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">delay_rdack</obj_property>
+      <obj_property name="ObjectShortName">delay_rdack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/delay_rdack2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">delay_rdack2</obj_property>
+      <obj_property name="ObjectShortName">delay_rdack2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/delay_rdack3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">delay_rdack3</obj_property>
+      <obj_property name="ObjectShortName">delay_rdack3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/delay_rdack4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">delay_rdack4</obj_property>
+      <obj_property name="ObjectShortName">delay_rdack4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/tx_fifo_datain" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_fifo_datain[8:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_datain[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/tx_fifo_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_fifo_wr</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/rx_fifo_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_rd</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_rd</obj_property>
+   </wvobject>
+</wave_config>

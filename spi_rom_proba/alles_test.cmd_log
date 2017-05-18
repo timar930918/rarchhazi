@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/gitproject/rarchhazi/spi_rom_proba/alles_test.xst" -ofn "C:/gitproject/rarchhazi/spi_rom_proba/alles_test.syr" 

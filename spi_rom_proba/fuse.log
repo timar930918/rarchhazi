@@ -7,7 +7,7 @@ Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/spiv2.v" into libr
 Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/ipcore_dir/tx_fifo.v" into library work
 Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/ipcore_dir/rx_fifo.v" into library work
 Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/spi_interface.v" into library work
-WARNING:HDLCompiler:751 - "C:/gitproject/rarchhazi/spi_rom_proba/spi_interface.v" Line 175: Redeclaration of ansi port sck is not allowed
+WARNING:HDLCompiler:751 - "C:/gitproject/rarchhazi/spi_rom_proba/spi_interface.v" Line 200: Redeclaration of ansi port sck is not allowed
 Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/amba.v" into library work
 Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/top_module.v" into library work
 Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" into library work
@@ -42,8 +42,8 @@ Compiling module alles_test
 Compiling module test_top_mmodule_alles
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 3 sub-compilation(s) to finish...
+Waiting for 4 sub-compilation(s) to finish...
 Compiled 16 Verilog Units
 Built simulation executable C:/gitproject/rarchhazi/spi_rom_proba/test_top_mmodule_alles_isim_beh.exe
-Fuse Memory Usage: 32672 KB
-Fuse CPU Usage: 968 ms
+Fuse Memory Usage: 32676 KB
+Fuse CPU Usage: 1077 ms

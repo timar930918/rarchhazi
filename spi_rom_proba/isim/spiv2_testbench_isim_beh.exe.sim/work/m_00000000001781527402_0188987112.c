@@ -113,7 +113,7 @@ LAB7:    xsi_set_current_line(77, ng0);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
     xsi_set_current_line(79, ng0);
     t2 = (t0 + 3936);
-    xsi_process_wait(t2, 300000LL);
+    xsi_process_wait(t2, 400000LL);
     *((char **)t1) = &&LAB8;
     goto LAB1;
 
