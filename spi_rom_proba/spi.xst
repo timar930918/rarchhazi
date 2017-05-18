@@ -1,5 +1,5 @@
-set -tmpdir "C:/Users/Ari/Desktop/xilinx/fehervari/spi_rom_proba/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Ari/Desktop/xilinx/fehervari/spi_rom_proba/xst"
+set -tmpdir "C:/gitproject/rarchhazi/spi_rom_proba/xst/projnav.tmp"
+set -xsthdpdir "C:/gitproject/rarchhazi/spi_rom_proba/xst"
 run -compileonly yes
 -p xc6slx4-3-tqg144
 -top spi
@@ -12,6 +12,7 @@ run -compileonly yes
 -rtlview Yes
 -glob_opt AllClockNets
 -read_cores YES
+-sd {"ipcore_dir"  }
 -write_timing_constraints NO
 -cross_clock_analysis NO
 -hierarchy_separator /

@@ -1,12 +1,12 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:/Users/Ari/Desktop/xilinx/fehervari/spi_rom_proba/xst/projnav.tmp
+--> Parameter TMPDIR set to C:/gitproject/rarchhazi/spi_rom_proba/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.17 secs
  
---> Parameter xsthdpdir set to C:/Users/Ari/Desktop/xilinx/fehervari/spi_rom_proba/xst
+--> Parameter xsthdpdir set to C:/gitproject/rarchhazi/spi_rom_proba/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -39,16 +39,16 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\Ari\Desktop\xilinx\fehervari\spi_rom_proba\spi.v" into library work
+Analyzing Verilog file "C:\gitproject\rarchhazi\spi_rom_proba\spi.v" into library work
 Parsing module <spi>.
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.12 secs
+Total CPU time to Xst completion: 6.05 secs
  
 --> 
 
-Total memory usage is 180260 kilobytes
+Total memory usage is 184272 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

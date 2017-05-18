@@ -89,7 +89,7 @@ module M23A1024 (SI_SIO0, SO_SIO1, SCK, CS_N, SIO2, HOLD_N_SIO3, RESET);
 
    input                RESET;                          // model reset/power-on reset
 
-   inout                SO_SIO1;                        // serial data input/output
+   output                SO_SIO1;                        // serial data input/output
 
 
 // *******************************************************************************************************

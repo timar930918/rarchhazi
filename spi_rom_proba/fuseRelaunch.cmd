@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Company/GitProject/rarchhazi/spi_rom_proba/test_bench_isim_beh.exe" -prj "C:/Company/GitProject/rarchhazi/spi_rom_proba/test_bench_beh.prj" "work.test_bench" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/gitproject/rarchhazi/spi_rom_proba/spiv2_testbench_isim_beh.exe" -prj "C:/gitproject/rarchhazi/spi_rom_proba/spiv2_testbench_beh.prj" "work.spiv2_testbench" "work.glbl" 

@@ -1,0 +1,29 @@
+Command line:
+   test_amba_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61452
+
+Wed May 17 12:28:32 2017
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 361.488 Meg
+
+ Total Signals          : 37
+ Total Nets             : 139
+ Total Signal Drivers   : 22
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 26
+ Total Traceable Variables  : 29
+ Total Scalar Nets and Variables : 300
+Total Line Count : 84
+
+ Total Simulation Time: 0.1875 sec
+
+ Current Memory Usage: 361.488 Meg
+
+Wed May 17 12:28:59 2017
+

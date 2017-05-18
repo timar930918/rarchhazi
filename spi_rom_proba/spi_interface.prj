@@ -1,0 +1,4 @@
+verilog work "spi.v"
+verilog work "ipcore_dir/tx_fifo.v"
+verilog work "ipcore_dir/rx_fifo.v"
+verilog work "spi_interface.v"

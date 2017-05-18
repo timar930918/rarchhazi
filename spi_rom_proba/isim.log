@@ -1,1475 +1,457 @@
 ISim log file
-Running: C:\Company\GitProject\rarchhazi\spi_rom_proba\test_bench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Company/GitProject/rarchhazi/spi_rom_proba/test_bench_isim_beh.wdb 
+Running: C:\gitproject\rarchhazi\spi_rom_proba\spiv2_testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/gitproject/rarchhazi/spi_rom_proba/spiv2_testbench_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1 us
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-WARNING: at 281250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:281250 ps, SI_SIO0:281250 ps,10 ns)
-
-
 ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
 # run 1 us
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-WARNING: at 281250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:281250 ps, SI_SIO0:281250 ps,10 ns)
-
-
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+ERROR: at 2760 ns(10000): Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation can not advance in time because signals can not resolve to a stable value in File "C:/gitproject/rarchhazi/spi_rom_proba/spiv2.v" Line 117. Please correct this code in order to advance past the current simulation time.
+ in File "C:/gitproject/rarchhazi/spi_rom_proba/spiv2.v" Line 117 
+ERROR: 
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+ERROR: at 2760 ns(10000): Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation can not advance in time because signals can not resolve to a stable value in File "C:/gitproject/rarchhazi/spi_rom_proba/spiv2.v" Line 117. Please correct this code in order to advance past the current simulation time.
+ in File "C:/gitproject/rarchhazi/spi_rom_proba/spiv2.v" Line 117 
+ERROR: 
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+ERROR: at 2760 ns(10000): Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation can not advance in time because signals can not resolve to a stable value in File "C:/gitproject/rarchhazi/spi_rom_proba/spiv2.v" Line 117. Please correct this code in order to advance past the current simulation time.
+ in File "C:/gitproject/rarchhazi/spi_rom_proba/spiv2.v" Line 117 
+ERROR: 
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ERROR: at 712 ns(10000): Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation can not advance in time because signals can not resolve to a stable value in File "C:/gitproject/rarchhazi/spi_rom_proba/spiv2.v" Line 117. Please correct this code in order to advance past the current simulation time.
+ in File "C:/gitproject/rarchhazi/spi_rom_proba/spiv2.v" Line 117 
+ERROR: 
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+ERROR: at 2760 ns(10000): Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation can not advance in time because signals can not resolve to a stable value in File "C:/gitproject/rarchhazi/spi_rom_proba/spiv2.v" Line 117. Please correct this code in order to advance past the current simulation time.
+ in File "C:/gitproject/rarchhazi/spi_rom_proba/spiv2.v" Line 117 
+ERROR: 
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
 # run 1.00us
 # run 1.00us
 # run 1.00us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-WARNING: at 281250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:281250 ps, SI_SIO0:281250 ps,10 ns)
-
-
+# run 1.00us
 # run 1.00us
 # run 1.00us
 # run 1.00us
 ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
 # run 1 us
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-WARNING: at 281250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:281250 ps, SI_SIO0:281250 ps,10 ns)
-
-
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-# run 62.5ns
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-# run 3us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 3us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-WARNING: at 968750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:968750 ps, SI_SIO0:968750 ps,10 ns)
-
-
-# run 1us
-WARNING: at 1093750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:1093750 ps, SI_SIO0:1093750 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 4093750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:4093750 ps, SI_SIO0:4093750 ps,10 ns)
-
-
-WARNING: at 4218750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:4218750 ps, SI_SIO0:4218750 ps,10 ns)
-
-
-WARNING: at 4718750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:4718750 ps, SI_SIO0:4718750 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 8968750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:8968750 ps, SI_SIO0:8968750 ps,10 ns)
-
-
-# run 1us
-WARNING: at 9218750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:9218750 ps, SI_SIO0:9218750 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 12093750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:12093750 ps, SI_SIO0:12093750 ps,10 ns)
-
-
-WARNING: at 12218750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:12218750 ps, SI_SIO0:12218750 ps,10 ns)
-
-
-# run 1us
-# run 1us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-WARNING: at 968750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:968750 ps, SI_SIO0:968750 ps,10 ns)
-
-
-# run 1us
-WARNING: at 1093750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:1093750 ps, SI_SIO0:1093750 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 4093750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:4093750 ps, SI_SIO0:4093750 ps,10 ns)
-
-
-WARNING: at 4218750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:4218750 ps, SI_SIO0:4218750 ps,10 ns)
-
-
-WARNING: at 4718750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:4718750 ps, SI_SIO0:4718750 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-WARNING: at 968750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:968750 ps, SI_SIO0:968750 ps,10 ns)
-
-
-# run 1us
-WARNING: at 1093750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:1093750 ps, SI_SIO0:1093750 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 4093750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:4093750 ps, SI_SIO0:4093750 ps,10 ns)
-
-
-WARNING: at 4218750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:4218750 ps, SI_SIO0:4218750 ps,10 ns)
-
-
-WARNING: at 4718750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:4718750 ps, SI_SIO0:4718750 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-WARNING: at 968750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:968750 ps, SI_SIO0:968750 ps,10 ns)
-
-
-# run 1us
-WARNING: at 1093750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:1093750 ps, SI_SIO0:1093750 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 4093750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:4093750 ps, SI_SIO0:4093750 ps,10 ns)
-
-
-WARNING: at 4218750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:4218750 ps, SI_SIO0:4218750 ps,10 ns)
-
-
-WARNING: at 4718750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:4718750 ps, SI_SIO0:4718750 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 4281250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:4281250 ps, SI_SIO0:4281250 ps,10 ns)
-
-
-# run 1us
-WARNING: at 5031250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:5031250 ps, SI_SIO0:5031250 ps,10 ns)
-
-
-WARNING: at 5156250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:5156250 ps, SI_SIO0:5156250 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 8031250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:8031250 ps, CS_N:8031250 ps,50 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 12968750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:12968750 ps, SI_SIO0:12968750 ps,10 ns)
-
-
-# run 1us
-WARNING: at 13218750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:13218750 ps, SI_SIO0:13218750 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-WARNING: File "C:/Company/GitProject/rarchhazi/spi_rom_proba/spi_interface.v" Line 23.  For instance interface/spi/, width 2 of formal port freq is not equal to width 1 of actual signal clk.
-# run 1 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-WARNING: at 968750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:968750 ps, SI_SIO0:968750 ps,10 ns)
-
-
-# run 1us
-WARNING: at 1093750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:1093750 ps, SI_SIO0:1093750 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 4093750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:4093750 ps, SI_SIO0:4093750 ps,10 ns)
-
-
-WARNING: at 4218750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:4218750 ps, SI_SIO0:4218750 ps,10 ns)
-
-
-WARNING: at 4718750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:4718750 ps, SI_SIO0:4718750 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 8968750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:8968750 ps, SI_SIO0:8968750 ps,10 ns)
-
-
-# run 1us
-WARNING: at 9218750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:9218750 ps, SI_SIO0:9218750 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 12093750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:12093750 ps, SI_SIO0:12093750 ps,10 ns)
-
-
-WARNING: at 12218750 ps: Timing violation in /test_bench/memoria/  $hold( SCK:12218750 ps, SI_SIO0:12218750 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 20906250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:20906250 ps, SI_SIO0:20906250 ps,10 ns)
-
-
-# run 1us
-WARNING: at 21156250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:21156250 ps, SI_SIO0:21156250 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 24031250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:24031250 ps, SI_SIO0:24031250 ps,10 ns)
-
-
-WARNING: at 24156250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:24156250 ps, SI_SIO0:24156250 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 28031250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:28031250 ps, CS_N:28031250 ps,50 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 32906250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:32906250 ps, SI_SIO0:32906250 ps,10 ns)
-
-
-# run 1us
-WARNING: at 33156250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:33156250 ps, SI_SIO0:33156250 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 36031250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:36031250 ps, SI_SIO0:36031250 ps,10 ns)
-
-
-WARNING: at 36156250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:36156250 ps, SI_SIO0:36156250 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 40031250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:40031250 ps, CS_N:40031250 ps,50 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 44906250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:44906250 ps, SI_SIO0:44906250 ps,10 ns)
-
-
-# run 1us
-WARNING: at 45156250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:45156250 ps, SI_SIO0:45156250 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 48031250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:48031250 ps, SI_SIO0:48031250 ps,10 ns)
-
-
-WARNING: at 48156250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:48156250 ps, SI_SIO0:48156250 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 52031250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:52031250 ps, CS_N:52031250 ps,50 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 56906250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:56906250 ps, SI_SIO0:56906250 ps,10 ns)
-
-
-# run 1us
-WARNING: at 57156250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:57156250 ps, SI_SIO0:57156250 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 60031250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:60031250 ps, SI_SIO0:60031250 ps,10 ns)
-
-
-WARNING: at 60156250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:60156250 ps, SI_SIO0:60156250 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 64031250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:64031250 ps, CS_N:64031250 ps,50 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 68906250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:68906250 ps, SI_SIO0:68906250 ps,10 ns)
-
-
-# run 1us
-WARNING: at 69156250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:69156250 ps, SI_SIO0:69156250 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 72031250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:72031250 ps, SI_SIO0:72031250 ps,10 ns)
-
-
-WARNING: at 72156250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:72156250 ps, SI_SIO0:72156250 ps,10 ns)
-
-
-# run 1us
-# run 1us
-# run 1us
-# run 1us
-WARNING: at 76031250 ps: Timing violation in /test_bench/memoria/  $hold( SCK:76031250 ps, CS_N:76031250 ps,50 ns)
-
-

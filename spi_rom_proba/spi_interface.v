@@ -20,23 +20,188 @@
 //////////////////////////////////////////////////////////////////////////////////
 module spi_interface(
 		//amba felol
-		input clk,
+		input bus2ip_clk,
 		input rst,
-		input [31:0] amba_din,
-		input amba_command, //read-write select
-		input [1:0] amba_reg_select,	//interface register select
-		output [31:0] amba_dout,		
+		input [8:0] bus2ip_data,
+		input [1:0] bus2ip_addr,
+		input bus2ip_wr,
+		input bus2ip_rd,
+		
+		output [7:0] ip2bus_data,
+		output ip2bus_rdack,
+		output ip2bus_wrack,
+		
 		//memory fele
 		input mosi,
 		output HOLD_ENABLE,
 		output miso,
 		output sck,
 		output cs
+		
     );
+	 
+	 
+assign HOLD_ENABLE = 1;
 
-wire [31:0] spi_data_in;
-wire [31:0] spi_data_out;
-wire spi_enable;
+wire clk;
+assign clk = bus2ip_clk;
+
+
+reg [8:0] cmd_reg;
+wire [7:0] status_reg;
+reg [1:0] state;
+
+reg [7:0] tempip2bus_data;
+reg t_ip2bus_wrack;
+reg t_ip2bus_rdack;
+
+assign status_reg = {4'b0,tx_fifo_full,tx_fifo_empty,rx_fifo_full,rx_fifo_empty};
+
+always@ (posedge clk)
+	if (rst)
+	begin
+		cmd_reg <= 0;
+		state <= 0;
+		t_ip2bus_wrack <= 0;
+		t_ip2bus_rdack <= 0;
+		tx_fifo_datain <= 0;
+		tx_fifo_wr <= 0;
+		rx_fifo_rd <= 0;
+		tx_fifo_rd <= 0;
+		rx_fifo_wr <= 0;
+	end
+	else if (state == 2'b00)
+	begin
+		if(bus2ip_wr)
+				begin
+					if(bus2ip_addr == 2'b00)
+						begin
+							cmd_reg <= bus2ip_data;
+							t_ip2bus_wrack <= 1;
+							state <= 2'b01;
+						end
+					else if(bus2ip_addr == 2'b10)
+					begin
+						if(tx_fifo_full)
+							begin
+							t_ip2bus_wrack <= 0;
+							end
+						else
+							begin
+							state <= 2'b01;
+							tx_fifo_datain <= bus2ip_data;
+							tx_fifo_wr <= 1;
+							t_ip2bus_wrack <= 1;
+							end
+					end
+					else if(bus2ip_addr == 2'b01)
+					begin
+						state <= 2'b01;
+						t_ip2bus_wrack <= 1;
+					end
+					else if(bus2ip_addr == 2'b11)
+					begin
+						state <= 2'b01;
+						t_ip2bus_wrack <= 1;
+					end
+				end
+		else if(bus2ip_rd)
+				begin
+					if(bus2ip_addr == 2'b00)
+						begin
+						state <= 2'b11;
+						t_ip2bus_rdack <= 1;
+						end
+					else if(bus2ip_addr == 2'b01)
+						begin
+						tempip2bus_data <= status_reg;
+						state <= 2'b11;
+						t_ip2bus_rdack <= 1;
+						end
+					else if(bus2ip_addr == 2'b10)
+						begin
+						state <= 2'b11;
+						t_ip2bus_rdack <= 1;
+						end
+					else if(bus2ip_addr == 2'b11)
+						begin
+						if(~rx_fifo_empty)
+							begin
+							state <= 2'b11;
+							t_ip2bus_rdack <= 1;
+							rx_fifo_rd <= 1;
+							tempip2bus_data <= rx_fifo_dataout;
+							end
+						else
+							begin
+							t_ip2bus_rdack <= 0;
+							end
+						end
+				end
+		end
+	else 
+		begin
+			if(tx_fifo_wr) begin tx_fifo_wr <= 0; state <= 0; end
+			if(rx_fifo_rd) begin rx_fifo_rd <= 0; state <= 0; end
+			if(state == 2'b11)
+			begin
+				t_ip2bus_rdack <= 0;
+				state <= 0;
+			end
+			if(~bus2ip_wr & state == 2'b01)
+			begin
+				t_ip2bus_wrack <= 0;
+				state <= 0;
+			end
+		end
+
+
+assign ip2bus_data = (bus2ip_addr == 2'b10)? rx_fifo_dataout[7:0] : status_reg[7:0];
+assign ip2bus_wrack = t_ip2bus_wrack;
+assign ip2bus_rdack = t_ip2bus_rdack;
+
+
+wire tx_fifo_full;
+reg [8:0] tx_fifo_datain;
+wire [8:0] tx_fifo_dataout;
+reg tx_fifo_wr;
+reg tx_fifo_rd;
+wire tx_fifo_empty;
+
+wire rx_fifo_full;
+reg [7:0] rx_fifo_datain;
+wire [7:0] rx_fifo_dataout;
+reg rx_fifo_wr;
+reg rx_fifo_rd;
+wire rx_fifo_empty;
+
+tx_fifo tx_fifo (
+	.rst(rst),
+	.clk(clk),
+	.din(tx_fifo_datain),
+	.dout(tx_fifo_dataout),
+	.wr_en(tx_fifo_wr),
+	.full(tx_fifo_full),
+	.rd_en(tx_fifo_rd),
+	.empty(tx_fifo_empty)
+);
+
+rx_fifo rx_fifo (
+	.rst(rst),
+	.clk(clk),
+	.din(rx_fifo_datain),
+	.dout(rx_fifo_dataout),
+	.wr_en(rx_fifo_wr),
+	.full(rx_fifo_full),
+	.rd_en(rx_fifo_rd),
+	.empty(rx_fifo_empty)
+	);
+
+reg spi_data_out;
+reg spi_data_in;
+reg spi_enable;
+reg transfer_success;
+reg sck;
 
 spi spi(
     .clk(clk), 				//input
@@ -44,116 +209,16 @@ spi spi(
     .cs(cs),   								   //output
     .miso(miso), 				//input
 	 .mosi(mosi),								   //output
-    .dout(spi_data_out),   				   //output
-	 .din(spi_data_in),  	//input
-	 .freq(clk),				//input
+    .dout(rx_fifo_datain),   				   //output
+	 .din(tx_fifo_dataout),  	//input
+	 .freq(cmd_reg [1:0]),				//input
 	 .en(spi_enable),					//input
 	 .transfer_succeded(transfer_success), //output
 	 .sck(sck)
     );
 
-reg ena;
-reg [23:0] reg_address;
-reg [1:0] reg_state;
-reg [7:0] reg_command;
-reg [31:0] reg_data_in;
-reg [31:0] reg_data_out;
-reg [31:0] reg_spi_data_in;
-reg [5:0] cntr;
+reg [1:0] spistatus;
+reg [5:0] spi_datactr;
 
-always@ (posedge clk) begin
-	if (ena) begin
-		if(amba_command==1) begin
-			case (reg_state)
-				2'b00 : reg_spi_data_in = {reg_command,reg_address};
-				2'b01 : reg_spi_data_in = reg_data_in;
-			endcase 
-		end
-		else if(amba_command==0) begin
-			case (reg_state)
-				2'b00 : reg_spi_data_in = {reg_command,reg_address}; 
-				2'b01 : begin reg_data_out = spi_data_out; reg_spi_data_in = 32'b0; end
-			endcase		
-		end
-	end
-end
-
-assign spi_data_in = reg_spi_data_in;
-assign amba_dout = reg_data_out;
-
-assign spi_enable = ena;
-assign HOLD_ENABLE = 1; //fixen futtatjuk a memoriat
-
-//always@ (posedge transfer_success)
-//	cntr <=0;
-
-always@ (negedge clk) begin
-	if(rst)
-		cntr <=6'b0;
-	else
-		cntr <= cntr + 1'b1;
-		
-	if(rst)
-		ena <= 1'b0;
-	else begin 
-		if(reg_command == 8'b00000010 && reg_state==2'b00) begin
-			ena <= 1'b1;
-		end
-		else if(reg_command == 8'b0000_0011 && reg_state==2'b00) begin
-			ena <= 1'b1;
-		end
-		else if(reg_command == 8'b0000_0011 && ena == 1 && cntr==6'b111111) begin
-			ena <= 0;
-			reg_state <= 2'b00;
-		end
-		else if(reg_command == 8'b00000010 && ena == 1 && cntr==6'b1111111) begin
-			ena <= 0;
-		end
-	end
-/*end
-
-always@ (posedge clk) begin*/
-	if(rst)
-		reg_state <= 2'b0;
-	else
-		if(transfer_success)
-			reg_state <= {reg_state[0],1'b1};
-		if(reg_state == 2'b11) begin
-			reg_state <= 2'b00;
-			end
-end
-	
-always@ (posedge clk)
-	if(rst)
-		reg_command <= 8'b0;
-	else begin
-		if(amba_command) //write
-			reg_command <= 8'b0000_0010;
-		else if(amba_command == 1'b0) //read
-			reg_command <= 8'b0000_0011;
-	end
-		
-always@ (posedge clk)
-	if(rst)
-		reg_address <= 24'b0;
-	else if(amba_reg_select == 2'b01)
-		if(amba_command) //write
-			reg_address <= amba_din[23:0];
-			
-always@ (posedge clk)
-	if(rst)
-		reg_data_in <= 32'b0;
-	else if(amba_reg_select == 2'b10)
-		if(amba_command) begin //write
-			reg_data_in <= amba_din;
-			end
-			
-always@ (posedge clk)
-	if(rst)
-		reg_data_out <= 32'b0;
-	else if(amba_reg_select == 2'b11)
-		if(~amba_command) begin //read
-			reg_data_out <= spi_data_out;
-		end
 
 endmodule
