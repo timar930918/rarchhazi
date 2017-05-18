@@ -9,6 +9,7 @@ module spiv2(
     input miso,
 	 output mosi,
 	 
+	 input rd_wr_in,
 	 
     output [7:0] dout, //miso-n vett adat
 	 input [8:0] din, //mosi-n küldendõ adat
@@ -20,7 +21,9 @@ module spiv2(
 	 
     );
 
-
+reg rd_wr;
+always@ ( * )
+rd_wr <= rd_wr_in;
 //az sck frekvenciájának beállítása
 // kommunikáció alatt nem lehetséges
 reg [1:0] frq;
@@ -52,7 +55,6 @@ assign sck_temp = (frq[1]) ? (frq[0] ? cntr[4] : cntr[3]) : (frq[0] ? cntr[2] : 
 // SPI órajel felfutó él lefutó él
 
 
-
 reg sck_reg;
 always@(posedge clk)
 if(rst)
@@ -63,27 +65,33 @@ else
 
 wire sck_rise;
 wire sck_fall;
-assign sck_fall = ((sck_reg == 1 && sck_temp == 0) & ~cs_delayed[7]);
-assign sck_rise = ((sck_reg == 0 && sck_temp == 1) & ~cs_delayed[7]);
+assign sck_fall = ((sck_reg == 1 && sck_temp == 0) & ~cs_delayed[2] & (datapos != 4'b0000));
+assign sck_rise = ((sck_reg == 0 && sck_temp == 1) & ~cs_delayed[2] );
 
 reg delaysck;
 always@(posedge clk)
 	delaysck <= sck_temp;
 
 
-`define IDLE		2'b00
-`define COMMAND	2'b01
-`define DATA		2'b10
-`define READY		2'b11
+`define IDLE		4'b0000
+`define COMMAND	4'b0001
+`define DATA		4'b0010
+`define READY		4'b0011
+`define WAIT		4'b0100
 
-assign mosi = (`DATA == status)? temp_mosi[8] : 1'b1;
-assign sck = ((`DATA == status)? delaysck : 1'b0) & ~cs_delayed[8];
+
+reg [1:0]delayed_mosi;
+always@ (posedge clk)
+	delayed_mosi <= { delayed_mosi[0] , (`DATA == status | `WAIT == status)? temp_mosi[7] : 1'b1};
+
+assign mosi = (datapos != 4'b0)? delayed_mosi[1] : 1'b0;
+assign sck = ((`DATA == status)? delaysck : 1'b0) & ~cs_delayed[2] & ~( datapos[3:0] == 4'b0000  ) & (datacntr != 8'b0);
 
 reg [8:0] cs_delayed;
 always@ (posedge clk)
 	cs_delayed <= { cs_delayed[7:0] ,(`DATA == status)? 1'b0 : 1'b1};
-	
-assign cs = (`DATA == status)? 1'b0 : 1'b1;
+
+assign cs = (`DATA == status | `WAIT == status) ? ((datacntr != 8'b0)? 1'b0 : 1'b1 ) : 1'b1;
 
 
 reg [3:0] status;
@@ -96,22 +104,89 @@ if(rst)
 	datacntr <= 0;
 else
 	if(status == `COMMAND & din[8] == 1'b1)
-		datacntr <= din[7:0];
+		datacntr <= din[6:0];
 	else
 		if(status == `DATA)
 			if(datapos == 4'b1000 & sck_rise)
 				datacntr <= datacntr - 1'b1;
 
+always@ (posedge clk)
+if (rst)
+	rd_wr <= 0;
+else if(status == `COMMAND & din[8] == 1'b1)
+		rd_wr <= din[7];
+
+
+reg tx_fifo_rd_reg;
+always @ (posedge clk)
+if (rst)
+	tx_fifo_rd_reg <= 0;
+else
+begin
+	if(tx_fifo_rd_reg == 1'b1 & tx_fifo_empty)
+		tx_fifo_rd_reg <= 1;
+	else 	if(tx_fifo_rd_reg == 1'b1 & ~tx_fifo_empty)
+		tx_fifo_rd_reg <= 0;
+	else if(tx_fifo_empty & status == `DATA & datapos == 4'b1000 & sck_fall & datacntr != 8'h01)
+		tx_fifo_rd_reg <= 1;
+	else
+	begin
+		if(~tx_fifo_empty)
+			if(status == `COMMAND)
+				tx_fifo_rd_reg <= 1'b1;
+			else if(datapos == 4'b1000 & sck_fall & datacntr != 8'h01)
+				tx_fifo_rd_reg <= 1'b1;
+			else if(datapos == 4'b0 & status == `WAIT)
+				tx_fifo_rd_reg <= 1'b1;
+	end
+end
+
+assign tx_fifo_rd = tx_fifo_rd_reg;
+		
+reg delayed_dout;
+always@ (posedge clk)
+ delayed_dout <= (datapos == 4'b1000 & sck_rise) ? 1'b1 : 1'b0;
+
+reg rx_fifo_wr_reg;
+always@ (posedge clk)
+if(rst)
+	rx_fifo_wr_reg <= 0;
+else if(rx_fifo_wr_reg)
+	rx_fifo_wr_reg <= 0;
+else
+	if(~rd_wr)
+	begin
+		if(delayed_dout)
+			rx_fifo_wr_reg <= 1;
+	end
+
+assign rx_fifo_wr = rx_fifo_wr_reg & rd_wr;
+
+
+reg [7:0] tx_fifo_rd_delay;
+always@ (posedge clk)
+	tx_fifo_rd_delay <= { tx_fifo_rd_delay[6:0] , tx_fifo_rd };
+
+wire test;
+assign test = ~(|tx_fifo_rd_delay);
 
 always@ (posedge clk)
 if(rst)
 	datapos <= 0;
 else
+if(cs)
+	datapos <= 0;
+else
 begin
 	if(sck_rise)
-		begin datapos <= datapos + 1'b1; end
-	if((datapos == 4'b1000) & sck_rise)
-		datapos <= 4'b0;
+		if(datapos == 4'b1000 & ~tx_fifo_empty)
+			datapos <= 4'b0001;
+		else if(datapos == 4'b1000 & tx_fifo_empty)
+			datapos <= 4'b0;
+		else if(datapos == 4'b0 & tx_fifo_empty & (|tx_fifo_rd_delay) & tx_fifo_rd)
+				datapos <= 4'b1001;
+		else
+			datapos <= datapos + 1'b1;
 end
 
 always@ (posedge clk)
@@ -123,17 +198,22 @@ else
 	case(status)
 		`IDLE		: if(~tx_fifo_empty)
 						status <= `READY;
-		`READY	: if(din[8] == 1)
+		`READY	: if(din[8] == 1 | datacntr == 8'b0)
 						status <= `COMMAND;
 					  else
 						status <= `DATA;
 		`COMMAND : if(din[8] == 1)
-						status <= `COMMAND;
+						status <= `DATA;
 					  else
 						status <= `DATA;
-		`DATA		: 	if(datapos == 3'b0)
+		`DATA		: begin 
 							if(datacntr == 8'b0)
 								status <= `IDLE;
+							else if(datapos == 4'b1000 & datacntr != 8'b0 & tx_fifo_empty & sck_rise)
+								status <= `WAIT;
+							else status <= `DATA;
+					  end
+		`WAIT		: if(~tx_fifo_empty) status <= `DATA;
 	endcase
 
 /*
@@ -162,10 +242,17 @@ else
 begin
 	if(datapos == 4'b0)
 		temp_mosi <= {1'b0, din[7:0]};
-	if(sck_reg == 0 & sck_temp == 1)
-		temp_mosi <= {temp_mosi[7:0] , 1'b0};
-	if(sck_reg == 1 & sck_temp == 0)
+	if(datapos == 4'b1000 & ~tx_fifo_empty & sck_rise)
+		temp_mosi <= {din[7:0], 1'b0};
+		else
+		begin
+			if(sck_reg == 0 & sck_temp == 1)
+				temp_mosi <= {temp_mosi[7:0] , 1'b0};
+		end
+	if(sck_fall)
 		temp_miso <= {temp_miso[7:0] , miso};
 end
+
+assign dout = (rst)? (8'b0) : (datapos == 4'b1000 & sck_rise)? temp_miso[7:0] : dout;
 
 endmodule

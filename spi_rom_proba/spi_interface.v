@@ -41,7 +41,7 @@ module spi_interface(
     );
 	 
 	 
-assign HOLD_ENABLE = 1;
+assign HOLD_ENABLE = 1'b1;
 
 wire clk;
 assign clk = bus2ip_clk;
@@ -67,8 +67,6 @@ always@ (posedge clk)
 		tx_fifo_datain <= 0;
 		tx_fifo_wr <= 0;
 		rx_fifo_rd <= 0;
-		tx_fifo_rd <= 0;
-		rx_fifo_wr <= 0;
 	end
 	else if (state == 2'b00)
 	begin
@@ -165,15 +163,16 @@ wire tx_fifo_full;
 reg [8:0] tx_fifo_datain;
 wire [8:0] tx_fifo_dataout;
 reg tx_fifo_wr;
-reg tx_fifo_rd;
+wire tx_fifo_rd;
 wire tx_fifo_empty;
 
 wire rx_fifo_full;
-reg [7:0] rx_fifo_datain;
+wire [7:0] rx_fifo_datain;
 wire [7:0] rx_fifo_dataout;
-reg rx_fifo_wr;
+wire rx_fifo_wr;
 reg rx_fifo_rd;
 wire rx_fifo_empty;
+wire sck;
 
 tx_fifo tx_fifo (
 	.rst(rst),
@@ -185,7 +184,6 @@ tx_fifo tx_fifo (
 	.rd_en(tx_fifo_rd),
 	.empty(tx_fifo_empty)
 );
-
 rx_fifo rx_fifo (
 	.rst(rst),
 	.clk(clk),
@@ -196,29 +194,21 @@ rx_fifo rx_fifo (
 	.rd_en(rx_fifo_rd),
 	.empty(rx_fifo_empty)
 	);
-
-reg spi_data_out;
-reg spi_data_in;
-reg spi_enable;
-reg transfer_success;
-reg sck;
-
-spi spi(
-    .clk(clk), 				//input
-    .rst(rst), 				//input
-    .cs(cs),   								   //output
-    .miso(miso), 				//input
-	 .mosi(mosi),								   //output
-    .dout(rx_fifo_datain),   				   //output
-	 .din(tx_fifo_dataout),  	//input
-	 .freq(cmd_reg [1:0]),				//input
-	 .en(spi_enable),					//input
-	 .transfer_succeded(transfer_success), //output
-	 .sck(sck)
+spiv2 spi(
+	 .clk(clk),
+    .rst(rst), 
+    .cs(cs),
+    .sck(sck),
+    .miso(miso),
+	 .mosi(mosi),
+    .dout(rx_fifo_datain), //miso-n vett adat
+	 .din(tx_fifo_dataout), //mosi-n küldendõ adat
+	 .freq(cmd_reg [1:0] ), //sck frekvenciáját meghatározó érték
+	 .tx_fifo_empty(tx_fifo_empty),
+	 .rx_fifo_full(rx_fifo_full),
+	 .tx_fifo_rd(tx_fifo_rd),
+	 .rx_fifo_wr(rx_fifo_wr),
+	 .rd_wr_in(bus_ip_wr)
     );
-
-reg [1:0] spistatus;
-reg [5:0] spi_datactr;
-
 
 endmodule

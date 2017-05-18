@@ -2,9 +2,28 @@ Command line:
    spiv2_testbench_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  62878
+     -socket  65227
 
-Thu May 18 00:26:53 2017
+Thu May 18 17:08:48 2017
 
 
- Elaboration Time: 0.0625 sec
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 361.538 Meg
+
+ Total Signals          : 37
+ Total Nets             : 47
+ Total Signal Drivers   : 22
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 41
+ Total Traceable Variables  : 42
+ Total Scalar Nets and Variables : 217
+Total Line Count : 165
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 676.127 Meg
+
+Thu May 18 17:09:44 2017
+

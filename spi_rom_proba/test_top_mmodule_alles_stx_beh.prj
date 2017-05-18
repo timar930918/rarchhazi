@@ -1,4 +1,4 @@
-verilog isim_temp "spi.v"
+verilog isim_temp "spiv2.v"
 verilog isim_temp "spi_interface.v"
 verilog isim_temp "amba.v"
 verilog isim_temp "top_module.v"

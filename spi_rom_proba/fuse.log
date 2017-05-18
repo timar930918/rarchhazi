@@ -1,18 +1,49 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/gitproject/rarchhazi/spi_rom_proba/spiv2_testbench_isim_beh.exe" -prj "C:/gitproject/rarchhazi/spi_rom_proba/spiv2_testbench_beh.prj" "work.spiv2_testbench" "work.glbl" 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/gitproject/rarchhazi/spi_rom_proba/test_top_mmodule_alles_isim_beh.exe" -prj "C:/gitproject/rarchhazi/spi_rom_proba/test_top_mmodule_alles_beh.prj" "work.test_top_mmodule_alles" "work.glbl" 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
 Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/spiv2.v" into library work
-Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/spiv2_testbench.v" into library work
+Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/ipcore_dir/tx_fifo.v" into library work
+Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/ipcore_dir/rx_fifo.v" into library work
+Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/spi_interface.v" into library work
+WARNING:HDLCompiler:751 - "C:/gitproject/rarchhazi/spi_rom_proba/spi_interface.v" Line 175: Redeclaration of ansi port sck is not allowed
+Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/amba.v" into library work
+Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/top_module.v" into library work
+Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" into library work
+Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/alles_test.v" into library work
+Analyzing Verilog file "C:/gitproject/rarchhazi/spi_rom_proba/test_top_mmodule_alles.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
+WARNING:HDLCompiler:188 - "C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 479: Actual bit length 32 differs from formal bit length 1
+WARNING:HDLCompiler:188 - "C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 480: Actual bit length 32 differs from formal bit length 1
+WARNING:HDLCompiler:188 - "C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 481: Actual bit length 32 differs from formal bit length 1
+WARNING:HDLCompiler:188 - "C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 479: Actual bit length 32 differs from formal bit length 1
+WARNING:HDLCompiler:188 - "C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 480: Actual bit length 32 differs from formal bit length 1
+WARNING:HDLCompiler:188 - "C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 481: Actual bit length 32 differs from formal bit length 1
+WARNING:HDLCompiler:188 - "C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 479: Actual bit length 32 differs from formal bit length 1
+WARNING:HDLCompiler:188 - "C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 480: Actual bit length 32 differs from formal bit length 1
+WARNING:HDLCompiler:188 - "C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 481: Actual bit length 32 differs from formal bit length 1
 Completed static elaboration
+Compiling module amba
+Compiling module fifo_generator_v9_3_bhv_ver_ss(C...
+Compiling module FIFO_GENERATOR_V9_3_CONV_VER(C_C...
+Compiling module FIFO_GENERATOR_V9_3(C_COMMON_CLO...
+Compiling module tx_fifo
+Compiling module fifo_generator_v9_3_bhv_ver_ss(C...
+Compiling module FIFO_GENERATOR_V9_3_CONV_VER(C_C...
+Compiling module FIFO_GENERATOR_V9_3(C_COMMON_CLO...
+Compiling module rx_fifo
 Compiling module spiv2
-Compiling module spiv2_testbench
+Compiling module spi_interface
+Compiling module top_module
+Compiling module M23A1024
+Compiling module alles_test
+Compiling module test_top_mmodule_alles
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Compiled 3 Verilog Units
-Built simulation executable C:/gitproject/rarchhazi/spi_rom_proba/spiv2_testbench_isim_beh.exe
-Fuse Memory Usage: 26560 KB
-Fuse CPU Usage: 624 ms
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 16 Verilog Units
+Built simulation executable C:/gitproject/rarchhazi/spi_rom_proba/test_top_mmodule_alles_isim_beh.exe
+Fuse Memory Usage: 32672 KB
+Fuse CPU Usage: 968 ms

@@ -73,7 +73,7 @@ module test_top_mmodule_alles;
 		
 		controll = `WR_DATA;
 		enable = 1;
-		#320;
+		#1000000;
 		enable = 0;
 		
 		controll = `RD_STATUS;

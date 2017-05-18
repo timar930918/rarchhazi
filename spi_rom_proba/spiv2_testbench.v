@@ -59,25 +59,39 @@ module spiv2_testbench;
 	);
 
 		initial begin
-		tx_fifo_empty = 0;
+		tx_fifo_empty = 1;
 		rx_fifo_full = 0;
 		clk = 1;
 		rst = 1;
 		miso = 0;
-		din = 9'b100000111;
+		din = 9'b0;
 		freq = 2'b00;
 
 		// Wait 100 ns for global reset to finish
 		#100;
       rst = 0;
 		// Add stimulus here
-		#50;
+		#30;
 		miso = 1;
-		#50;
-		din = 9'b000001111;
-		#10000000;
+		#30;
+		din = 9'b111111111;
+		tx_fifo_empty = 0;
+		#300;
+		din = 9'b011101111;
+		tx_fifo_empty = 1;
+
+		#460;
+		tx_fifo_empty = 0;
 		din = 9'b100000001;
-		
+		#380;
+		din = 9'b000000011;
+		tx_fifo_empty = 0;
+		#30;
+		din = 9'b100000011;
+		#60;
+		din = 9'b000001010;
+
+
 
 	end
       		always#5 clk <= ~clk;

@@ -5,5 +5,59 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\gitproject\rarchhazi\spi_rom_proba\spi_interface.v" Line 175: Redeclaration of ansi port <arg fmt="%s" index="1">sck</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="572" delta="new" >"C:\gitproject\rarchhazi\spi_rom_proba\alles_test.v" Line 72: Macro &lt;<arg fmt="%s" index="1">IDLE</arg>&gt; is redefined.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="new" >"C:\gitproject\rarchhazi\spi_rom_proba\alles_test.v" Line 31: Using initial value of <arg fmt="%s" index="1">address</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\gitproject\rarchhazi\spi_rom_proba\amba.v" Line 63: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\gitproject\rarchhazi\spi_rom_proba\top_module.v" Line 65: Assignment to <arg fmt="%s" index="1">prdata</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="error" file="HDLCompiler" num="329" delta="new" >"C:\gitproject\rarchhazi\spi_rom_proba\spi_interface.v" Line 204: Target &lt;<arg fmt="%s" index="1">rx_fifo_datain</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"C:\gitproject\rarchhazi\spi_rom_proba\top_module.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">top_module</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="886" delta="new" >"C:\gitproject\rarchhazi\spi_rom_proba\23A1024.v" Line 119: Vector size is larger than 2**<arg fmt="%d" index="1">16</arg> bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\gitproject\rarchhazi\spi_rom_proba\23A1024.v" Line 247: Assignment to <arg fmt="%s" index="1">InstructionEDIO</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\gitproject\rarchhazi\spi_rom_proba\23A1024.v" Line 248: Assignment to <arg fmt="%s" index="1">InstructionEQIO</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\gitproject\rarchhazi\spi_rom_proba\23A1024.v" Line 249: Assignment to <arg fmt="%s" index="1">InstructionRSTIO</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\gitproject\rarchhazi\spi_rom_proba\23A1024.v" Line 338: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\gitproject\rarchhazi\spi_rom_proba\23A1024.v" Line 339: Result of <arg fmt="%d" index="1">18</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\gitproject\rarchhazi\spi_rom_proba\23A1024.v" Line 348: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\gitproject\rarchhazi\spi_rom_proba\23A1024.v" Line 349: Result of <arg fmt="%d" index="1">18</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\gitproject\rarchhazi\spi_rom_proba\23A1024.v" Line 358: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\gitproject\rarchhazi\spi_rom_proba\23A1024.v" Line 359: Result of <arg fmt="%d" index="1">18</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
+</msg>
+
+<msg type="user_fatal" file="Portability" num="3" delta="new" >This Xilinx application has run out of memory or has encountered a memory conflict.  Current memory usage is <arg fmt="%d" index="1">11330308</arg> kb.  You can try increasing your system&apos;s physical or virtual memory.  If you are using a Win32 system, you can increase your application memory from 2GB to 3GB using the /3G switch in your boot.ini file. For more information on this, please refer to Xilinx Answer Record #14932. For technical support on this issue, please visit http://www.xilinx.com/support.
+</msg>
+
 </messages>
 

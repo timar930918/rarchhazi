@@ -5,5 +5,35 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"C:/gitproject/rarchhazi/spi_rom_proba/spi_interface.v" Line 175: Redeclaration of ansi port <arg fmt="%s" index="1">sck</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="188" delta="unknown" >"C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 479: Actual bit length <arg fmt="%d" index="1">32</arg> differs from formal bit length <arg fmt="%d" index="2">1</arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="188" delta="unknown" >"C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 480: Actual bit length <arg fmt="%d" index="1">32</arg> differs from formal bit length <arg fmt="%d" index="2">1</arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="188" delta="unknown" >"C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 481: Actual bit length <arg fmt="%d" index="1">32</arg> differs from formal bit length <arg fmt="%d" index="2">1</arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="188" delta="unknown" >"C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 479: Actual bit length <arg fmt="%d" index="1">32</arg> differs from formal bit length <arg fmt="%d" index="2">1</arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="188" delta="unknown" >"C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 480: Actual bit length <arg fmt="%d" index="1">32</arg> differs from formal bit length <arg fmt="%d" index="2">1</arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="188" delta="unknown" >"C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 481: Actual bit length <arg fmt="%d" index="1">32</arg> differs from formal bit length <arg fmt="%d" index="2">1</arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="188" delta="unknown" >"C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 479: Actual bit length <arg fmt="%d" index="1">32</arg> differs from formal bit length <arg fmt="%d" index="2">1</arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="188" delta="unknown" >"C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 480: Actual bit length <arg fmt="%d" index="1">32</arg> differs from formal bit length <arg fmt="%d" index="2">1</arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="188" delta="unknown" >"C:/gitproject/rarchhazi/spi_rom_proba/23A1024.v" Line 481: Actual bit length <arg fmt="%d" index="1">32</arg> differs from formal bit length <arg fmt="%d" index="2">1</arg>
+</msg>
+
 </messages>
 

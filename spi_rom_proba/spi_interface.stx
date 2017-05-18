@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to C:/gitproject/rarchhazi/spi_rom_proba/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to C:/gitproject/rarchhazi/spi_rom_proba/xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: spi_interface.prj
 
@@ -39,19 +39,19 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\gitproject\rarchhazi\spi_rom_proba\spi.v" into library work
-Parsing module <spi>.
+Analyzing Verilog file "C:\gitproject\rarchhazi\spi_rom_proba\spiv2.v" into library work
+Parsing module <spiv2>.
 Analyzing Verilog file "C:\gitproject\rarchhazi\spi_rom_proba\ipcore_dir\tx_fifo.v" into library work
 Parsing module <tx_fifo>.
 Analyzing Verilog file "C:\gitproject\rarchhazi\spi_rom_proba\ipcore_dir\rx_fifo.v" into library work
 Parsing module <rx_fifo>.
 Analyzing Verilog file "C:\gitproject\rarchhazi\spi_rom_proba\spi_interface.v" into library work
 Parsing module <spi_interface>.
-WARNING:HDLCompiler:751 - "C:\gitproject\rarchhazi\spi_rom_proba\spi_interface.v" Line 200: Redeclaration of ansi port sck is not allowed
+WARNING:HDLCompiler:751 - "C:\gitproject\rarchhazi\spi_rom_proba\spi_interface.v" Line 175: Redeclaration of ansi port sck is not allowed
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.12 secs
+Total CPU time to Xst completion: 6.05 secs
  
 --> 
 
