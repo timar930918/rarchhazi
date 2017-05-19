@@ -22,8 +22,8 @@ module spiv2(
     );
 
 reg rd_wr;
-always@ ( * )
-rd_wr <= rd_wr_in;
+
+
 //az sck frekvenciájának beállítása
 // kommunikáció alatt nem lehetséges
 reg [1:0] frq;
@@ -204,7 +204,10 @@ else
 					  else
 						status <= `DATA;
 		`COMMAND : if(din[8] == 1)
+						begin
 						status <= `DATA;
+						rd_wr <= din[7];
+						end
 					  else
 						status <= `DATA;
 		`DATA		: begin 

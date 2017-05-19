@@ -232,8 +232,7 @@ spiv2 spi(
 	 .tx_fifo_empty(tx_fifo_empty),
 	 .rx_fifo_full(rx_fifo_full),
 	 .tx_fifo_rd(tx_fifo_rd),
-	 .rx_fifo_wr(rx_fifo_wr),
-	 .rd_wr_in(bus_ip_wr)
+	 .rx_fifo_wr(rx_fifo_wr)
     );
 
 endmodule

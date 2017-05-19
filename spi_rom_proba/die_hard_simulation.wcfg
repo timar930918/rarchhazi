@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/gitproject/rarchhazi/spi_rom_proba/test_top_mmodule_alles_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_top_mmodule_alles" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/test_top_mmodule_alles/uut/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/paddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">paddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">paddr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/pwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pwrite</obj_property>
+      <obj_property name="ObjectShortName">pwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/psel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">psel</obj_property>
+      <obj_property name="ObjectShortName">psel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/pen" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pen</obj_property>
+      <obj_property name="ObjectShortName">pen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/pready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pready</obj_property>
+      <obj_property name="ObjectShortName">pready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/status_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">status_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">status_reg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/cmd_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cmd_reg[8:0]</obj_property>
+      <obj_property name="ObjectShortName">cmd_reg[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/prdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">prdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">prdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/pwdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pwdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pwdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/mosi" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mosi</obj_property>
+      <obj_property name="ObjectShortName">mosi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/miso" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">miso</obj_property>
+      <obj_property name="ObjectShortName">miso</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/cs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs</obj_property>
+      <obj_property name="ObjectShortName">cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/sck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sck</obj_property>
+      <obj_property name="ObjectShortName">sck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/tx_fifo_empty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/tx_fifo_full" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_fifo_full</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/rx_fifo_full" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_full</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top_mmodule_alles/uut/uut/spi_interface/rx_fifo_empty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_empty</obj_property>
+   </wvobject>
+</wave_config>

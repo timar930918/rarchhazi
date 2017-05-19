@@ -2,28 +2,9 @@ Command line:
    test_top_mmodule_alles_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49465
+     -socket  59826
 
-Thu May 18 21:08:38 2017
+Sat May 20 00:25:00 2017
 
 
- Elaboration Time: 0.078125 sec
-
- Current Memory Usage: 374.264 Meg
-
- Total Signals          : 1170
- Total Nets             : 4250
- Total Signal Drivers   : 287
- Total Blocks           : 20
- Total Primitive Blocks : 8
- Total Processes        : 421
- Total Traceable Variables  : 1048
- Total Scalar Nets and Variables : 1081410
-Total Line Count : 1140
-
- Total Simulation Time: 0.15625 sec
-
- Current Memory Usage: 374.264 Meg
-
-Thu May 18 21:08:49 2017
-
+ Elaboration Time: 0.09375 sec

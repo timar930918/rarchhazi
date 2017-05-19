@@ -61,15 +61,15 @@ module test_top_mmodule_alles;
 		
 		controll = `WRITE_CMD;
 		enable = 1;
-		#40;
+		#80;
 		enable = 0;
 		#70;
 		
 		controll = `RD_STATUS;
 		enable = 1;
-		#40;
-		enable = 0;
 		#80;
+		enable = 0;
+		#40;
 		
 		controll = `WR_DATA;
 		enable = 1;
@@ -78,7 +78,7 @@ module test_top_mmodule_alles;
 		
 		controll = `RD_STATUS;
 		enable = 1;
-		#80;
+		#20;
 		enable = 0;
 		//#20;
 		
