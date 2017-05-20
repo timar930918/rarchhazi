@@ -7,10 +7,7 @@ module spiv2(
     output cs,
     output sck,
     input miso,
-	 output mosi,
-	 
-	 input rd_wr_in,
-	 
+	 output mosi,	 
     output [7:0] dout, //miso-n vett adat
 	 input [8:0] din, //mosi-n küldendõ adat
 	 input [1:0] freq, //sck frekvenciáját meghatározó érték
